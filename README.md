@@ -4,5 +4,4 @@ planit [![Build Status](https://travis-ci.org/arieldiamond/planit.svg?branch=tra
 www.letstakeatripwithourfriendsandplanitrealnice.com
 
 =======
-<a href="http://imgur.com/pTntUjA"><img src="http://i.imgur.com/pTntUjA.png" title="Hosted by imgur.com"/></a>
-
+<a href="http://imgur.com/xUDYlDW"><img src="http://i.imgur.com/xUDYlDW.png" title="Hosted by imgur.com" /></a>
