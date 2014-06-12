@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	#as a trip-goer
-	has_many :trip_participations
+	has_many :trip_participations, foreign_key: :traveler_id
 	has_many :trips, through: :trip_participations, foreign_key: :traveler_id
 
 	#as a creator of an activity
