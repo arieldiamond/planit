@@ -1,6 +1,6 @@
 planit
 ======
-  
+[![Build Status](https://travis-ci.org/arieldiamond/planit.svg?branch=travis)](https://travis-ci.org/arieldiamond/planit)  
 www.letstakeatripwithourfriendsandplanitrealnice.com
 
 =======
