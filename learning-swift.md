@@ -1,7 +1,7 @@
 #Swift Intro Video
 - [Slides](https://dl.dropboxusercontent.com/u/689710/402_introduction_to_swift.pdf)
 
-####Constants and Vars
+###Constants and Vars
 - Swift prefers immutability
 - you can use unicode characters for var names
 ![](https://dl.dropboxusercontent.com/s/xpigq57ed4vc15l/constants%20and%20vars.png "")
@@ -32,4 +32,31 @@ no need to specify type
 ####Modifying an Array
 ![](https://dl.dropboxusercontent.com/s/y0a9zaj5c4uda7u/2014-06-12%20at%2011.19%20AM.png "")
 - Nothing is represented by `nil`
+
+###If Statements
+![](https://dl.dropboxusercontent.com/s/oomvxw2bjwtddhp/2014-06-12%20at%2011.21%20AM.png "")21%20AM.png
+
+- optional parens
+- braces required
+
+###Switch Statements
+![](https://dl.dropboxusercontent.com/s/tukdseaba38r595/2014-06-12%20at%2011.22%20AM.png "")
+
+- must supply `default` case. either a `case` for every value or a `default`.
+
+
+##Functions
+![](https://dl.dropboxusercontent.com/s/tukdseaba38r595/2014-06-12%20at%2011.22%20AM.png "")
+
+![](https://dl.dropboxusercontent.com/s/tukdseaba38r595/2014-06-12%20at%2011.22%20AM.png "")
+
+### Returning Values
+![](https://dl.dropboxusercontent.com/s/3bcip8kb59ehm5t/2014-06-12%20at%2011.27%20AM.png "")
+
+![](https://dl.dropboxusercontent.com/s/x94ny4cihd3dm8s/2014-06-12%20at%2011.29%20AM.png "")
+
+![](https://dl.dropboxusercontent.com/s/rgxgcgsnqvf1jlm/2014-06-12%20at%2011.30%20AM.png "")
+
+
+
 
