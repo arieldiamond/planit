@@ -33,6 +33,9 @@ gem "table_print"
 #for user authentication
 gem 'devise'
 
+#for testing and coverage
+gem 'coveralls', require: false
+
 group :test do
   gem 'shoulda-matchers'
 end
