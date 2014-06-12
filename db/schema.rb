@@ -29,11 +29,18 @@ ActiveRecord::Schema.define(version: 20140612001217) do
   end
 
   create_table "activity_participations", force: true do |t|
+    t.integer  "activity_id"
+    t.integer  "participant_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "trip_participations", force: true do |t|
+    t.integer  "traveler_id"
+    t.integer  "trip_id"
+    t.string   "transportation_type"
+    t.datetime "arrival_time"
+    t.datetime "departure_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
