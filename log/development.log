@@ -1,0 +1,47 @@
+  [1m[36m (0.8ms)[0m  [1mDROP DATABASE IF EXISTS "planit_test"[0m
+  [1m[35m (417.7ms)[0m  CREATE DATABASE "planit_test" ENCODING = 'unicode'
+  [1m[36m (26.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140612001041)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (26.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001041"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTrips (20140612001047)
+  [1m[35m (6.4ms)[0m  BEGIN
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "trips" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001047"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateActivities (20140612001137)
+  [1m[35m (6.4ms)[0m  BEGIN
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "activities" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001137"]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateActivityParticipations (20140612001204)
+  [1m[35m (6.4ms)[0m  BEGIN
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "activity_participations" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001204"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTripParticipations (20140612001217)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "trip_participations" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001217"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (132.3ms)[0m  [1mDROP DATABASE IF EXISTS "planit_test"[0m
+  [1m[35m (266.4ms)[0m  CREATE DATABASE "planit_test" ENCODING = 'unicode'
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "activities" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "activity_participations" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "trip_participations" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "trips" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "users" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140612001217')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140612001041')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140612001047')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140612001137')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140612001204')
