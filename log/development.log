@@ -1389,3 +1389,121 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 08:51:43
   [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
   [1m[35mTrip Load (1.2ms)[0m  SELECT "trips".* FROM "trips"
   [1m[36mTripParticipation Load (0.9ms)[0m  [1mSELECT "trip_participations".* FROM "trip_participations"[0m
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140612001041)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "first_name" character varying(255), "last_name" character varying(255), "phone" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001041"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTrips (20140612001047)
+  [1m[35m (14.6ms)[0m  BEGIN
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE "trips" ("id" serial primary key, "name" character varying(255), "description" character varying(255), "location" character varying(255), "start_date" timestamp, "end_date" timestamp, "creator_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001047"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateActivities (20140612001137)
+  [1m[35m (16.7ms)[0m  BEGIN
+  [1m[36m (20.6ms)[0m  [1mCREATE TABLE "activities" ("id" serial primary key, "name" character varying(255), "description" character varying(255), "location" character varying(255), "start_time" timestamp, "end_time" timestamp, "trip_id" integer, "creator_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001137"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateActivityParticipations (20140612001204)
+  [1m[35m (16.6ms)[0m  BEGIN
+  [1m[36m (18.8ms)[0m  [1mCREATE TABLE "activity_participations" ("id" serial primary key, "activity_id" integer, "participant_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001204"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTripParticipations (20140612001217)
+  [1m[35m (15.6ms)[0m  BEGIN
+  [1m[36m (18.7ms)[0m  [1mCREATE TABLE "trip_participations" ("id" serial primary key, "traveler_id" integer, "trip_id" integer, "transportation_type" character varying(255), "arrival_time" timestamp, "departure_time" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140612001217"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (15.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.308976"], ["email", "ariel@email.com"], ["first_name", "Ariel"], ["last_name", "Diamond"], ["phone", "111-222-3333"], ["updated_at", "2014-06-12 15:20:34.308976"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.332268"], ["email", "fabi@email.com"], ["first_name", "Fabi"], ["last_name", "Castillo"], ["phone", "555-666-7777"], ["updated_at", "2014-06-12 15:20:34.332268"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.335737"], ["email", "dusty@email.com"], ["first_name", "Dusty"], ["last_name", "Wilson"], ["phone", "123-456-7890"], ["updated_at", "2014-06-12 15:20:34.335737"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.339030"], ["email", "jaimin@email.com"], ["first_name", "Jaimin"], ["last_name", "Patel"], ["phone", "182-929-9080"], ["updated_at", "2014-06-12 15:20:34.339030"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.341840"], ["email", "annie@email.com"], ["first_name", "Annie"], ["last_name", "Baer"], ["phone", "123-8383-1199"], ["updated_at", "2014-06-12 15:20:34.341840"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.344479"], ["email", "spiderman@email.com"], ["first_name", "Peter"], ["last_name", "Parker"], ["phone", "878-010-9267"], ["updated_at", "2014-06-12 15:20:34.344479"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.346992"], ["email", "batman@email.com"], ["first_name", "Bruce"], ["last_name", "Wayne"], ["phone", "888-999-0000"], ["updated_at", "2014-06-12 15:20:34.346992"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.349260"], ["email", "superman@email.com"], ["first_name", "Clark"], ["last_name", "Kent"], ["phone", "732-237-7237"], ["updated_at", "2014-06-12 15:20:34.349260"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.351497"], ["email", "cplanit@planit.com"], ["first_name", "Captain"], ["last_name", "Planit"], ["phone", "892-840-0087"], ["updated_at", "2014-06-12 15:20:34.351497"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.7ms)[0m  INSERT INTO "trips" ("created_at", "creator_id", "description", "end_date", "location", "name", "start_date", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.373508"], ["creator_id", 9], ["description", "Just another day"], ["end_date", "2014-02-11 00:00:00.000000"], ["location", "Metropolis"], ["name", "Save the world"], ["start_date", "2014-02-03 00:00:00.000000"], ["updated_at", "2014-06-12 15:20:34.373508"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "trips" ("created_at", "creator_id", "description", "end_date", "location", "name", "start_date", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.388505"], ["creator_id", 8], ["description", "Everyone needs a vacation"], ["end_date", "2010-04-15 00:00:00.000000"], ["location", "Virginia Beach"], ["name", "Spring break"], ["start_date", "2010-04-07 00:00:00.000000"], ["updated_at", "2014-06-12 15:20:34.388505"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trips" ("created_at", "creator_id", "description", "end_date", "location", "name", "start_date", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.391619"], ["creator_id", 1], ["description", "Because today is a really convenient day to have a birthday"], ["end_date", "2014-06-20 00:00:00.000000"], ["location", "DBC"], ["name", "Ariel's Birthday"], ["start_date", "2014-06-19 00:00:00.000000"], ["updated_at", "2014-06-12 15:20:34.391619"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trips" ("created_at", "creator_id", "description", "end_date", "location", "name", "start_date", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2014-06-12 15:20:34.394587"], ["creator_id", 9], ["description", "It's fourth of july!"], ["end_date", "2012-07-15 00:00:00.000000"], ["location", "Vermont"], ["name", "Lake House"], ["start_date", "2012-07-01 00:00:00.000000"], ["updated_at", "2014-06-12 15:20:34.394587"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trips" ("created_at", "creator_id", "description", "end_date", "location", "name", "start_date", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2014-06-12 15:20:34.397365"], ["creator_id", 7], ["description", "...that we broke saving the world"], ["end_date", "2014-02-20 00:00:00.000000"], ["location", "Metropolis"], ["name", "Clean up everything"], ["start_date", "2014-02-13 00:00:00.000000"], ["updated_at", "2014-06-12 15:20:34.397365"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-03 14:30:00.000000"], ["created_at", "2014-06-12 15:20:34.414566"], ["departure_time", "2014-02-10 10:45:00.000000"], ["transportation_type", "web"], ["traveler_id", 6], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.414566"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2014-02-03 18:30:00.000000"], ["created_at", "2014-06-12 15:20:34.418501"], ["departure_time", "2014-02-11 10:00:00.000000"], ["transportation_type", "batmobile"], ["traveler_id", 7], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.418501"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-03 02:45:00.000000"], ["created_at", "2014-06-12 15:20:34.421435"], ["departure_time", "2014-02-10 10:45:00.000000"], ["transportation_type", "flying"], ["traveler_id", 8], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.421435"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2014-02-03 20:30:00.000000"], ["created_at", "2014-06-12 15:20:34.423976"], ["departure_time", "2014-02-11 05:00:00.000000"], ["transportation_type", "bike"], ["traveler_id", 9], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.423976"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-03 15:00:00.000000"], ["created_at", "2014-06-12 15:20:34.426403"], ["departure_time", "2014-02-10 08:40:00.000000"], ["transportation_type", "train"], ["traveler_id", 2], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.426403"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2010-04-07 14:30:00.000000"], ["created_at", "2014-06-12 15:20:34.429157"], ["departure_time", "2010-04-15 10:45:00.000000"], ["transportation_type", "flying"], ["traveler_id", 8], ["trip_id", 2], ["updated_at", "2014-06-12 15:20:34.429157"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2010-04-07 18:30:00.000000"], ["created_at", "2014-06-12 15:20:34.431603"], ["departure_time", "2010-04-15 10:00:00.000000"], ["transportation_type", "plane"], ["traveler_id", 3], ["trip_id", 2], ["updated_at", "2014-06-12 15:20:34.431603"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2010-04-07 02:45:00.000000"], ["created_at", "2014-06-12 15:20:34.433960"], ["departure_time", "2010-04-15 10:45:00.000000"], ["transportation_type", "drive"], ["traveler_id", 4], ["trip_id", 2], ["updated_at", "2014-06-12 15:20:34.433960"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-03 20:30:00.000000"], ["created_at", "2014-06-12 15:20:34.436559"], ["departure_time", "2014-02-11 05:00:00.000000"], ["transportation_type", "bike"], ["traveler_id", 9], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.436559"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2014-02-03 15:00:00.000000"], ["created_at", "2014-06-12 15:20:34.439025"], ["departure_time", "2014-02-10 08:40:00.000000"], ["transportation_type", "train"], ["traveler_id", 2], ["trip_id", 1], ["updated_at", "2014-06-12 15:20:34.439025"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-13 14:30:00.000000"], ["created_at", "2014-06-12 15:20:34.441403"], ["departure_time", "2014-02-20 10:45:00.000000"], ["transportation_type", "web"], ["traveler_id", 6], ["trip_id", 5], ["updated_at", "2014-06-12 15:20:34.441403"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2014-02-13 18:30:00.000000"], ["created_at", "2014-06-12 15:20:34.443799"], ["departure_time", "2014-02-10 10:00:00.000000"], ["transportation_type", "batmobile"], ["traveler_id", 7], ["trip_id", 5], ["updated_at", "2014-06-12 15:20:34.443799"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-14 02:45:00.000000"], ["created_at", "2014-06-12 15:20:34.446107"], ["departure_time", "2014-02-19 10:45:00.000000"], ["transportation_type", "flying"], ["traveler_id", 8], ["trip_id", 5], ["updated_at", "2014-06-12 15:20:34.446107"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["arrival_time", "2014-02-14 20:30:00.000000"], ["created_at", "2014-06-12 15:20:34.448446"], ["departure_time", "2014-02-20 05:00:00.000000"], ["transportation_type", "bike"], ["traveler_id", 9], ["trip_id", 5], ["updated_at", "2014-06-12 15:20:34.448446"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "trip_participations" ("arrival_time", "created_at", "departure_time", "transportation_type", "traveler_id", "trip_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["arrival_time", "2014-02-13 15:00:00.000000"], ["created_at", "2014-06-12 15:20:34.450758"], ["departure_time", "2014-02-20 08:40:00.000000"], ["transportation_type", "train"], ["traveler_id", 2], ["trip_id", 5], ["updated_at", "2014-06-12 15:20:34.450758"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mTripParticipation Load (0.7ms)[0m  [1mSELECT "trip_participations".* FROM "trip_participations"[0m
