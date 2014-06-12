@@ -22,7 +22,15 @@ trips = [{name: "Save the world", description: "Just another day", location: "Me
 				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
 				 {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1},
 				 {name: "Lake House", description: "It's fourth of july!", location: "Vermont", start_date: DateTime.new(2012,7,1), end_date: DateTime.new(2012,7,15), creator_id: 9},
-				 {name: "Clean up everything", description: "...that we broke saving the world", location: "Metropolis", start_date: DateTime.new(2014,2,13), end_date: DateTime.new(2014,2,29), creator_id: 7}]
+				 {name: "Clean up everything", description: "...that we broke saving the world", location: "Metropolis", start_date: DateTime.new(2014,2,13), end_date: DateTime.new(2014,2,20), creator_id: 7}]
 
 Trip.create!(trips)
 
+
+trip_participations = [{trip_id: 1, traveler_id: 6, transportation_type: "web", arrival_time: DateTime.new(2014,2,3,14,30,0), departure_time: DateTime.new(2014,2,10,10,45,0)},
+											 {trip_id: 1, traveler_id: 7, transportation_type: "batmobile", arrival_time: DateTime.new(2014,2,3,18,30,0), departure_time: DateTime.new(2014,2,11,10,0,0)},
+											 {trip_id: 1, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2014,2,3,2,45,0), departure_time: DateTime.new(2014,2,10,10,45,0)},
+											 {trip_id: 1, traveler_id: 9, transportation_type: "bike", arrival_time: DateTime.new(2014,2,3,20,30,0), departure_time: DateTime.new(2014,2,11,5,0,0)},
+											 {trip_id: 1, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,2,3,15,0,0), departure_time: DateTime.new(2014,2,10,8,40,0)}]
+
+TripParticipation.create!(trip_participations)
