@@ -63,16 +63,16 @@ activities = [{name: "fishing", description: "Woohoo, on a boat!", start_time: D
 
 Activity.create!(activities)
 
-activity_participations = [{activity_id: 1, participant_id: 1},
-													 {activity_id: 1, participant_id: 2},
-													 {activity_id: 1, participant_id: 3},
-													 {activity_id: 2, participant_id: 3},
-													 {activity_id: 2, participant_id: 4},
-													 {activity_id: 2, participant_id: 5},
-													 {activity_id: 7, participant_id: 9},
-													 {activity_id: 7, participant_id: 8},
-													 {activity_id: 7, participant_id: 7},
-													 {activity_id: 7, participant_id: 6}]
+activity_participations = [{activity_id: 1, trip_participation_id: 14},
+													 {activity_id: 1, trip_participation_id: 15},
+													 {activity_id: 1, trip_participation_id: 16},
+													 {activity_id: 2, trip_participation_id: 16},
+													 {activity_id: 2, trip_participation_id: 17},
+													 {activity_id: 2, trip_participation_id: 18},
+													 {activity_id: 7, trip_participation_id: 1},
+													 {activity_id: 7, trip_participation_id: 2},
+													 {activity_id: 7, trip_participation_id: 3},
+													 {activity_id: 7, trip_participation_id: 5}]
 
 ActivityParticipation.create!(activity_participations)
 
