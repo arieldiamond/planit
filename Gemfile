@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 #testing with rspec
 group :development, :test do
-  gem 'rspec-rails', '~> 2.9.9'
+  gem 'rspec-rails', '~> 3.0.0'
 end
 
 #making it easier to test things in the console
