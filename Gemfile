@@ -30,6 +30,9 @@ end
 #making it easier to test things in the console
 gem "table_print"
 
+#for user authentication
+gem 'devise'
+
 group :test do
   gem 'shoulda-matchers'
 end
