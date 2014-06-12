@@ -29,6 +29,6 @@ RSpec.describe TripParticipation, :type => :model do
   context "#associations" do
     it {should belong_to(:traveler)}
     it {should belong_to(:trip)}
-    it {should have_many(:activity_participations).with_foreign_key(:participant_id)}
+    it {should have_many(:activity_participations)}
   end
 end
