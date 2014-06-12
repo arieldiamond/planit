@@ -27,6 +27,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
 end
 
+#making it easier to test things in the console
+gem "table_print"
+
 group :test do
   gem 'shoulda-matchers'
 end

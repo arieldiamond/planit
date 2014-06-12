@@ -1906,3 +1906,4 @@ PG::UndefinedColumn: ERROR:  column trip_participations.user_id does not exist
 LINE 1: ...rticipations".* FROM "trip_participations"  WHERE "trip_part...
                                                              ^
 : SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."user_id" = $1
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
