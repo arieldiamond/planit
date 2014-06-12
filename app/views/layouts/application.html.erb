@@ -5,10 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div class="main">
+		<div class="nav">
+		<h1 id="title">planit</h1>
+		<p id="tagline">Planning trips... with science.</p>
+		</div>
 
-<%= yield %>
-
+	<%= yield %>
+	</div>
 </body>
 </html>
