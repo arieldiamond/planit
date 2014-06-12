@@ -6,15 +6,15 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = [{email: "ariel@email.com", first_name: "Ariel", last_name: "Diamond", phone: "111-222-3333"},
-				 {email: "fabi@email.com", first_name: "Fabi", last_name: "Castillo", phone: "555-666-7777"},
-				 {email: "dusty@email.com", first_name: "Dusty", last_name: "Wilson", phone: "123-456-7890"},
-				 {email: "jaimin@email.com", first_name: "Jaimin", last_name: "Patel", phone: "182-929-9080"},
-				 {email: "annie@email.com", first_name: "Annie", last_name: "Baer", phone: "123-8383-1199"},
-				 {email: "spiderman@email.com", first_name: "Peter", last_name: "Parker", phone: "878-010-9267"},
-				 {email: "batman@email.com", first_name: "Bruce", last_name: "Wayne", phone: "888-999-0000"},
-				 {email: "superman@email.com", first_name: "Clark", last_name: "Kent", phone: "732-237-7237"},
-				 {email: "cplanit@planit.com", first_name: "Captain", last_name: "Planit", phone: "892-840-0087"}]
+users = [{email: "ariel@email.com", first_name: "Ariel", last_name: "Diamond", phone: "111-222-3333", password: "password"},
+				 {email: "fabi@email.com", first_name: "Fabi", last_name: "Castillo", phone: "555-666-7777", password: "password"},
+				 {email: "dusty@email.com", first_name: "Dusty", last_name: "Wilson", phone: "123-456-7890", password: "password"},
+				 {email: "jaimin@email.com", first_name: "Jaimin", last_name: "Patel", phone: "182-929-9080", password: "password"},
+				 {email: "annie@email.com", first_name: "Annie", last_name: "Baer", phone: "123-8383-1199", password: "password"},
+				 {email: "spiderman@email.com", first_name: "Peter", last_name: "Parker", phone: "878-010-9267", password: "password"},
+				 {email: "batman@email.com", first_name: "Bruce", last_name: "Wayne", phone: "888-999-0000", password: "password"},
+				 {email: "superman@email.com", first_name: "Clark", last_name: "Kent", phone: "732-237-7237", password: "password"},
+				 {email: "cplanit@planit.com", first_name: "Captain", last_name: "Planit", phone: "892-840-0087", password: "password"}]
 
 User.create!(users)
 

@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 	#as a trip-goer
 	has_many :trip_participations, foreign_key: :traveler_id #works
 	has_many :traveled_trips, through: :trip_participations, source: :trip #works

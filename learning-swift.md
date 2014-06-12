@@ -103,3 +103,12 @@ No more alloc!
 ####Class initialization
 - see intermediate talk
 
+####Adding Methods to Functions
+
+####Property Observers
+![](https://dl.dropboxusercontent.com/s/pcmg2l0yw8ah75m/2014-06-12%20at%203.06%20PM.png "")
+
+left off at 36:10
+
+
+
