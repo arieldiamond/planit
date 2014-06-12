@@ -23,10 +23,10 @@ RSpec.describe User, :type => :model do
 
   context "#associations" do
     it {should have_many(:trip_participations).with_foreign_key(:traveler_id)}
-    # it {should have_many(:traveled_trips).through(:trip_participations).source(:trip)}
-    # it {should have_many(:created_trips).source(:trip).with_foreign_key(:creator_id)}
-    # it {should have_many(:created_activities).source(:activity).with_foreign_key(:creator_id)}
-    # it {should have_many(:activity_participations).with_foreign_key(:trip_participation_id)}
-    # it {should have_many(:participated_activities).through(:activity_participations).source(:activity)}
+    it {should have_many(:traveled_trips).through(:trip_participations).source(:trip)}
+    it {should have_many(:created_trips).with_foreign_key(:creator_id)}
+    it {should have_many(:created_activities).with_foreign_key(:creator_id)}
+    it {should have_many(:activity_participations).with_foreign_key(:trip_participation_id)}
+    it {should have_many(:participated_activities).through(:activity_participations).source(:activity)}
   end
 end

@@ -35,7 +35,8 @@ RSpec.describe Activity, :type => :model do
 
   context "#associations" do
     it {should have_many(:activity_participations)}
-    it {should have_many(:participants).through(:activity_participations)}
+    it {should have_many(:trip_participations).through(:activity_participations)}
+    it {should have_many(:participants).through(:trip_participations).source(:traveler)}
     it {should have_many(:trip_participations).through(:activity_participations)}
     it {should belong_to(:creator)}
     it {should belong_to(:trip)}
