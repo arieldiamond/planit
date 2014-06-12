@@ -18,14 +18,14 @@ no need to specify type
 
 ####Building Complex Strings
 - interpolations
-- 
+
 ![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
 
 ####Array and Dictionaries
 ![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
 - can work with any type, don't have to be objects or clas types
 - Collections are *typed* collections. Can provide a type annotation to specify only accepts strings.
-- 
+
 ![](https://dl.dropboxusercontent.com/s/x5brx6dbsbnmvzx/2014-06-12%20at%2011.12%20AM.png "")
 
 ##Loops
@@ -78,6 +78,28 @@ no need to specify type
 ![](https://dl.dropboxusercontent.com/s/wphci095mtf85yn/2014-06-12%20at%2011.34%20AM.png "")
 
 - functions are **named closures** in Swift
-- 
 
+##Classes
+![](https://dl.dropboxusercontent.com/s/w6uslkbx7wevmov/2014-06-12%20at%2011.52%20AM.png "")
+- no header files
+- no base class required, can use NSObject for ex if you want
+
+![](https://dl.dropboxusercontent.com/s/njoiru0k6l1ezw3/2014-06-12%20at%2011.53%20AM.png "")
+- would be `let` instead of `var` if you don't want to change it later on
+- stored and computed properties 30:52
+- computed properties, even read-only ones do need to be defined as variables
+
+####Initializer Syntax
+![](https://dl.dropboxusercontent.com/s/njoiru0k6l1ezw3/2014-06-12%20at%2011.53%20AM.png "")
+
+No more alloc!
+
+- won't need an initializer if you had supplied a default value
+
+####Dot Syntax
+![](https://dl.dropboxusercontent.com/s/16icjp3orhybkyi/2014-06-12%20at%2011.57%20AM.png "")
+
+
+####Class initialization
+- see intermediate talk
 
