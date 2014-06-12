@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+ .main {
+ 	padding: 10px;
+ 	border: dotted 1px gray;
+	background-color: #EEEEEE;
+ }
+
+ .nav {
+ 	background-color: #67809F;
+ 	font-family: 'Dosis', sans-serif;
+ }
+ 
+ #title{
+ 	padding-left: 10px;
+ 	padding-top: 10px;
+ }
+
+ #tagline{
+ 	padding-left: 10px;
+ 	padding-bottom: 5px;
+ 	margin-top: -15px;	
+ 	font-style: italic;
+ }
+
+ .welcome{
+ 	font-family: 'Dosis', sans-serif;	
+ }
