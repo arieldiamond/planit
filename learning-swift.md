@@ -17,3 +17,19 @@ no need to specify type
 ####Building Complex Strings
 - interpolations
 ![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
+
+####Array and Dictionaries
+![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
+- can work with any type, don't have to be objects or clas types
+- Collections are *typed* collections. Can provide a type annotation to specify only accepts strings.
+![](https://dl.dropboxusercontent.com/s/x5brx6dbsbnmvzx/2014-06-12%20at%2011.12%20AM.png "")
+
+##Loops
+###Create and modify collections
+####For-in loop
+- characters, strings, ranges 11:51, arrays, dictionaries
+
+####Modifying an Array
+![](https://dl.dropboxusercontent.com/s/y0a9zaj5c4uda7u/2014-06-12%20at%2011.19%20AM.png "")
+- Nothing is represented by `nil`
+
