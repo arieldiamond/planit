@@ -12,6 +12,14 @@
 		<div class="nav">
 		<h1 id="title">planit</h1>
 		<p id="tagline">Planning trips... with science.</p>
+		<p><a href="/users/"></a></p>
+		<p><% if user_signed_in? %>
+				<%= link_to('Sign out', destroy_user_session_path, :method => :delete) %>
+			<% else %>
+				<%= link_to('Sign in', new_user_session_path) %>
+			<% end %>
+		</p>
+
 		</div>
 
 	<%= yield %>
