@@ -4,24 +4,28 @@
 ###Constants and Vars
 - Swift prefers immutability
 - you can use unicode characters for var names
-![](https://dl.dropboxusercontent.com/s/xpigq57ed4vc15l/constants%20and%20vars.png "")
+![](https://dl.dropboxusercontent.com/s/xpigq57e
+d4vc15l/constants%20and%20vars.png "")
 
 ####Type inference
 no need to specify type
 
 ###String
 ![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
+
 - collection of characters, can use a for in loop to iterate over characters
 - can combine strings and characters
 
 ####Building Complex Strings
 - interpolations
+- 
 ![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
 
 ####Array and Dictionaries
 ![](https://dl.dropboxusercontent.com/s/l6h9u4bmnvs065i/2014-06-12%20at%2011.07%20AM.png "")
 - can work with any type, don't have to be objects or clas types
 - Collections are *typed* collections. Can provide a type annotation to specify only accepts strings.
+- 
 ![](https://dl.dropboxusercontent.com/s/x5brx6dbsbnmvzx/2014-06-12%20at%2011.12%20AM.png "")
 
 ##Loops
@@ -57,6 +61,23 @@ no need to specify type
 
 ![](https://dl.dropboxusercontent.com/s/rgxgcgsnqvf1jlm/2014-06-12%20at%2011.30%20AM.png "")
 
+###Tuples
+- usefule when u want to pass around multiple values simply like when a function returns multiple values
+- u get at those values with a constant
+![](https://dl.dropboxusercontent.com/s/ec6rir45sixv3bn/2014-06-12%20at%2011.32%20AM.png "")
 
+- for each iteration of the dict you get a tuple pair
+- 
+####Another wayt o get values:
+
+![](https://dl.dropboxusercontent.com/s/jc6doqhorrs34ad/2014-06-12%20at%2011.33%20AM.png "")
+
+##Closures
+- no need to specify types
+
+![](https://dl.dropboxusercontent.com/s/wphci095mtf85yn/2014-06-12%20at%2011.34%20AM.png "")
+
+- functions are **named closures** in Swift
+- 
 
 
