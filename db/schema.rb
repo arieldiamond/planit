@@ -17,6 +17,13 @@ ActiveRecord::Schema.define(version: 20140612001217) do
   enable_extension "plpgsql"
 
   create_table "activities", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "location"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "trip_id"
+    t.integer  "creator_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -32,6 +39,12 @@ ActiveRecord::Schema.define(version: 20140612001217) do
   end
 
   create_table "trips", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "location"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.integer  "creator_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
