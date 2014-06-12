@@ -2,5 +2,4 @@ planit
 ======
   
 www.letstakeatripwithourfriendsandplanitrealnice.com
-
-[Imgur](http://i.imgur.com/pTntUjA.png)
+<a href="http://imgur.com/pTntUjA"><img src="http://i.imgur.com/pTntUjA.png" title="Hosted by imgur.com"/></a>
