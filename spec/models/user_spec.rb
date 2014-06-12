@@ -20,4 +20,11 @@ RSpec.describe User, :type => :model do
   		expect(user.phone).to eq("773-981-3133")
   	end
   end
+
+  context "#associations" do
+    it {should have_many(:trip_participations)}
+    it {should have_many(:trips).through(:trip_participations).with_foreign_key(:traveler_id)}
+    it {should have_many(:created_activities)}
+    it {should have_many(:created_trips)}
+  end
 end

@@ -5,6 +5,11 @@ class Activity < ActiveRecord::Base
 
 	# association with trip
 	has_many :trip_participations, through: :activity_participations
+	
+	#creator of activity
+	belongs_to :creator, class_name: "User"
+
+	#trip id
 	belongs_to :trip
 
 	# belongs to trip creator

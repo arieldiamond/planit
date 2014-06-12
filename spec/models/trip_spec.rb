@@ -28,4 +28,10 @@ RSpec.describe Trip, :type => :model do
   		expect(trip.creator_id).to eq(1)
   	end
   end
+
+  context "#associations" do
+    it {should have_many(:trip_participations)}
+    it {should have_many(:travelers).through(:trip_participations)}
+    it {should belong_to(:creator)}
+  end
 end
