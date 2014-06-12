@@ -32,4 +32,12 @@ RSpec.describe Activity, :type => :model do
   		expect(activity.creator_id).to eq(6)
   	end
   end
+
+  context "#associations" do
+    it {should have_many(:activity_participations)}
+    it {should have_many(:participants).through(:activity_participations)}
+    it {should have_many(:trip_participations).through(:activity_participations)}
+    it {should belong_to(:creator)}
+    it {should belong_to(:trip)}
+  end
 end

@@ -12,4 +12,9 @@ RSpec.describe ActivityParticipation, :type => :model do
   		expect(participation.activity_id).to eq(1)
   	end
   end
+
+  context "#associations" do
+  	it {should belong_to(:participant)}
+  	it {should belong_to(:activity)}
+  end
 end
