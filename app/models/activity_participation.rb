@@ -1,4 +1,5 @@
 class ActivityParticipation < ActiveRecord::Base
-	belongs_to :participant, class_name: "User"
-	belongs_to :activity
+	#needs to be associated with trip participations
+	belongs_to :participant, class_name: "User" #works
+	belongs_to :activity #works
 end

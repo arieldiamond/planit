@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140612001217) do
 
   create_table "activity_participations", force: true do |t|
     t.integer  "activity_id"
-    t.integer  "participant_id"
+    t.integer  "trip_participation_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
