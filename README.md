@@ -1,4 +1,4 @@
 planit
 ======
   
-www.letstakeatripwithoutfriendsandplanitrealnice.com
+www.letstakeatripwithourfriendsandplanitrealnice.com
