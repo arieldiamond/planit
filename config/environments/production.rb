@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # setting default url for devise (NEEDS TO BE CHANGED ONCE WE"RE DEPLOYED)
-  #config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'http://secure-taiga-5848.herokuapp.com/' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
