@@ -5883,3 +5883,32 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 16:52:38
 
 
 Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-12 16:52:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 136ms (Views: 110.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
