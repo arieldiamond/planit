@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+	background-image: url('../Earth.jpg');
+	font-family: 'Dosis', sans-serif;
+}
  .main {
  	padding: 10px;
  	border: dotted 1px gray;
@@ -21,22 +25,30 @@
  }
 
  .nav {
+
  	background-color: #67809F;
- 	font-family: 'Dosis', sans-serif;
+ 	padding: 5px 10px 5px 10px;
+
  }
  
- #title{
- 	padding-left: 10px;
- 	padding-top: 10px;
+ .nav h1{
+ 	margin: 0;
+ 	width: 100px;
  }
 
- #tagline{
- 	padding-left: 10px;
+ #tagline {
+ 	float: right;
+ /*	padding-left: 10px;
  	padding-bottom: 5px;
- 	margin-top: -15px;	
+ 	margin-top: -15px;	*/
  	font-style: italic;
  }
 
+ #login {
+ 	/*float:right;*/
+ }
+
  .welcome{
+
  	font-family: 'Dosis', sans-serif;	
  }
