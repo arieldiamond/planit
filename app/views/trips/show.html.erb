@@ -1,3 +1,9 @@
-<p>This trip:
-<%= @trip.name %></p>
+<h2>Your Trip: <%= @trip.name %></h2>
 <p><%= @trip.description %>
+<p><%= @trip.location %>
+<p><%= @trip.start_date %>
+<p><%= @trip.end_date %>
+
+<p><%= button_to "Edit This Trip", edit_trip_path(@trip.id) %>
+
+<p><%= button_to "Delete This Trip", @trip, method: :delete %>

@@ -1,6 +1,7 @@
 <div class="welcome">
 	<% if user_signed_in? %>
 		<%= link_to "Your Trips:", trips_path %>
+		<p><%= link_to "Make a New Trip!", new_trip_path %>
 	<% else %>
 		<h2>Get Started With Planit!</h2>
 		<p>We have features!</p>
