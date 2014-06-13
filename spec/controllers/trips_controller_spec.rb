@@ -104,14 +104,15 @@ RSpec.describe TripsController, :type => :controller do
   describe "PUT update" do
     describe "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        # skip("Add a hash of attributes valid for your model")
+        {name: "Ariel's Stupid Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1}
       }
 
       it "updates the requested trip" do
         trip = Trip.create! valid_attributes
         put :update, {:id => trip.to_param, :trip => new_attributes}, valid_session
         trip.reload
-        skip("Add assertions for updated state")
+        # skip("Add assertions for updated state")
       end
 
       it "assigns the requested trip as @trip" do

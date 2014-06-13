@@ -104,14 +104,15 @@ RSpec.describe ActivitiesController, :type => :controller do
   describe "PUT update" do
     describe "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        # skip("Add a hash of attributes valid for your model")
+        {name: "drink cocktails", description: "because it's Ariel's birthday and we need drinks", start_time: DateTime.new(2014,6,19,16,0,0), end_time: DateTime.new(2014,6,19,23,0,0), location: "Bavette's and Gilt Bar", trip_id: 3, creator_id: 1}
       }
 
       it "updates the requested activity" do
         activity = Activity.create! valid_attributes
         put :update, {:id => activity.to_param, :activity => new_attributes}, valid_session
         activity.reload
-        skip("Add assertions for updated state")
+        # skip("Add assertions for updated state")
       end
 
       it "assigns the requested activity as @activity" do
