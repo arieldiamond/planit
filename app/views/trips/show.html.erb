@@ -1,3 +1,8 @@
-<p>This trip:
-<%= @trip.name %></p>
+<h2>Your Trip: <%= @trip.name %></h2>
 <p><%= @trip.description %>
+
+<h4>Edit this trip</h4>
+<p><%= link_to "Edit", edit_trip_path(@trip.id) %>
+
+<h4>Delete this trip:</h4>
+<p><%= form_for @trip, :html => [method: delete] %>
