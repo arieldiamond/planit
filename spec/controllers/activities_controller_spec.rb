@@ -25,12 +25,14 @@ RSpec.describe ActivitiesController, :type => :controller do
   # adjust the attributes here as well.
   let(:valid_attributes) {
     # skip("Add a hash of attributes valid for your model")
-    {name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "Bavette's", trip_id: 3, creator_id: 1}
+    {name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "Bavette's",creator_id: 1}
   }
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
   } #pending
+
+  let(:trip) {Trip.create!(name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1)}
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -39,7 +41,8 @@ RSpec.describe ActivitiesController, :type => :controller do
 
   describe "GET index" do
     it "assigns all activities as @activities" do
-      activity = Activity.create! valid_attributes
+      activity = Activity.new valid_attributes
+      trip.activities << activity
       get :index, {}, valid_session
       expect(assigns(:activities)).to eq([activity])
     end

@@ -10,6 +10,8 @@ class ActivitiesController < ApplicationController
   # GET /activities/1
   # GET /activities/1.json
   def show
+    @activity = Activity.find(params[:id])
+    @trip = @activity.trip
   end
 
   # GET /activities/new
@@ -27,6 +29,9 @@ class ActivitiesController < ApplicationController
   # POST /activities.json
   def create
     @activity = Activity.new(activity_params)
+    @trip = Trip.find(params[:trip_id])
+    @trip.activities << @activity
+    current_user.created_activities << @activity
 
     respond_to do |format|
       if @activity.save
@@ -58,7 +63,7 @@ class ActivitiesController < ApplicationController
   def destroy
     @activity.destroy
     respond_to do |format|
-      format.html { redirect_to activities_url, notice: 'Activity was successfully destroyed.' }
+      format.html { redirect_to trip_activities_path(@activity.trip.id), notice: 'Activity was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
