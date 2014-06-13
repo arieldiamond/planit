@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: planit_production
-  username: planit
+
   password: <%= ENV['PLANIT_DATABASE_PASSWORD'] %>
