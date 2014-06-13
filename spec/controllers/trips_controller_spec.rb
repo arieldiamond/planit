@@ -24,7 +24,8 @@ RSpec.describe TripsController, :type => :controller do
   # Trip. As you add validations to Trip, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    # skip("Add a hash of attributes valid for your model")
+    {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1}
   }
 
   let(:invalid_attributes) {
