@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 #testing with rspec
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'capybara'
 end
 
 #making it easier to test things in the console
