@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
 
+  resources :activities
+
+  resources :trips
+
   devise_for :users
   root "welcome#index"
-  resources :trips do
-    resources :activities
-  end
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

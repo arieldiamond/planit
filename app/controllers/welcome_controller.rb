@@ -1,6 +1,4 @@
 class WelcomeController < ApplicationController
-	def index
-		@trips = Trip.all
-	end
-
+  def index
+  end
 end
