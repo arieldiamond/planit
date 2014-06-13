@@ -1,0 +1,8 @@
+	<% if user_signed_in? %>
+		<h2>Your Trips:</h2>
+		<% @trips.each do |t| %>
+			<p><%= link_to t.name, trip_path(t.id) %>:&emsp;<%= t.description %></p>
+		<% end %>
+	<% else %>
+		<h2>Get Started With Planit!</h2>
+	<% end %>
