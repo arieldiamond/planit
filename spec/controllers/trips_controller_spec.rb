@@ -37,9 +37,16 @@ RSpec.describe TripsController, :type => :controller do
   # TripsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  let(:user) {User.create!(email: "ariel@email.com", first_name: "Ariel", last_name: "Diamond", phone: "111-222-3333", password: "password")}
+
+  before {
+    TripsController.any_instance.stub(:current_user => user)
+  }
+
   describe "GET index" do
-    it "assigns all trips as @trips" do
+    it "assigns all user's trips as @trips" do
       trip = Trip.create! valid_attributes
+      user.traveled_trips << trip
       get :index, {}, valid_session
       expect(assigns(:trips)).to eq([trip])
     end

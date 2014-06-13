@@ -32,8 +32,10 @@
     <%= f.datetime_select :end_date %>
   </div>
   <div class="field">
-    <%= f.label :creator_id %><br>
-    <%= f.number_field :creator_id %>
+    <%#= f.label :creator_id %>
+    <%#= current_user.first_name %> <%#= current_user.last_name %>
+    <%#= f.number_field :creator_id %>
+    <%#= current_user.id %>
   </div>
   <div class="actions">
     <%= f.submit %>

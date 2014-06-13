@@ -26,6 +26,8 @@ class TripsController < ApplicationController
   # POST /trips.json
   def create
     @trip = Trip.new(trip_params)
+    current_user.created_trips << @trip
+    current_user.traveled_trips << @trip
 
     respond_to do |format|
       if @trip.save
@@ -57,7 +59,7 @@ class TripsController < ApplicationController
   def destroy
     @trip.destroy
     respond_to do |format|
-      format.html { redirect_to trips_url, notice: 'Trip was successfully destroyed.' }
+      format.html { redirect_to trips_path, notice: 'Trip was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
