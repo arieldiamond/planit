@@ -14,11 +14,13 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/new
   def new
+    @trip = Trip.find(params[:trip_id])
     @activity = Activity.new
   end
 
   # GET /activities/1/edit
   def edit
+
   end
 
   # POST /activities

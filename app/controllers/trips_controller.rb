@@ -4,7 +4,8 @@ class TripsController < ApplicationController
   # GET /trips
   # GET /trips.json
   def index
-    @trips = Trip.all
+    @participations = TripParticipation.where(traveler_id: current_user.id)
+    @trips = @participations.map{|participation| participation.trip}
   end
 
   # GET /trips/1
