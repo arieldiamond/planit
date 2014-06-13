@@ -59,7 +59,8 @@ TripParticipation.create!(trip_participations)
 
 activities = [{name: "fishing", description: "Woohoo, on a boat!", start_time: DateTime.new(2012,7,3,6,0,0), end_time: DateTime.new(2012,7,3,15,0,0), location: "lake", trip_id: 4, creator_id: 3},
 							{name: "kayaking", description: "Woohoo, on a smaller boat!", start_time: DateTime.new(2012,7,4,10,0,0), end_time: DateTime.new(2012,7,4,14,0,0), location: "river", trip_id: 4, creator_id: 3},
-							{name: "winning", description: "because we're superheroes", start_time: DateTime.new(2014,2,5,10,0,0), end_time: DateTime.new(2014,2,7,15,0,0), location: "city center", trip_id: 1, creator_id: 7}]
+							{name: "winning", description: "because we're superheroes", start_time: DateTime.new(2014,2,5,10,0,0), end_time: DateTime.new(2014,2,7,15,0,0), location: "city center", trip_id: 1, creator_id: 7},
+							{name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "Bavette's", trip_id: 3, creator_id: 1}]
 
 Activity.create!(activities)
 
