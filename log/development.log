@@ -5912,3 +5912,5 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -05
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 19:48:18 -0500
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mTrip Load (0.5ms)[0m  SELECT "trips".* FROM "trips"  WHERE "trips"."creator_id" = $1  [["creator_id", 10]]
