@@ -1,10 +1,5 @@
-<div id="new_trip">
-	<%= form_for @trip, {action: "create"} do |f| %>
-		<p>Trip Name: <%= f.text_field :name %>
-		<p>Description: <%= f.text_area :description %>
-		<p>Location: <%= f.text_field :location %>
-		<p>Start Date: <%= f.date_select(:start_date) %>
-		<p>End Date: <%= f.date_select(:end_date) %>
-		<p><%= f.submit "Make a New Trip!" %>
-		<% end %>
-</div>
+<h1>New trip</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', trips_path %>

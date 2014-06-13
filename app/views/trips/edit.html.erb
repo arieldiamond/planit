@@ -1,11 +1,6 @@
-<div id="edit_trips">
-<h2>Edit Your Trip</h2>
-	<%= form_for @trip, {action: "update"} do |f| %>
-		<p>Trip Title: <%= f.text_field :name %>
-		<p>Trip Description: <%= f.text_field :description %>
-		<p>Location: <%= f.text_field :location %>
-		<p>Start Date: <%= f.text_field :start_date %>
-		<p>End Date: <%= f.text_field :end_date %>
-		<p><%= f.submit "Edit This Trip" %>
-	<% end %>
-</div>
+<h1>Editing trip</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @trip %> |
+<%= link_to 'Back', trips_path %>
