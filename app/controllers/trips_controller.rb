@@ -1,8 +1,16 @@
 class TripsController < ApplicationController
 	def new
+		# @trip = Trip.new
 	end
 
 	def create
+		@trip = Trip.new(trip_params)
+		if @trip.save
+			current_user.trips << @trip
+			redirect_to trip_path
+		else
+			render action: "new"
+		end
 	end
 
 	def index
@@ -30,6 +38,7 @@ class TripsController < ApplicationController
 	def destroy
 		@trip = Trip.find(params[:id])
 		@trip.destroy
+		redirect_to trips_path
 	end
 
 	private

@@ -1,0 +1,9 @@
+<div id="new_trip">
+	<%= form_for @trip, {action: "create"} do |f| %>
+		<%= f.text_field :name %>
+		<%= f.text_area :description %>
+		<%= f.text_field :location %>
+		<%= f.date :start_date %>
+		<%= f.date :end_date %>
+		<%= f.submit "Make a New Trip!" %>
+</div>
