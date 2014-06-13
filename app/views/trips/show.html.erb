@@ -4,6 +4,6 @@
 <p><%= @trip.start_date %>
 <p><%= @trip.end_date %>
 
-<p><%= button_to "Edit This Trip", edit_trip_path(@trip.id) %>
+<p><%= link_to "Edit This Trip", edit_trip_path(@trip.id) %>
 
 <p><%= button_to "Delete This Trip", @trip, method: :delete %>
