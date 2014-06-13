@@ -41,6 +41,8 @@ class ActivitiesController < ApplicationController
         format.html { render :new }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
+      # if request.env["HTTP_X_REQUESTED_WITH"] == "text/xml"
+      # then request is from mobile app
     end
   end
 
