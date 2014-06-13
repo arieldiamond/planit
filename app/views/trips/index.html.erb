@@ -1,8 +1,36 @@
-	<% if user_signed_in? %>
-		<h2>Your Trips:</h2>
-		<% @trips.each do |t| %>
-			<p><%= link_to t.name, trip_path(t.id) %>:&emsp;<%= t.description %></p>
-		<% end %>
-	<% else %>
-		<h2>Get Started With Planit!</h2>
-	<% end %>
+<h1>Listing trips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Location</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Creator</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trips.each do |trip| %>
+      <tr>
+        <td><%= trip.name %></td>
+        <td><%= trip.description %></td>
+        <td><%= trip.location %></td>
+        <td><%= trip.start_date %></td>
+        <td><%= trip.end_date %></td>
+        <td><%= trip.creator_id %></td>
+        <td><%= link_to 'Activities', trip_activities_path(trip) %></td>
+        <td><%= link_to 'Show', trip %></td>
+        <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
+        <td><%= link_to 'Delete', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trip', new_trip_path %>

@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users
-  resources :welcome
-  root "welcome#index"
+
   resources :trips do
-    resources :activities
+    resources :activities, shallow: true
   end
+
+  devise_for :users
+  root "welcome#index"
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
