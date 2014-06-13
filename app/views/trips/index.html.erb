@@ -22,6 +22,7 @@
         <td><%= trip.start_date %></td>
         <td><%= trip.end_date %></td>
         <td><%= trip.creator_id %></td>
+        <td><%= link_to 'Activities', trip_activities_path(trip) %></td>
         <td><%= link_to 'Show', trip %></td>
         <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
         <td><%= link_to 'Destroy', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>

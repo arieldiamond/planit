@@ -2951,3 +2951,2624 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 11:22:53 -05
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 11:22:53 -0500
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT "activities".* FROM "activities"[0m
+  Rendered activities/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:22 -0500
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities"
+  Rendered activities/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 13:51:24 -0500
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities"[0m
+  Rendered activities/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 13:52:35 -0500
+
+
+Started GET "/activities/1/edit" for 127.0.0.1 at 2014-06-13 13:52:37 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered activities/_form.html.erb (70.4ms)
+  Rendered activities/edit.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 86ms (Views: 81.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-06-13 13:53:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/activities"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.2ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2014-06-13 13:53:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/activities/1"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.1ms)
+
+
+Started GET "/activities/1" for 127.0.0.1 at 2014-06-13 13:53:25 -0500
+Processing by ActivitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered activities/show.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined local variable or method `activities_path' for #<#<Class:0x007fdf364c8bd8>:0x007fdf364d1e40>):
+    36: </p>
+    37: 
+    38: <%= link_to 'Edit', edit_activity_path(@activity) %> |
+    39: <%= link_to 'Back', activities_path %>
+  app/views/activities/show.html.erb:39:in `_app_views_activities_show_html_erb__353321263076849052_70298332730600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/trip/w" for 127.0.0.1 at 2014-06-13 13:53:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/trip/w"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.2ms)
+
+
+Started GET "/trip/1" for 127.0.0.1 at 2014-06-13 13:53:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/trip/1"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrip Load (0.4ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (98.6ms)
+Completed 200 OK in 115ms (Views: 101.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 13:53:45 -0500
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 13:53:51 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities"
+  Rendered activities/index.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `new_activity_path' for #<#<Class:0x007fdf364c8bd8>:0x007fdf364d3d58>):
+    34: 
+    35: <br>
+    36: 
+    37: <%= link_to 'New Activity', new_activity_path %>
+  app/views/activities/index.html.erb:37:in `_app_views_activities_index_html_erb___3499673561165175606_70298331829400'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities"[0m
+  Rendered activities/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 13:56:59 -0500
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 13:57:59 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mActivity Load (0.5ms)[0m  SELECT "activities".* FROM "activities"  WHERE ('trip_id')
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for type boolean: "trip_id"
+LINE 1: SELECT "activities".* FROM "activities"  WHERE ('trip_id')
+                                                        ^
+: SELECT "activities".* FROM "activities"  WHERE ('trip_id')
+  Rendered activities/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for type boolean: "trip_id"
+LINE 1: SELECT "activities".* FROM "activities"  WHERE ('trip_id')
+                                                        ^
+: SELECT "activities".* FROM "activities"  WHERE ('trip_id')):
+    15:   </thead>
+    16: 
+    17:   <tbody>
+    18:     <% @activities.each do |activity| %>
+    19:       <tr>
+    20:         <td><%= activity.name %></td>
+    21:         <td><%= activity.description %></td>
+  app/views/activities/index.html.erb:18:in `_app_views_activities_index_html_erb___3499673561165175606_70298334072660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 1[0m
+  Rendered activities/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 119ms (Views: 16.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 13:58:58 -0500
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 13:59:53 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered activities/_form.html.erb (17.7ms)
+  Rendered activities/edit.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined local variable or method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf36522688>):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', activities_path %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298339936780'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.7ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 13:59:53 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered activities/_form.html.erb (10.4ms)
+  Rendered activities/edit.html.erb within layouts/application (22.7ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined local variable or method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf334e8918>):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', activities_path %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298307681620'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:00:38 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mActivity Load (0.3ms)[0m  SELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered activities/_form.html.erb (9.1ms)
+  Rendered activities/edit.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"activities", :id=>"3"} missing required keys: [:trip_id]):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', trip_activities_path %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298333136800'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:01:26 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mActivity Load (0.4ms)[0m  [1mSELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered activities/_form.html.erb (9.8ms)
+  Rendered activities/edit.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"activities", :trip_id=>nil} missing required keys: [:trip_id]):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', trip_activities_path(params[:trip_id]) %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298315739440'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:01:54 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mActivity Load (0.2ms)[0m  SELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered activities/_form.html.erb (9.3ms)
+  Rendered activities/edit.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"activities", :id=>"3"} missing required keys: [:trip_id]):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', trip_activities_path, params[:trip_id] %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298332841880'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:02:57 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered activities/_form.html.erb (9.3ms)
+  Rendered activities/edit.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"activities", :id=>"3"} missing required keys: [:trip_id]):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', trip_activities_path, @activity.trip.id %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298334338640'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:03:09 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mActivity Load (0.2ms)[0m  SELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered activities/_form.html.erb (10.7ms)
+  Rendered activities/edit.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"activities", :id=>"3"} missing required keys: [:trip_id]):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @activity %> |
+    6: <%= link_to 'Back', trip_activities_path, trip_id: @activity.trip.id %>
+  app/views/activities/edit.html.erb:6:in `_app_views_activities_edit_html_erb___1788348522292799647_70298340017520'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered activities/_form.html.erb (9.3ms)
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered activities/edit.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 71ms (Views: 67.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:03:21 -0500
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 14:03:29 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mActivity Load (0.5ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 1[0m
+  Rendered activities/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:03:32 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (57.6ms)
+  Rendered activities/new.html.erb within layouts/application (59.2ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf367b9180>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298340034920'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298334270340'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.0ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:03:32 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (11.7ms)
+  Rendered activities/new.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf3379dc58>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307908480'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298309081440'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:03:50 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (45.0ms)
+  Rendered activities/new.html.erb within layouts/application (46.2ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf3661b8c8>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307908480'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298333401540'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:04:07 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (10.8ms)
+  Rendered activities/new.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf363d2300>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307908480'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332225100'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.5ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:04:10 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (10.4ms)
+  Rendered activities/new.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf33125358>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307908480'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332225100'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:04:40 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (45.8ms)
+  Rendered activities/new.html.erb within layouts/application (47.5ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf344c2ff0>:0x007fdf364a0b60>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307908480'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332649600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:05:40 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (2.6ms)
+  Rendered activities/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    1: <%= form_for(@activity, trip_activities_path) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298332089120'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332649600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:05:58 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (1.9ms)
+  Rendered activities/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    1: <%= form_for(@activity, trip_activities_path(params[:trip_id])) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298333268320'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332649600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:06:19 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (1.5ms)
+  Rendered activities/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for(@activity, trip_activities_path(@activity.trip.id)) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298334238240'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332649600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:08:16 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (5.5ms)
+  Rendered activities/new.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for(@activity, trip_activities_path(@activity.trip.id)) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298334238240'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332649600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:08:24 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (0.8ms)
+  Rendered activities/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for(@activity, trip_activities_path(@activity.trip.id)) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298334238240'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332649600'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:08:54 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (0.9ms)
+  Rendered activities/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for(@activity, trip_activities_path(@activity.trip.id)) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298334238240'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298333660320'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.0ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:09:02 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (56.8ms)
+  Rendered activities/new.html.erb within layouts/application (57.4ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf36089a40>:0x007fdf37051f18>):
+    1: <%= form_for(@activity) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298338771960'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298333660320'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:10:11 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (11.6ms)
+  Rendered activities/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf36089a40>:0x007fdf363e0900>):
+    1: <%= form_for @activity do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298332303540'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.4ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:10:20 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (10.6ms)
+  Rendered activities/new.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `activities_path' for #<#<Class:0x007fdf36089a40>:0x007fdf334fa618>):
+    1: <%= form_for @activity, activities_path do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307773080'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:10:27 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (2.1ms)
+  Rendered activities/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    1: <%= form_for @activity, trip_activities_path do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298332712340'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:11:07 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (2.2ms)
+  Rendered activities/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    1: <%= form_for @activity, trip_activities_path(params[:trip_id]) do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298333745500'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (38.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.7ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:13:19 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (10.9ms)
+  Rendered activities/new.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf36089a40>:0x007fdf33521ce0>):
+    1: <%= form_for @activity, {action: "create"} do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298307890940'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:13:31 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (2.1ms)
+  Rendered activities/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (wrong number of arguments (3 for 1..2)):
+    1: <%= form_for @activity, trip_activities_path(params[:trip_id]), {action: "create"} do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298332732740'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:13:35 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (1.0ms)
+  Rendered activities/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/apprentice/Desktop/aa/planit/app/views/activities/_form.html.erb:1: syntax error, unexpected ':', expecting '}'
+...path(params[:trip_id]) {action: "create"} do |f| @output_buf...
+...                               ^):
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (37.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.0ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:14:11 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (1.1ms)
+  Rendered activities/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/apprentice/Desktop/aa/planit/app/views/activities/_form.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "create"} trip_activities_path(params[:trip_id])  do |f| @o...
+...                               ^):
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:14:33 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (0.9ms)
+  Rendered activities/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/apprentice/Desktop/aa/planit/app/views/activities/_form.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "create"} trip_activities_path(params[:trip_id])  do |f| @o...
+...                               ^):
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:15:56 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (10.3ms)
+  Rendered activities/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `activities_path' for #<#<Class:0x007fdf36089a40>:0x007fdf36651e00>):
+    1: <%= form_for [@trip, @activity] do |f| %>
+    2:   <% if @activity.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+  app/views/activities/_form.html.erb:1:in `_app_views_activities__form_html_erb___4023801416414313082_70298333551200'
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:16:50 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  Rendered activities/_form.html.erb (1.0ms)
+  Rendered activities/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/apprentice/Desktop/aa/planit/app/views/activities/_form.html.erb:1: syntax error, unexpected ']', expecting ')'
+...nd(params[:trip_id], @activity] do |f| @output_buffer.safe_a...
+...                               ^
+/Users/apprentice/Desktop/aa/planit/app/views/activities/_form.html.erb:7: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze;       @activity.errors.full_messages.each do |message| 
+                                                      ^
+/Users/apprentice/Desktop/aa/planit/app/views/activities/_form.html.erb:45: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze; end 
+             ^):
+  app/views/activities/new.html.erb:3:in `_app_views_activities_new_html_erb___2026418231214129193_70298332255660'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mTrip Load (0.4ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered activities/_form.html.erb (21.6ms)
+  Rendered activities/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:17:03 -0500
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mTrip Load (0.4ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_form.html.erb (20.9ms)
+  Rendered activities/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 89ms (Views: 28.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:00 -0500
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 14:18:06 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 1
+  Rendered activities/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/activities/3/edit" for 127.0.0.1 at 2014-06-13 14:18:11 -0500
+Processing by ActivitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT  "activities".* FROM "activities"  WHERE "activities"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered activities/_form.html.erb (20.2ms)
+  [1m[35mTrip Load (0.5ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered activities/edit.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trips/1/activites" for 127.0.0.1 at 2014-06-13 14:18:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/trips/1/activites"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.5ms)
+
+
+Started GET "/trips/1/activities" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 1[0m
+  Rendered activities/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 25ms (Views: 14.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:18:35 -0500
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:18:36 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mTrip Load (0.4ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered activities/_form.html.erb (22.9ms)
+  Rendered activities/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 43ms (Views: 32.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/1/activities/new" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_form.html.erb (8.4ms)
+  Rendered activities/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:30 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-13 14:19:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (68.8ms)
+Completed 200 OK in 100ms (Views: 75.4ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gl/Dh8kWlqYziDDGg/IIbiTbSawAlE6dm+VevrpzPCg=", "user"=>{"email"=>"albaer@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'albaer@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gl/Dh8kWlqYziDDGg/IIbiTbSawAlE6dm+VevrpzPCg=", "user"=>{"email"=>"albaer@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 79ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:45 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:19:48 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gl/Dh8kWlqYziDDGg/IIbiTbSawAlE6dm+VevrpzPCg=", "user"=>{"first_name"=>"Annie", "last_name"=>"Baer", "email"=>"albaer@gmail.com", "phone"=>"914-409-7450", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'albaer@gmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "first_name", "last_name", "phone", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-06-13 19:20:22.591696"], ["email", "albaer@gmail.com"], ["encrypted_password", "$2a$10$zlv60qtJAwLEQFxvlY1t9eoen/jPWoL5npWQSWHW2tMNgNVpjEIf6"], ["first_name", "Annie"], ["last_name", "Baer"], ["phone", "914-409-7450"], ["updated_at", "2014-06-13 19:20:22.591696"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 10  [["current_sign_in_at", "2014-06-13 19:20:22.594990"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-06-13 19:20:22.594990"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-06-13 19:20:22.596045"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 87ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:22 -0500
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+Processing by TripsController#index as HTML
+  [1m[36mTrip Load (0.4ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (4.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:20:29 -0500
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:24:56 -0500
+
+SyntaxError (/Users/apprentice/Desktop/aa/planit/app/controllers/trips_controller.rb:7: syntax error, unexpected ']', expecting ')'
+...e(traveler_id: current_user.id])
+...                               ^):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.3ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 10
+  Rendered trips/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 6.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:28 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gl/Dh8kWlqYziDDGg/IIbiTbSawAlE6dm+VevrpzPCg="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 10  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:38 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-06-13 14:25:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pe1xtdqUYIszh0Rc2CZduWHfk3FuJqWJfPnUZ+eu9vM=", "user"=>{"email"=>"dusty@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'dusty@email.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 3  [["current_sign_in_at", "2014-06-13 19:25:52.769853"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-06-13 19:25:52.769853"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-06-13 19:25:52.770878"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 80ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:25:52 -0500
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.3ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (47.8ms)
+Completed 200 OK in 70ms (Views: 53.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:26:03 -0500
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:26:13 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTrip Load (0.4ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (3.5ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (11.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 25ms (Views: 18.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/trips/2/edit" for 127.0.0.1 at 2014-06-13 14:26:16 -0500
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.4ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered trips/_form.html.erb (19.6ms)
+  Rendered trips/edit.html.erb within layouts/application (21.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:26:17 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.4ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:26:56 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTrip Load (0.4ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (4.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/trips/2/activies" for 127.0.0.1 at 2014-06-13 14:27:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/trips/2/activies"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.9ms)
+
+
+Started GET "/trips/2/activties" for 127.0.0.1 at 2014-06-13 14:27:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/trips/2/activties"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.9ms)
+
+
+Started GET "/trips/2/activities" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"2"}
+  [1m[36mActivity Load (0.2ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 2[0m
+  Rendered activities/index.html.erb within layouts/application (3.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:27:16 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:29:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:29:21 -0500
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:29:27 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.4ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 12.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2014-06-13 14:29:32 -0500
+Processing by TripsController#new as HTML
+  Rendered trips/_form.html.erb (17.3ms)
+  Rendered trips/new.html.erb within layouts/application (19.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:29:42 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.4ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 68ms (Views: 59.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:29:47 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTrip Load (0.4ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:31:11 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"activities", :id=>"2"} missing required keys: [:trip_id]):
+    36:   <li><%= traveler.first_name %> <%= traveler.last_name %></li>
+    37:   <% end %>
+    38: </ul>
+    39: <%= link_to 'Add a New Activity!', new_trip_activity_path %>
+    40: <%= link_to 'Edit', edit_trip_path(@trip) %> |
+    41: <%= link_to 'Back', trips_path %>
+  app/views/trips/show.html.erb:39:in `_app_views_trips_show_html_erb__2070022929989676194_70298330907720'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:31:34 -0500
+
+
+Started GET "/trips/2/activities/new" for 127.0.0.1 at 2014-06-13 14:31:38 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"2"}
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered activities/_form.html.erb (23.3ms)
+  Rendered activities/new.html.erb within layouts/application (24.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:25 -0500
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:32:37 -0500
+
+
+Started GET "/trips/2/activities" for 127.0.0.1 at 2014-06-13 14:32:39 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"2"}
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 2
+  Rendered activities/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trips/2/activities/new" for 127.0.0.1 at 2014-06-13 14:32:43 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"2"}
+  [1m[35mTrip Load (0.7ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered activities/_form.html.erb (18.6ms)
+  Rendered activities/new.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:32:49 -0500
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:32:50 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.4ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTrip Load (0.4ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 12.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:32:53 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTrip Load (1.6ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:32:59 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:33:05 -0500
+Processing by TripsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTripParticipation Load (0.4ms)[0m  [1mSELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3[0m
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2014-06-13 14:33:07 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1  [["trip_id", 2]]
+  Rendered trips/show.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trips/2/activities" for 127.0.0.1 at 2014-06-13 14:33:10 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"2"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 2
+  Rendered activities/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/trips/3" for 127.0.0.1 at 2014-06-13 14:33:16 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTrip Load (0.5ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1[0m  [["trip_id", 3]]
+  Rendered trips/show.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/trips/3/activities" for 127.0.0.1 at 2014-06-13 14:33:17 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"3"}
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 3[0m
+  Rendered activities/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-13 14:33:26 -0500
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:33:29 -0500
+Processing by TripsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTripParticipation Load (0.4ms)[0m  [1mSELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3[0m
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTrip Load (1.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/trips/4" for 127.0.0.1 at 2014-06-13 14:33:32 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" INNER JOIN "trip_participations" ON "users"."id" = "trip_participations"."traveler_id" WHERE "trip_participations"."trip_id" = $1  [["trip_id", 4]]
+  Rendered trips/show.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/trips/4/activities" for 127.0.0.1 at 2014-06-13 14:33:34 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"4"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 4
+  Rendered activities/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/trips/4/activities/new" for 127.0.0.1 at 2014-06-13 14:33:36 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"4"}
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered activities/_form.html.erb (16.5ms)
+  Rendered activities/new.html.erb within layouts/application (17.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:35:12 -0500
+Processing by TripsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTripParticipation Load (0.2ms)[0m  [1mSELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3[0m
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:12 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:13 -0500
+
+
+Started GET "/trips" for 127.0.0.1 at 2014-06-13 14:35:25 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTripParticipation Load (0.2ms)[0m  SELECT "trip_participations".* FROM "trip_participations"  WHERE "trip_participations"."traveler_id" = 3
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered trips/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/trips.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/trips.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-13 14:35:26 -0500
+
+
+Started GET "/trips/2/activities" for 127.0.0.1 at 2014-06-13 14:35:27 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"2"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 2
+  Rendered activities/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trips/3/activities" for 127.0.0.1 at 2014-06-13 14:35:32 -0500
+Processing by ActivitiesController#index as HTML
+  Parameters: {"trip_id"=>"3"}
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities"  WHERE "activities"."trip_id" = 3
+  Rendered activities/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.9ms)

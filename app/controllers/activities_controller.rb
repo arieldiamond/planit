@@ -4,7 +4,7 @@ class ActivitiesController < ApplicationController
   # GET /activities
   # GET /activities.json
   def index
-    @activities = Activity.all
+    @activities = Activity.where(trip_id: params[:trip_id])
   end
 
   # GET /activities/1
@@ -14,11 +14,13 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/new
   def new
+    @trip = Trip.find(params[:trip_id])
     @activity = Activity.new
   end
 
   # GET /activities/1/edit
   def edit
+
   end
 
   # POST /activities

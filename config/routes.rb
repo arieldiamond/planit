@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
 
-  resources :activities
 
-  resources :trips
+  resources :trips do
+    resources :activities, shallow: true
+  end
 
   devise_for :users
   root "welcome#index"
