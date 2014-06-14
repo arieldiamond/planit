@@ -37,6 +37,7 @@ class ActivitiesController < ApplicationController
       if @activity.save
         format.html { redirect_to @activity, notice: 'Activity was successfully created.' }
         format.json { render :show, status: :created, location: @activity }
+        UserMailer.test_email(current_user).deliver
       else
         format.html { render :new }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
