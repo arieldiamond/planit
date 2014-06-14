@@ -15,7 +15,9 @@
  */
 
 body {
-	background-image: url('../Earth.jpg');
+	background-image: url('../Boat.jpg');
+	background-repeat:none;
+	background-size: cover;
 	font-family: 'Dosis', sans-serif;
 }
  .main {
