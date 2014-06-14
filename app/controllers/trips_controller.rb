@@ -33,6 +33,7 @@ class TripsController < ApplicationController
       if @trip.save
         format.html { redirect_to @trip, notice: 'Trip was successfully created.' }
         format.json { render :show, status: :created, location: @trip }
+        # User.invite!({:email => "dwwilson21@gmail.com"}, current_user)
       else
         format.html { render :new }
         format.json { render json: @trip.errors, status: :unprocessable_entity }
