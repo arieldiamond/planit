@@ -15,3 +15,15 @@
 - Deployed ~2hrs ago
 - Ariel setup Coveralls and Travis
 - Annie setup Devise
+
+#Day 4 - June 14, 2014
+3:21 PM
+
+Once Jaimin is done with maps his help is needed with voting
+Mobile will need a rails custom controller, more on that soon
+
+###Done
+- can invite people to trips via email
+- can display activities' markers in map
+- got more mobile advice
+- sent data to Heroku
