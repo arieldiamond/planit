@@ -57,4 +57,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'geocoder'
+
+gem 'gmaps4rails'
+
 gem 'rails_12factor', group: :production
