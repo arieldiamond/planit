@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :activities, shallow: true
   end
 
-  devise_for :users
+  devise_for :users, :controllers => { :invitations => 'users/invitations' }
   root "welcome#index"
 
 

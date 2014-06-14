@@ -33,6 +33,7 @@ gem "table_print"
 
 #for user authentication
 gem 'devise'
+gem 'devise_invitable', '~> 1.3.4'
 
 #for testing and coverage
 gem 'coveralls', require: false

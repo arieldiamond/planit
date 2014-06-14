@@ -15,8 +15,9 @@
  */
 
 body {
-	background-image: url('../Earth.jpg');
-	background-color: blue;
+	background-image: url('../Boat.png');
+	background-repeat:none;
+	background-size: cover;
 	font-family: 'Dosis', sans-serif;
 }
  .main {
@@ -31,7 +32,7 @@ body {
  	padding: 5px 10px 5px 10px;
 
  }
- 
+
  .nav h1{
  	margin: 0;
  	width: 100px;
@@ -51,5 +52,5 @@ body {
 
  .welcome{
 
- 	font-family: 'Dosis', sans-serif;	
+ 	font-family: 'Dosis', sans-serif;
  }
