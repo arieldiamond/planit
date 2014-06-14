@@ -16,6 +16,7 @@
 
 body {
 	background-image: url('../Earth.jpg');
+	background-color: blue;
 	font-family: 'Dosis', sans-serif;
 }
  .main {
