@@ -11,6 +11,12 @@ class TripsController < ApplicationController
   # GET /trips/1
   # GET /trips/1.json
   def show
+    @activities = Trip.find(params[:id]).activities
+    @hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
+      marker.lat activity.latitude
+      marker.lng activity.longitude
+      marker.infowindow activity.description
+    end
   end
 
   # GET /trips/new
@@ -33,7 +39,6 @@ class TripsController < ApplicationController
       if @trip.save
         format.html { redirect_to @trip, notice: 'Trip was successfully created.' }
         format.json { render :show, status: :created, location: @trip }
-        # User.invite!({:email => "dwwilson21@gmail.com"}, current_user)
       else
         format.html { render :new }
         format.json { render json: @trip.errors, status: :unprocessable_entity }

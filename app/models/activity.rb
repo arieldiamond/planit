@@ -1,4 +1,10 @@
 class Activity < ActiveRecord::Base
+
+	#for geocoder, sets latitude and longitude
+	geocoded_by :location
+	after_validation :geocode
+
+
   #activity-goers
   has_many :activity_participations, dependent: :destroy #works
   # association with trip
