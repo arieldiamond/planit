@@ -18,6 +18,7 @@ body {
 	background-image: url('../Boat.png');
 	background-repeat:none;
 	background-size: cover;
+	background-color: blue;
 	font-family: 'Dosis', sans-serif;
 }
  .main {
