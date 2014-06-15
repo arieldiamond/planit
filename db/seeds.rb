@@ -6,20 +6,17 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = [{email: "ariel.diamond@gmail.com", first_name: "Ariel", last_name: "Diamond", phone: "111-222-3333", password: "password"},
-				 {email: "fabi@email.com", first_name: "Fabi", last_name: "Castillo", phone: "555-666-7777", password: "password"},
-				 {email: "dusty@email.com", first_name: "Dusty", last_name: "Wilson", phone: "123-456-7890", password: "password"},
-				 {email: "jaimin@email.com", first_name: "Jaimin", last_name: "Patel", phone: "182-929-9080", password: "password"},
-				 {email: "annie@email.com", first_name: "Annie", last_name: "Baer", phone: "123-8383-1199", password: "password"},
-				 {email: "spiderman@email.com", first_name: "Peter", last_name: "Parker", phone: "878-010-9267", password: "password"},
-				 {email: "batman@email.com", first_name: "Bruce", last_name: "Wayne", phone: "888-999-0000", password: "password"},
-				 {email: "superman@email.com", first_name: "Clark", last_name: "Kent", phone: "732-237-7237", password: "password"},
-				 {email: "cplanit@planit.com", first_name: "Captain", last_name: "Planit", phone: "892-840-0087", password: "password"}]
+users = [{email: "ariel.diamond@gmail.com", first_name: "Ariel", last_name: "Diamond", phone: "111-222-3333", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "fabi@email.com", first_name: "Fabi", last_name: "Castillo", phone: "555-666-7777", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "dusty@email.com", first_name: "Dusty", last_name: "Wilson", phone: "123-456-7890", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "jaimin@email.com", first_name: "Jaimin", last_name: "Patel", phone: "182-929-9080", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "annie@email.com", first_name: "Annie", last_name: "Baer", phone: "123-8383-1199", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "spiderman@email.com", first_name: "Peter", last_name: "Parker", phone: "878-010-9267", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "batman@email.com", first_name: "Bruce", last_name: "Wayne", phone: "888-999-0000", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "superman@email.com", first_name: "Clark", last_name: "Kent", phone: "732-237-7237", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil},
+				 {email: "cplanit@planit.com", first_name: "Captain", last_name: "Planit", phone: "892-840-0087", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil}]
 
-users.each do |user|
-	User.new(user)
-	User.save(false)
-end
+User.create!(users)
 
 trips = [{name: "Save the world", description: "Just another day", location: "Metropolis", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
 				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
@@ -73,10 +70,10 @@ activity_participations = [{activity_id: 1, trip_participation_id: 14},
 													 {activity_id: 2, trip_participation_id: 16},
 													 {activity_id: 2, trip_participation_id: 17},
 													 {activity_id: 2, trip_participation_id: 18},
-													 {activity_id: 7, trip_participation_id: 1},
-													 {activity_id: 7, trip_participation_id: 2},
-													 {activity_id: 7, trip_participation_id: 3},
-													 {activity_id: 7, trip_participation_id: 5}]
+													 {activity_id: 4, trip_participation_id: 1},
+													 {activity_id: 4, trip_participation_id: 2},
+													 {activity_id: 4, trip_participation_id: 3},
+													 {activity_id: 4, trip_participation_id: 5}]
 
 ActivityParticipation.create!(activity_participations)
 
