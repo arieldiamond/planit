@@ -5,7 +5,6 @@ class TripsController < ApplicationController
   # GET /trips.json
   def index
     @participations = TripParticipation.where(traveler_id: current_user.id)
-    @trips = @participations.map{|participation| participation.trip}
   end
 
   # GET /trips/1
@@ -69,6 +68,20 @@ class TripsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # ALB note: Not sure where this should go... definitely not here.
+  def invite
+    @trip = Trip.find(params[:trip_invited_to])
+    @invitee_email = params[:invitee_email]
+    if User.find_by_email(@invitee_email)
+      @invitee = User.find_by_email(@invitee_email)
+      TripParticipation.create(traveler_id: @invitee.id, trip_id: @trip.id, confirmed: false)
+    else
+      #SEND EMAIL LIKE WE DID YESTERDAY
+    end
+    redirect_to trip_path(@trip.id)
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

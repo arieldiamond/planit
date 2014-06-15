@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :activities, shallow: true
   end
 
+  post 'trips/:id/invite' => "trips#invite"
+
   devise_for :users, :controllers => { :invitations => 'users/invitations' }
   root "welcome#index"
 
