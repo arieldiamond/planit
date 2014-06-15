@@ -37,13 +37,15 @@ RSpec.describe TripsController, :type => :controller do
   # TripsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  let(:user) {User.create!(email: "ariel@email.com", first_name: "Ariel", last_name: "Diamond", phone: "111-222-3333", password: "password")}
+  let(:user) {User.create!(first_name: "Annie", last_name: "Baer", phone: "111-111-1111", created_at: "2014-06-15 15:21:15", updated_at: "2014-06-15 15:21:27", email: "annie@email.com", password: "password", confirmed_at: "2014-06-15 15:21:27".to_datetime, confirmation_sent_at: "2014-06-15 15:21:15".to_datetime, unconfirmed_email: nil)}
 
   before {
     TripsController.any_instance.stub(:current_user => user)
   }
 
+
   describe "GET index" do
+
     it "assigns all user's trips as @trips" do
       trip = Trip.create! valid_attributes
       user.traveled_trips << trip

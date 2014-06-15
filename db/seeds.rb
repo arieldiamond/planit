@@ -16,7 +16,10 @@ users = [{email: "ariel.diamond@gmail.com", first_name: "Ariel", last_name: "Dia
 				 {email: "superman@email.com", first_name: "Clark", last_name: "Kent", phone: "732-237-7237", password: "password"},
 				 {email: "cplanit@planit.com", first_name: "Captain", last_name: "Planit", phone: "892-840-0087", password: "password"}]
 
-User.create!(users)
+users.each do |user|
+	User.new(user)
+	User.save(false)
+end
 
 trips = [{name: "Save the world", description: "Just another day", location: "Metropolis", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
 				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},

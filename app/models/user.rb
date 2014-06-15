@@ -16,4 +16,14 @@ class User < ActiveRecord::Base
 	#as an activity participant
 	has_many :activity_participations, foreign_key: :trip_participation_id #works
 	has_many :participated_activities, through: :activity_participations, source: :activity  #works
+
+	# before_invitation_accepted :make_pending_trip_invitation
+
+	private
+
+	# def make_pending_trip_invitation
+		
+
+	# end
+
 end
