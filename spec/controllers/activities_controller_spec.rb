@@ -34,6 +34,10 @@ RSpec.describe ActivitiesController, :type => :controller do
 
   let(:trip) {Trip.create!(name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1)}
 
+  before {
+    Trip.stub(:find => trip)
+  }
+
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # ActivitiesController. Be sure to keep this updated too.
@@ -41,9 +45,10 @@ RSpec.describe ActivitiesController, :type => :controller do
 
   describe "GET index" do
     it "assigns all activities as @activities" do
-      activity = Activity.new valid_attributes
+      @trip.stub(:id => trip.id)
+      activity = Activity.create! valid_attributes
       trip.activities << activity
-      get :index, {}, valid_session
+      get :index, {:trip_id => 1}, valid_session
       expect(assigns(:activities)).to eq([activity])
     end
   end
@@ -58,7 +63,8 @@ RSpec.describe ActivitiesController, :type => :controller do
 
   describe "GET new" do
     it "assigns a new activity as @activity" do
-      get :new, {}, valid_session
+      # trip.stub(:id => 1)
+      get :new, {:trip_id => 1}, valid_session
       expect(assigns(:activity)).to be_a_new(Activity)
     end
   end
