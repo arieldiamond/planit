@@ -16,4 +16,11 @@ class User < ActiveRecord::Base
 	#as an activity participant
 	has_many :activity_participations, foreign_key: :trip_participation_id #works
 	has_many :participated_activities, through: :activity_participations, source: :activity  #works
+
+  after_invitation_accepted :add_to_trip
+
+  def add_to_trip
+    Trip.find(3).travelers << self #find_by_id(params[:trip_id])
+  end
+
 end
