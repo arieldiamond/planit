@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   devise_for :users #, :controllers => { :invitations => 'users/invitations' }
   root "welcome#index"
 
+  # custom routes for mobile users:
+  get 'mobile_users/new' => 'mobile_users#new'
+  post 'mobile_users/new' => 'mobile_users#create'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
