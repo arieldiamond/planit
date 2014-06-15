@@ -1,0 +1,9 @@
+<h1><%= @poll.name %></h1>
+
+<ol>
+<% @options.each do |option| %>
+	<li><%= option.name %></li>
+	<li><%= button_to "Up Vote", "#{@poll.id}/upvote" %></li>
+<% end %>
+</ol>
+	
