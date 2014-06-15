@@ -14,7 +14,8 @@
   </thead>
 
   <tbody>
-    <% @trips.each do |trip| %>
+    <% @participations.each do |participation| %>
+      <% trip = participation.trip %>
       <tr>
         <td><%= trip.name %></td>
         <td><%= trip.description %></td>
@@ -27,6 +28,12 @@
         <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
         <td><%= link_to 'Delete', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      <% if participation.confirmed == false %>
+        <tr>
+          <td colspan="9">You are not confirmed on the above trip. If you're going, click <a href="#">here</a> to confirm. If you're not, click <a href="#">here</a> to take yourself off.
+          <td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
