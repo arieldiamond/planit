@@ -4,7 +4,16 @@ class TripsController < ApplicationController
   # GET /trips
   # GET /trips.json
   def index
+    @traveler = current_user
+    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
     @participations = TripParticipation.where(traveler_id: current_user.id)
+    @pending_trip_partcipations = @traveler.pending_trip_participations
+    @confirmed_trip_partcipations = @traveler.confirmed_trip_participations
+    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+    p @pending_trip_partcipations
+    p @confirmed_trip_partcipations
+    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
   end
 
   # GET /trips/1

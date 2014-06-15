@@ -27,33 +27,33 @@ trips = [{name: "Save the world", description: "Just another day", location: "Me
 Trip.create!(trips)
 
 
-trip_participations = [{trip_id: 1, traveler_id: 6, transportation_type: "web", arrival_time: DateTime.new(2014,2,3,14,30,0), departure_time: DateTime.new(2014,2,10,10,45,0)},
-											 {trip_id: 1, traveler_id: 7, transportation_type: "batmobile", arrival_time: DateTime.new(2014,2,3,18,30,0), departure_time: DateTime.new(2014,2,11,10,0,0)},
-											 {trip_id: 1, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2014,2,3,2,45,0), departure_time: DateTime.new(2014,2,10,10,45,0)},
-											 {trip_id: 1, traveler_id: 9, transportation_type: "bike", arrival_time: DateTime.new(2014,2,3,20,30,0), departure_time: DateTime.new(2014,2,11,5,0,0)},
-											 {trip_id: 1, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,2,3,15,0,0), departure_time: DateTime.new(2014,2,10,8,40,0)},
+trip_participations = [{trip_id: 1, traveler_id: 6, transportation_type: "web", arrival_time: DateTime.new(2014,2,3,14,30,0), departure_time: DateTime.new(2014,2,10,10,45,0), confirmed: true},
+											 {trip_id: 1, traveler_id: 7, transportation_type: "batmobile", arrival_time: DateTime.new(2014,2,3,18,30,0), departure_time: DateTime.new(2014,2,11,10,0,0), confirmed: true},
+											 {trip_id: 1, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2014,2,3,2,45,0), departure_time: DateTime.new(2014,2,10,10,45,0), confirmed: true},
+											 {trip_id: 1, traveler_id: 9, transportation_type: "bike", arrival_time: DateTime.new(2014,2,3,20,30,0), departure_time: DateTime.new(2014,2,11,5,0,0), confirmed: true},
+											 {trip_id: 1, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,2,3,15,0,0), departure_time: DateTime.new(2014,2,10,8,40,0), confirmed: true},
 
-											 {trip_id: 2, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2010,4,7,14,30,0), departure_time: DateTime.new(2010,4,15,10,45,0)},
-											 {trip_id: 2, traveler_id: 3, transportation_type: "plane", arrival_time: DateTime.new(2010,4,7,18,30,0), departure_time: DateTime.new(2010,4,15,10,0,0)},
-											 {trip_id: 2, traveler_id: 4, transportation_type: "drive", arrival_time: DateTime.new(2010,4,7,2,45,0), departure_time: DateTime.new(2010,4,15,10,45,0)},
+											 {trip_id: 2, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2010,4,7,14,30,0), departure_time: DateTime.new(2010,4,15,10,45,0), confirmed: true},
+											 {trip_id: 2, traveler_id: 3, transportation_type: "plane", arrival_time: DateTime.new(2010,4,7,18,30,0), departure_time: DateTime.new(2010,4,15,10,0,0), confirmed: true},
+											 {trip_id: 2, traveler_id: 4, transportation_type: "drive", arrival_time: DateTime.new(2010,4,7,2,45,0), departure_time: DateTime.new(2010,4,15,10,45,0), confirmed: true},
 
-											 {trip_id: 3, traveler_id: 1, transportation_type: "train", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0)},
-											 {trip_id: 3, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0)},
-											 {trip_id: 3, traveler_id: 3, transportation_type: "walking", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0)},
-											 {trip_id: 3, traveler_id: 4, transportation_type: "train", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0)},
-											 {trip_id: 3, traveler_id: 5, transportation_type: "walking", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0)},
+											 {trip_id: 3, traveler_id: 1, transportation_type: "train", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0), confirmed: true},
+											 {trip_id: 3, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0), confirmed: true},
+											 {trip_id: 3, traveler_id: 3, transportation_type: "walking", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0), confirmed: true},
+											 {trip_id: 3, traveler_id: 4, transportation_type: "train", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0), confirmed: true},
+											 {trip_id: 3, traveler_id: 5, transportation_type: "walking", arrival_time: DateTime.new(2014,6,19,8,0,0), departure_time: DateTime.new(2014,6,20,2,30,0), confirmed: true},
 
-											 {trip_id: 4, traveler_id: 1, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0)},
-											 {trip_id: 4, traveler_id: 2, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0)},
-											 {trip_id: 4, traveler_id: 3, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0)},
-											 {trip_id: 4, traveler_id: 4, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0)},
-											 {trip_id: 4, traveler_id: 5, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0)},
+											 {trip_id: 4, traveler_id: 1, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0), confirmed: true},
+											 {trip_id: 4, traveler_id: 2, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0), confirmed: true},
+											 {trip_id: 4, traveler_id: 3, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0), confirmed: true},
+											 {trip_id: 4, traveler_id: 4, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0), confirmed: true},
+											 {trip_id: 4, traveler_id: 5, transportation_type: "car", arrival_time: DateTime.new(2012,7,1,14,30,0), departure_time: DateTime.new(2012,7,15,10,0,0), confirmed: true},
 
-											 {trip_id: 5, traveler_id: 6, transportation_type: "web", arrival_time: DateTime.new(2014,2,13,14,30,0), departure_time: DateTime.new(2014,2,20,10,45,0)},
-											 {trip_id: 5, traveler_id: 7, transportation_type: "batmobile", arrival_time: DateTime.new(2014,2,13,18,30,0), departure_time: DateTime.new(2014,2,10,10,0,0)},
-											 {trip_id: 5, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2014,2,14,2,45,0), departure_time: DateTime.new(2014,2,19,10,45,0)},
-											 {trip_id: 5, traveler_id: 9, transportation_type: "bike", arrival_time: DateTime.new(2014,2,14,20,30,0), departure_time: DateTime.new(2014,2,20,5,0,0)},
-											 {trip_id: 5, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,2,13,15,0,0), departure_time: DateTime.new(2014,2,20,8,40,0)}]
+											 {trip_id: 5, traveler_id: 6, transportation_type: "web", arrival_time: DateTime.new(2014,2,13,14,30,0), departure_time: DateTime.new(2014,2,20,10,45,0), confirmed: true},
+											 {trip_id: 5, traveler_id: 7, transportation_type: "batmobile", arrival_time: DateTime.new(2014,2,13,18,30,0), departure_time: DateTime.new(2014,2,10,10,0,0), confirmed: true},
+											 {trip_id: 5, traveler_id: 8, transportation_type: "flying", arrival_time: DateTime.new(2014,2,14,2,45,0), departure_time: DateTime.new(2014,2,19,10,45,0), confirmed: true},
+											 {trip_id: 5, traveler_id: 9, transportation_type: "bike", arrival_time: DateTime.new(2014,2,14,20,30,0), departure_time: DateTime.new(2014,2,20,5,0,0), confirmed: true},
+											 {trip_id: 5, traveler_id: 2, transportation_type: "train", arrival_time: DateTime.new(2014,2,13,15,0,0), departure_time: DateTime.new(2014,2,20,8,40,0), confirmed: true}]
 
 TripParticipation.create!(trip_participations)
 
@@ -70,6 +70,10 @@ activity_participations = [{activity_id: 1, trip_participation_id: 14},
 													 {activity_id: 2, trip_participation_id: 16},
 													 {activity_id: 2, trip_participation_id: 17},
 													 {activity_id: 2, trip_participation_id: 18},
+													 {activity_id: 3, trip_participation_id: 16},
+													 {activity_id: 3, trip_participation_id: 17},
+													 {activity_id: 3, trip_participation_id: 18},
+													 {activity_id: 3, trip_participation_id: 16},
 													 {activity_id: 4, trip_participation_id: 1},
 													 {activity_id: 4, trip_participation_id: 2},
 													 {activity_id: 4, trip_participation_id: 3},

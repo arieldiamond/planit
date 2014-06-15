@@ -17,6 +17,13 @@ class User < ActiveRecord::Base
 	has_many :activity_participations, foreign_key: :trip_participation_id #works
 	has_many :participated_activities, through: :activity_participations, source: :activity  #works
 
+	def confirmed_trip_participations
+		self.trip_participations.select{ |participation| participation.confirmed == true }
+	end
+
+	def pending_trip_participations
+		self.trip_participations.select{ |participation| participation.confirmed == false }
+	end
 	# before_invitation_accepted :make_pending_trip_invitation
 
 	private
