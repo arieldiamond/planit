@@ -9,4 +9,13 @@ class Trip < ActiveRecord::Base
   	self.trip_participations.order(:traveler_id)
   end
 
+  def cost_in_cents
+  	self.expenses.pluck(:cost_in_cents).sum
+  end
+
+  def cost_display
+		# display_in_dollars(self.cost_in_cents)
+		self.cost_in_cents
+  end
+
 end

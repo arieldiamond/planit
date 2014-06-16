@@ -15,29 +15,33 @@
 		<tr>
 			<td><%= expense.name %></td>
 			<td><%= expense.date %></td>
-			<td><%= expense.cost_in_cents %></td>
+			<td><%= expense.cost_display %></td>
 			<% @trip.splitters.each do |splitter| %>
 				<td>
 					<table>
 						<% if splitter.find_charge_by_expense(expense) %>
-							<tr><td><%= splitter.find_charge_by_expense(expense).debt_in_cents %></tr></td>
-							<tr><td><%= splitter.find_charge_by_expense(expense).payment_in_cents %></tr></td>
-							<tr><td><%= splitter.find_charge_by_expense(expense).account_in_cents %></tr></td>
-						<% else %>
-							x
+							<tr><td class="charge_debt"><%= splitter.find_charge_by_expense(expense).debt_display %></tr></td>
+							<tr><td class="charge_payment"><%= splitter.find_charge_by_expense(expense).payment_display %></tr></td>
+							<tr><td class="charge_account"><%= splitter.find_charge_by_expense(expense).account_display %></tr></td>
 						<% end %>
 					</table>
-				
-
-					<%#= splitter.find_charge_by_expense(expense).debt_in_cents %>
-					<%#= splitter.find_charge_by_expense(expense).payment_in_cents %>
-					<%#= splitter.find_charge_by_expense(expense).account_in_cents %>
-
 				</td>
 			<% end %>
 		</tr>
 		<% end %>
-		<div class="expense_row">
+		</div>
+		<div class="total_row">
+			<td></td>
+			<td></td>
+			<td><%= @trip.cost_display %></td>
+			<% @trip.splitters.each do |splitter| %>
+				<td> <%= splitter.trip_account_display %></td>
+			<% end %>
+		</tr>
+		</div>
 	</tbody>
 </table>
+
+<%= link_to 'Add an expense', new_trip_expense_path(@trip) %>
+
 </div>

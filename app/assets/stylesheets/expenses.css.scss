@@ -2,6 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.trip_expenses_table table {
+div.trip_expenses_table table th, td {
 	border: 1px solid black;
 }
