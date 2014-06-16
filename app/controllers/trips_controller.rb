@@ -5,7 +5,7 @@ class TripsController < ApplicationController
   # GET /trips.json
   def index
     @participations = TripParticipation.where(traveler_id: current_user.id)
-    @trips = @participations.map{ |p| p.trip } 
+    @trips = Trip.all
   end
 
   # GET /trips/1
