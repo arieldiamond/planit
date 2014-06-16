@@ -5,7 +5,7 @@ class MobileTripsController < ApplicationController
 
 	def create
 
-		@trip = Trip.create(
+		@trip = Trip.new(
 			name: params[:name], 
 			description: params[:description], 
 			location: params[:location], 
@@ -13,7 +13,9 @@ class MobileTripsController < ApplicationController
 			end_date: params[:end_date],
 			creator_id: params[:creator_id] 
 			)
-		
+
+		redirect_to "/"
+	
 	end 
 
 end
