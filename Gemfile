@@ -63,4 +63,6 @@ gem 'gmaps4rails'
 
 gem 'acts_as_votable', '~> 0.10.0'
 
+gem 'cocoon'
+
 gem 'rails_12factor', group: :production

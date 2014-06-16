@@ -12,6 +12,7 @@ class PollsController < ApplicationController
 
 	def new
 		@poll = Poll.new
+		@trip = Trip.find(params[:trip_id])
 	end
 
 	def edit
@@ -56,7 +57,7 @@ class PollsController < ApplicationController
 	private
 
 		def poll_params
-			params.require(:poll).permit(:name, :trip_id, :creator_id)
+			params.require(:poll).permit(:name, :trip_id, :creator_id, option_attributes: [:name, :_destroy])
 		end
 
 end
