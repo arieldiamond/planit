@@ -13,8 +13,6 @@ class MobileUsersController < ApplicationController
 						phone: params[:phone],
 						password: params[:pword]
 						)
-		p "+++++++++++++++++++++++++++++++++++++"
-		p @user.id 
 
 		# respond_to do |format|
   #     if @activity.save
@@ -23,7 +21,6 @@ class MobileUsersController < ApplicationController
   #       UserMailer.test_email(current_user).deliver
   #   end
 
-		redirect_to "/"
 	end 
 
 end

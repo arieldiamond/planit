@@ -13,6 +13,12 @@ Rails.application.routes.draw do
   # custom routes for mobile users:
   get 'mobile_users/new' => 'mobile_users#new'
   post 'mobile_users/new' => 'mobile_users#create'
+  get 'mobile_sessions/new' => 'mobile_sessions#new'
+  post 'mobile_sessions/new' => 'mobile_sessions#create'
+  get 'mobile_trips/new' => 'mobile_trips#new'
+  post 'mobile_trips/new' => 'mobile_trips#create'
+  get 'mobile_activities/new' => 'mobile_activities#new'
+  post 'mobile_activities/new' => 'mobile_activities#create'
 
   # custom routes for trip invitiations
   post 'trips/:id/invite' => "trips#invite"
