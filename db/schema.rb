@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 20140616060332) do
   end
 
   create_table "charges", force: true do |t|
-    t.decimal  "payment"
-    t.decimal  "debt"
+    t.integer  "payment_in_cents"
+    t.integer  "debt_in_cents"
     t.integer  "trip_participation_id"
     t.integer  "expense_id"
     t.datetime "created_at"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20140616060332) do
   create_table "expenses", force: true do |t|
     t.string   "name"
     t.datetime "date"
-    t.decimal  "total_cost"
+    t.integer  "cost_in_cents"
     t.text     "notes"
     t.integer  "trip_id"
     t.integer  "activity_id"

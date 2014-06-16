@@ -1,8 +1,8 @@
 class CreateCharges < ActiveRecord::Migration
   def change
     create_table :charges do |t|
-      t.decimal :payment
-      t.decimal :debt
+      t.integer :payment_in_cents
+      t.integer :debt_in_cents
       t.integer :trip_participation_id
       t.integer :expense_id
 

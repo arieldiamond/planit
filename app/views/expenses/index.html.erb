@@ -1,0 +1,27 @@
+<table>
+	<thead>
+		<th>Expense</th>
+		<th>Date</th>
+		<th>Cost</th>
+		<% @trip_participations.each do |participation| %>
+			<th><%= participation.traveler.first_name %></th>
+		<% end %>
+	</thead>
+
+	<tbody>
+		<% @expenses.each do |expense| %>
+		<tr>
+			<td><%= expense.name %></td>
+			<td><%= expense.date %></td>
+			<td><%= expense.cost_in_cents %></td>
+			<% expense.splitters.each do |splitter| %>
+				<td><% if expense.charges
+
+					<%= charge.debt_in_cents %>
+
+				</td>
+			<% end %>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

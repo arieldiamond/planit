@@ -90,29 +90,29 @@ activity_participations = [{activity_id: 1, trip_participation_id: 14},
 
 ActivityParticipation.create!(activity_participations)
 
-expenses = [{name: "doughnuts", date: DateTime.new(2014,6,16), total_cost: 15, notes: "Thanks, Dusty!", trip_id: 6},
-						{name: "beer", date: DateTime.new(2014,6,17), total_cost: 28, notes: "Ariel was drinking her bourbon", trip_id: 6},
-						{name: "real domain name", date: DateTime.new(2014,6,18), total_cost: 12, notes: "planit.com", trip_id: 6},
-						{name: "long domain name", date: DateTime.new(2014,6,18), total_cost: 12, notes: "letstakeatripwithfriendsandplanitrealnice.com", trip_id: 6}]
+expenses = [{name: "doughnuts", date: DateTime.new(2014,6,16), cost_in_cents: 1500, notes: "Thanks, Dusty!", trip_id: 6},
+						{name: "beer", date: DateTime.new(2014,6,17), cost_in_cents: 2800, notes: "Ariel was drinking her bourbon", trip_id: 6},
+						{name: "real domain name", date: DateTime.new(2014,6,18), cost_in_cents: 1200, notes: "planit.com", trip_id: 6},
+						{name: "long domain name", date: DateTime.new(2014,6,18), cost_in_cents: 1200, notes: "letstakeatripwithfriendsandplanitrealnice.com", trip_id: 6}]
 
 Expense.create!(expenses)
 
-charges = [{expense_id: 1, payment: 0, debt: 3, trip_participation_id: 24},
-					 {expense_id: 1, payment: 0, debt: 3, trip_participation_id: 25},
-					 {expense_id: 1, payment: 15, debt: 3, trip_participation_id: 26},
-					 {expense_id: 1, payment: 0, debt: 3, trip_participation_id: 27},
-					 {expense_id: 1, payment: 0, debt: 3, trip_participation_id: 28},
+charges = [{expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 24},
+					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 25},
+					 {expense_id: 1, payment_in_cents: 1500, debt_in_cents: 300, trip_participation_id: 26},
+					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 27},
+					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 28},
 
-					 {expense_id: 2, payment: 0, debt: 7, trip_participation_id: 25},
-					 {expense_id: 2, payment: 0, debt: 7, trip_participation_id: 26},
-					 {expense_id: 2, payment: 28, debt: 7, trip_participation_id: 27},
-					 {expense_id: 2, payment: 0, debt: 7, trip_participation_id: 28},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 25},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 26},
+					 {expense_id: 2, payment_in_cents: 2800, debt_in_cents: 700, trip_participation_id: 27},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 28},
 
-					 {expense_id: 3, payment: 0, debt: 6, trip_participation_id: 26},
-					 {expense_id: 3, payment: 12, debt: 6, trip_participation_id: 28},
+					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 600, trip_participation_id: 26},
+					 {expense_id: 3, payment_in_cents: 1200, debt_in_cents: 600, trip_participation_id: 28},
 
-					 {expense_id: 4, payment: 10, debt: 4, trip_participation_id: 24},
-					 {expense_id: 4, payment: 0, debt: 4, trip_participation_id: 25},
-					 {expense_id: 4, payment: 2, debt: 4, trip_participation_id: 27}]
+					 {expense_id: 4, payment_in_cents: 1000, debt_in_cents: 400, trip_participation_id: 24},
+					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 400, trip_participation_id: 25},
+					 {expense_id: 4, payment_in_cents: 200, debt_in_cents: 400, trip_participation_id: 27}]
 
 Charge.create!(charges)

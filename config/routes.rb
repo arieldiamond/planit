@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :trips do
     resources :activities, shallow: true
+    resources :expenses, :only => [:index]
   end
 
   devise_for :users #, :controllers => { :invitations => 'users/invitations' }
