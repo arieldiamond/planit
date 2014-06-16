@@ -24,6 +24,13 @@ class User < ActiveRecord::Base
 	def pending_trip_participations
 		self.trip_participations.select{ |participation| participation.confirmed == false }
 	end
+
+  # after_invitation_accepted :add_to_trip
+
+  # def add_to_trip
+  #   Trip.find(3).travelers << self #find_by_id(params[:trip_id])
+  # end
+
 	# before_invitation_accepted :make_pending_trip_invitation
 
 	private
@@ -32,5 +39,6 @@ class User < ActiveRecord::Base
 		
 
 	# end
+>>>>>>> master
 
 end
