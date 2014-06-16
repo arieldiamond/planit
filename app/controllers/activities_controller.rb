@@ -4,7 +4,8 @@ class ActivitiesController < ApplicationController
   # GET /activities
   # GET /activities.json
   def index
-    @activities = Activity.where(trip_id: params[:trip_id])
+    @trip = Trip.find_by_id(params[:trip_id])
+    @activities = Activity.where(trip_id: @trip.id)
   end
 
   # GET /activities/1

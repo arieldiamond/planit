@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   end
 
   devise_for :users #, :controllers => { :invitations => 'users/invitations' }
+  post 'trips/:id/invite' => "trips#invite"
+
   root "welcome#index"
 
   # custom routes for mobile users:
