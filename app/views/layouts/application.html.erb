@@ -13,11 +13,15 @@
 <body>
  <!-- Static navbar -->
 <%= render 'shared/nav' %>
-
  <!-- END Static navbar -->
 
 
   <div class="container">
+    <div class="devise_flash_messages">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div> <!-- / flash -->
+
     <div class="row">
       <div class=-"col-lg-2">
         asdfasdfa
@@ -27,10 +31,7 @@
         <!-- before yield -->
         <%= yield %>
         <!-- after yield -->
-        <div class="devise_flash_messages">
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
-        </div> <!-- / flash -->
+
       </div> <!-- / .col-lg-9 -->
     </div> <!-- / row -->
   </div> <!-- / .container -->

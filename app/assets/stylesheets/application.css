@@ -16,12 +16,7 @@
  *= require twitter/bootstrap
  */
 
-body {
-	background-image: url('../Boat.png');
-	background-repeat:none;
-	background-size: cover;
-	font-family: 'Dosis', sans-serif;
-}
+
  /*.main {
  	padding: 10px;
  	border: dotted 1px gray;
