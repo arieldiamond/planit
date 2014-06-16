@@ -1,9 +1,11 @@
-<% form_for trip_polls_path(@trip, @poll) do |f| %>
-    <%= f.text_field :name %><br>
+<%= form_for [@trip, @poll] do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
   <h3>Options</h3>
-    <% f.fields_for :options do |option| %>
-     <% render 'option_fields', :f => option %>
+    <%= f.fields_for :options do |option| %>
+      <%= render 'option_fields', :f => option %>
+    <% end %>
      <%= link_to_add_association 'add option', f, :options %>
-  <%= f.submit %>
-  <% end %>
+  <%= f.submit "submit" %>
+  
 <% end %>

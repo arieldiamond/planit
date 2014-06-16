@@ -20,9 +20,12 @@ class PollsController < ApplicationController
 	end
 
 	def create
+		puts params
 		@poll = Poll.new(poll_params)
 		if @poll.save
-			redirect_to :index
+			redirect_to trip_polls_path
+		else
+			redirect_to :back
 		end
 	end
 
