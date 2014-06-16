@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'mobile_users/new' => 'mobile_users#new'
   post 'mobile_users/new' => 'mobile_users#create'
   get 'mobile_sessions/new' => 'mobile_sessions#new'
+
   post 'mobile_sessions/new' => 'mobile_sessions#create'
   get 'mobile_trips/new' => 'mobile_trips#new'
   post 'mobile_trips/new' => 'mobile_trips#create'
