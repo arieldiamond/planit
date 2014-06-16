@@ -81,7 +81,8 @@ class TripsController < ApplicationController
       @invitee = User.find_by_email(@invitee_email)
       TripParticipation.create(traveler_id: @invitee.id, trip_id: @trip.id, confirmed: false)
     else
-
+      @user = User.invite!({:email => @invitee_email}, current_user)
+      TripParticipation.create(traveler_id: @user.id, trip_id: @trip.id, confirmed: false)
     end
     redirect_to trip_path(@trip.id)
   end

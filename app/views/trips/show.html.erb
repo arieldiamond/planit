@@ -45,10 +45,9 @@
   </li>
   <% end %>
 </ul>
-<p><%= link_to "Invite Your Friends!", new_user_invitation_path %></p>
 
 <%# ALB note: I want to do this properly %>
-<p>Enter the email addresses of people you want to invite, separated by commas.</p>
+<p>Invite someone! (one email address at a time)</p>
 <form method="post" action="/trips/:id/invite">
   <input type="text" name="invitee_email">
   <input type="submit" value="Send Invitations">

@@ -38,7 +38,6 @@ class User < ActiveRecord::Base
 	# def make_pending_trip_invitation
 		
 
-	# end
->>>>>>> master
+	# endc
 
 end
