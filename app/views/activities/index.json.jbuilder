@@ -1,4 +1,7 @@
 json.array!(@activities) do |activity|
-  json.extract! activity, :id, :name, :description, :location, :start_time, :end_time, :trip_id, :creator_id
-  json.url activity_url(activity, format: :json)
+  json.extract! activity, :id, :description
+  json.title activity.name
+  json.start activity.start_time
+  json.end activity.end_time
+  json.url activity_url(activity, format: :html)
 end

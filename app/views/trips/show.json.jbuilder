@@ -1,1 +1,7 @@
-json.extract! @trip, :id, :name, :description, :location, :start_date, :end_date, :creator_id, :created_at, :updated_at
+json.array!(@activities) do |activity|
+  json.extract! activity, :id, :description
+  json.title activity.name
+  json.start activity.start_time
+  json.end activity.end_time
+  json.url activity_url(activity, format: :html)
+end

@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require fullcalendar
+//= require jquery.ui.datepicker
 //= require underscore
 //= require gmaps/google
 //= require_tree .
+
