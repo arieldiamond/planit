@@ -5,6 +5,9 @@ $(document).ready(function(){
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();
     });
+    // return $('#calendar').fullCalendar({
+    // events: '/trips.json'
+    // });
     return $('#calendar').fullCalendar({
     events: '/trips/' + window.trip_id + '.json'
     });
