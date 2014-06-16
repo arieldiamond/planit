@@ -64,6 +64,8 @@
   <div id="map" style='width: 800px; height: 400px;'></div>
 </div>
 
+<div style='width:400px;' id="calendar"></div>
+
 <script type="text/javascript">
 $(document).ready(function(){
     handler = Gmaps.build('Google');
@@ -71,6 +73,9 @@ $(document).ready(function(){
     markers = handler.addMarkers(<%=raw @hash.to_json %>);
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();
+    });
+    return $('#calendar').fullCalendar({
+    events: '/trips/<%= @trip.id %>.json'
     });
   });
 </script>

@@ -79,5 +79,9 @@
 <div style="width:400px;" id="calendar"></div>
 
 <script type="text/javascript">
-
+$(document).ready(function() {
+  return $('#calendar').fullCalendar({
+    events: '/trips.json'
+  });
+});
 </script>
