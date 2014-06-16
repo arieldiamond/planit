@@ -12,31 +12,8 @@
 </head>
 <body>
  <!-- Static navbar -->
-    <div class="navbar navbar-static-top">
-        <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">planit<%= image_tag "currynation.png"%><small>Planning trips better... with science.</small></a>
+<%= render 'nav' %>
 
-        <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-            <li class="active">asdf</li>
-            </ul>
-            <ul class="nav navbar-nav pull-right">
-              <p><a href="/users/"></a></p>
-              <p>
-                <% if user_signed_in? %>
-                  <span id="login"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
-                <% else %>
-                  <span id="login"><%= link_to('Sign in', new_user_session_path) %></span>
-                <% end %>
-              </p>
-            </ul> <!-- / .pull-right -->
-        </div><!--/.nav-collapse -->
-    </div>
  <!-- END Static navbar -->
 
 
