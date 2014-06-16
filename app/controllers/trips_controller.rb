@@ -6,6 +6,7 @@ class TripsController < ApplicationController
   def index
     @traveler = current_user
     @participations = TripParticipation.where(traveler_id: current_user.id)
+    @trips = @participations.map{|p| p.trip}
     @pending_trip_partcipations = @traveler.pending_trip_participations
     @confirmed_trip_partcipations = @traveler.confirmed_trip_participations
   end
