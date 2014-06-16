@@ -5,15 +5,9 @@ class TripsController < ApplicationController
   # GET /trips.json
   def index
     @traveler = current_user
-    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
-    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
     @participations = TripParticipation.where(traveler_id: current_user.id)
     @pending_trip_partcipations = @traveler.pending_trip_participations
     @confirmed_trip_partcipations = @traveler.confirmed_trip_participations
-    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
-    p @pending_trip_partcipations
-    p @confirmed_trip_partcipations
-    p "XXXXXXXXXXXXXXXXXXXXXXXXXX"
   end
 
   # GET /trips/1
@@ -86,7 +80,7 @@ class TripsController < ApplicationController
       @invitee = User.find_by_email(@invitee_email)
       TripParticipation.create(traveler_id: @invitee.id, trip_id: @trip.id, confirmed: false)
     else
-      #SEND EMAIL LIKE WE DID YESTERDAY
+
     end
     redirect_to trip_path(@trip.id)
   end
