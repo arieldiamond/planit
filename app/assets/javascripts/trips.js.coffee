@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
 	$('#trip_start_date').datepicker()
-	dateFormat: 'DD,d MM, yy';
+	dateFormat: 'DD,d MM, yy'
 	$('#trip_end_date').datepicker()
 	dateFormat: 'DD,d MM, yy'

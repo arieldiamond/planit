@@ -13,7 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.datepicker
+//= require fullcalendar
 //= require turbolinks
 //= require underscore
 //= require gmaps/google
 //= require_tree .
+
+$(document).ready(function(){
+	$('#calendar').fullCalendar(
+		// events: '/events.json'
+		);
+});
