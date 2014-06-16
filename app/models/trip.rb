@@ -4,4 +4,9 @@ class Trip < ActiveRecord::Base
   belongs_to :creator, class_name: "User" #works
   has_many :activities, dependent: :destroy #works
   has_many :expenses, dependent: :destroy 
+
+  def splitters
+  	self.trip_participations.order(:traveler_id)
+  end
+
 end

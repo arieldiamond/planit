@@ -1,27 +1,43 @@
+<div class="trip_expenses_table">
 <table>
 	<thead>
 		<th>Expense</th>
 		<th>Date</th>
 		<th>Cost</th>
-		<% @trip_participations.each do |participation| %>
-			<th><%= participation.traveler.first_name %></th>
+		<% @splitters.each do |splitter| %>
+			<th><%= splitter.traveler.first_name %></th>
 		<% end %>
 	</thead>
 
 	<tbody>
+		<div class="expense_row">
 		<% @expenses.each do |expense| %>
 		<tr>
 			<td><%= expense.name %></td>
 			<td><%= expense.date %></td>
 			<td><%= expense.cost_in_cents %></td>
-			<% expense.splitters.each do |splitter| %>
-				<td><% if expense.charges
+			<% @trip.splitters.each do |splitter| %>
+				<td>
+					<table>
+						<% if splitter.find_charge_by_expense(expense) %>
+							<tr><td><%= splitter.find_charge_by_expense(expense).debt_in_cents %></tr></td>
+							<tr><td><%= splitter.find_charge_by_expense(expense).payment_in_cents %></tr></td>
+							<tr><td><%= splitter.find_charge_by_expense(expense).account_in_cents %></tr></td>
+						<% else %>
+							x
+						<% end %>
+					</table>
+				
 
-					<%= charge.debt_in_cents %>
+					<%#= splitter.find_charge_by_expense(expense).debt_in_cents %>
+					<%#= splitter.find_charge_by_expense(expense).payment_in_cents %>
+					<%#= splitter.find_charge_by_expense(expense).account_in_cents %>
 
 				</td>
 			<% end %>
 		</tr>
 		<% end %>
+		<div class="expense_row">
 	</tbody>
 </table>
+</div>
