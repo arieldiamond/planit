@@ -3,9 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 # $(document).on("page:load", function(){
 $(document).ready ->
-	$('#calendar').fullCalendar(
-		trips: '/trips.json'
-		console.log trips: '/trips.json'.val()
+	$('#trip_calendar').fullCalendar(
+		events: '/trips.json'
 	)
 jQuery ->
 	$('#trip_start_date').datepicker()

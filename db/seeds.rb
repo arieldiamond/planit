@@ -18,7 +18,7 @@ users = [{email: "ariel.diamond@gmail.com", first_name: "Ariel", last_name: "Dia
 
 User.create!(users)
 
-trips = [{name: "Test event", description: "fuck you", location: "Chicago", start_date: "2014-06-18T10:00:00.000Z", end_date: "2014-06-18T11:00:00.000Z", creator_id: 1}, {name: "Save the world", description: "Just another day", location: "Metropolis", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
+trips = [{name: "Save the world", description: "Just another day", location: "Metropolis", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
 				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
 				 {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1},
 				 {name: "Lake House", description: "It's fourth of july!", location: "Vermont", start_date: DateTime.new(2012,7,1), end_date: DateTime.new(2012,7,15), creator_id: 9},
