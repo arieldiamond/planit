@@ -1,4 +1,6 @@
-<h1>Listing trips</h1>
+
+<% if @confirmed_trip_partcipations.length > 0 %>
+<h2>Your Trips</h2>
 
 <table>
   <thead>
@@ -14,29 +16,62 @@
   </thead>
 
   <tbody>
-    <% @participations.each do |participation| %>
-      <% trip = participation.trip %>
+    <% @confirmed_trip_partcipations.each do |participation| %>
       <tr>
-        <td><%= trip.name %></td>
-        <td><%= trip.description %></td>
-        <td><%= trip.location %></td>
-        <td><%= trip.start_date %></td>
-        <td><%= trip.end_date %></td>
-        <td><%= trip.creator_id %></td>
-        <td><%= link_to 'Activities', trip_activities_path(trip) %></td>
-        <td><%= link_to 'Show', trip %></td>
-        <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
-        <td><%= link_to 'Delete', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= participation.trip.name %></td>
+        <td><%= participation.trip.description %></td>
+        <td><%= participation.trip.location %></td>
+        <td><%= participation.trip.start_date %></td>
+        <td><%= participation.trip.end_date %></td>
+        <td><%= participation.trip.creator_id %></td>
+        <td><%= link_to 'Activities', trip_activities_path(participation.trip) %></td>
+        <td><%= link_to 'Show', participation.trip %></td>
+        <td><%= link_to 'Edit', edit_trip_path(participation.trip) %></td>
+        <td><%= link_to 'Delete', participation.trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-      <% if participation.confirmed == false %>
-        <tr>
-          <td colspan="9">You are not confirmed on the above trip. If you're going, click <a href="#">here</a> to confirm. If you're not, click <a href="#">here</a> to take yourself off.
-          <td>
-        </tr>
-      <% end %>
     <% end %>
   </tbody>
 </table>
+<% end %>
+
+
+<% if @pending_trip_partcipations.length > 0 %>
+<h2>Unconfirmed Trips</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Creator</th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @pending_trip_partcipations.each do |participation| %>
+        <% trip = participation.trip %>
+        <tr>
+          <td><%= participation.trip.name %></td>
+          <td><%= participation.trip.description %></td>
+          <td><%= participation.trip.location %></td>
+          <td><%= participation.trip.start_date %></td>
+          <td><%= participation.trip.end_date %></td>
+          <td><%= participation.trip.creator_id %></td>
+          <td>
+            <form method="post" action="/trip_participations/<%=participation.id%>">
+              <input name="_method" type="hidden" value="put" />
+              <input type="hidden" name="trip_participation[confirmed]" value="true" >
+              <input type="submit" value="going">
+            </form>
+          </td>
+          <td><%= button_to 'Remove', "/trip_participations/#{participation.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
 
 <br>
 
