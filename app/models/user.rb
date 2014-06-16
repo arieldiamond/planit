@@ -19,6 +19,8 @@ class User < ActiveRecord::Base
 
 	# before_invitation_accepted :make_pending_trip_invitation
 
+	acts_as_voter
+
 	private
 
 	# def make_pending_trip_invitation

@@ -20,6 +20,9 @@ class PollsController < ApplicationController
 
 	def create
 		@poll = Poll.new(poll_params)
+		if @poll.save
+			redirect_to :index
+		end
 	end
 
 	def update
@@ -36,7 +39,17 @@ class PollsController < ApplicationController
 	end
 
 	def upvote
-		redirect_to "http://www.google.com"
+		@user = current_user
+		@option = Option.find(params[:option_id])
+		@option.upvote_from @user
+		redirect_to :back
+	end
+
+	def downvote
+		@user = current_user
+		@option = Option.find(params[:option_id])
+		@option.downvote_from @user
+		redirect_to :back
 	end
 
 

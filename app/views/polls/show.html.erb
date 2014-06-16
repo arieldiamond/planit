@@ -2,8 +2,18 @@
 
 <ol>
 <% @options.each do |option| %>
-	<li><%= option.name %></li>
-	<li><%= button_to "Up Vote", "#{@poll.id}/upvote" %></li>
+	<li>
+		<%= option.name %>
+		<form method="post" action="<%= option.poll_id %>/upvote">
+	  		<input type="submit" value="Up Vote">
+	  		<input type="hidden" name="option_id" value="<%= option.id %>">
+		</form>
+		<form method="post" action="<%= option.poll_id %>/downvote">
+	  		<input type="submit" value="Down Vote">
+	  		<input type="hidden" name="option_id" value="<%= option.id %>">
+		</form>
+		Upvotes: <%= option.votes_for.up.size %>
+		Downvotes: <%= option.votes_for.down.size %>
+	</li>
 <% end %>
 </ol>
-	
