@@ -5,12 +5,14 @@ class TripsController < ApplicationController
   # GET /trips.json
   def index
     @participations = TripParticipation.where(traveler_id: current_user.id)
+    @trips = @participations.map{ |p| p.trip } 
   end
 
   # GET /trips/1
   # GET /trips/1.json
   def show
-    @activities = Trip.find(params[:id]).activities
+    @trip = Trip.find(params[:id])
+    @activities = @trip.activities
     @hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
       marker.lat activity.latitude
       marker.lng activity.longitude
