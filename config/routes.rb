@@ -6,15 +6,18 @@ Rails.application.routes.draw do
     resources :activities, shallow: true
   end
 
-  post 'trips/:id/invite' => "trips#invite"
+  devise_for :users #, :controllers => { :invitations => 'users/invitations' }
 
-  devise_for :users, :controllers => { :invitations => 'users/invitations' }
   root "welcome#index"
 
   # custom routes for mobile users:
   get 'mobile_users/new' => 'mobile_users#new'
   post 'mobile_users/new' => 'mobile_users#create'
 
+  # custom routes for trip invitiations
+  post 'trips/:id/invite' => "trips#invite"
+  put 'trip_participations/:id' => "trip_participations#update"
+  delete 'trip_participations/:id' => "trip_participations#destroy"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

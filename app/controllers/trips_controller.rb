@@ -4,8 +4,11 @@ class TripsController < ApplicationController
   # GET /trips
   # GET /trips.json
   def index
+    @traveler = current_user
     @participations = TripParticipation.where(traveler_id: current_user.id)
-    @trips = Trip.all
+    @trips = @participations.map{|p| p.trip}
+    @pending_trip_partcipations = @traveler.pending_trip_participations
+    @confirmed_trip_partcipations = @traveler.confirmed_trip_participations
   end
 
   # GET /trips/1
@@ -13,6 +16,7 @@ class TripsController < ApplicationController
   def show
     @trip = Trip.find(params[:id])
     @activities = @trip.activities
+
     @hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
       marker.lat activity.latitude
       marker.lng activity.longitude
@@ -79,7 +83,8 @@ class TripsController < ApplicationController
       @invitee = User.find_by_email(@invitee_email)
       TripParticipation.create(traveler_id: @invitee.id, trip_id: @trip.id, confirmed: false)
     else
-      #SEND EMAIL LIKE WE DID YESTERDAY
+      @user = User.invite!({:email => @invitee_email}, current_user)
+      TripParticipation.create(traveler_id: @user.id, trip_id: @trip.id, confirmed: false)
     end
     redirect_to trip_path(@trip.id)
   end

@@ -46,13 +46,12 @@
 </ul>
 
 <%# ALB note: I want to do this properly %>
-<p>Enter the email addresses of people you want to invite, separated by commas.</p>
+<p>Invite someone! (one email address at a time)</p>
 <form method="post" action="/trips/:id/invite">
   <input type="text" name="invitee_email">
   <input type="submit" value="Send Invitations">
   <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
 </form><br>
-
 
 <%= link_to 'See All Activities', trip_activities_path(@trip.id) %> |
 <%= link_to 'Add a New Activity!', new_trip_activity_path(@trip.id) %> |

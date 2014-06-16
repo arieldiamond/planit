@@ -42,7 +42,7 @@ class TripParticipationsController < ApplicationController
   def update
     respond_to do |format|
       if @trip_participation.update(trip_participation_params)
-        format.html { redirect_to @trip_participation, notice: 'Trip participation was successfully updated.' }
+        format.html { redirect_to trips_path, notice: 'Trip participation was successfully updated.' }
         format.json { render :show, status: :ok, location: @trip_participation }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class TripParticipationsController < ApplicationController
   def destroy
     @trip_participation.destroy
     respond_to do |format|
-      format.html { redirect_to trip_participations_url, notice: 'Trip participation was successfully destroyed.' }
+      format.html { redirect_to trips_path, notice: 'Trip participation was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -71,6 +71,6 @@ class TripParticipationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trip_participation_params
-      params.require(:trip_participation).permit(:traveler_id, :trip_id, :transportation_type, :arrival_time, :departure_time)
+      params.require(:trip_participation).permit(:traveler_id, :trip_id, :transportation_type, :arrival_time, :departure_time, :confirmed)
     end
 end
