@@ -22,7 +22,7 @@ body {
 	background-size: cover;
 	font-family: 'Dosis', sans-serif;
 }
- .main {
+ /*.main {
  	padding: 10px;
  	border: dotted 1px gray;
 	background-color: #EEEEEE;
@@ -42,17 +42,12 @@ body {
 
  #tagline {
  	float: right;
- /*	padding-left: 10px;
- 	padding-bottom: 5px;
- 	margin-top: -15px;	*/
  	font-style: italic;
  }
 
- #login {
- 	/*float:right;*/
- }
+
 
  .welcome{
-
  	font-family: 'Dosis', sans-serif;
  }
+*/
