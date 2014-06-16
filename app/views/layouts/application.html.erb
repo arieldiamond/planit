@@ -11,24 +11,50 @@
 
 </head>
 <body>
-	<div class="nav">
-		<a href="/"><h1>planit</h1></a>
-		<span id="tagline">Planning trips better... with science.</span>
-		<p><a href="/users/"></a></p>
-		<p><% if user_signed_in? %>
-				<span id="login"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
-			<% else %>
-				<span id="login"><%= link_to('Sign in', new_user_session_path) %></span>
-			<% end %>
-		</p>
-	</div>
+ <!-- Static navbar -->
+    <div class="navbar navbar-static-top">
+        <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">planit<%= image_tag "currynation.png"%><small>Planning trips better... with science.</small></a>
 
-	<div class="main">
-	<%= yield %>
-	<div class="devise_flash_messages">
-     <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
-	</div>
-	</div>
+        <div class="nav-collapse collapse">
+            <ul class="nav navbar-nav">
+            <li class="active">asdf</li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <p><a href="/users/"></a></p>
+              <p>
+                <% if user_signed_in? %>
+                  <span id="login"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
+                <% else %>
+                  <span id="login"><%= link_to('Sign in', new_user_session_path) %></span>
+                <% end %>
+              </p>
+            </ul> <!-- / .pull-right -->
+        </div><!--/.nav-collapse -->
+    </div>
+ <!-- END Static navbar -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class=-"col-lg-2">
+        asdfasdfa
+      </div> <!-- / .col-lg-2 -->
+
+      <div class=-"col-lg-9">
+        <%= yield %>
+        <div class="devise_flash_messages">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+        </div> <!-- / flash -->
+      </div> <!-- / .col-lg-9 -->
+    </div> <!-- / row -->
+  </div> <!-- / .container -->
+
 </body>
 </html>
