@@ -1,11 +1,17 @@
 <%= form_for [@trip, @poll] do |f| %>
+
+<div class= "field">
   <%= f.label :name %><br>
   <%= f.text_field :name %><br>
-  <h3>Options</h3>
-    <%= f.fields_for :options do |option| %>
-      <%= render 'option_fields', :f => option %>
+</div>
+
+    <%= f.fields_for :options do |builder| %>
+      <%= render 'option_fields', f: builder %>
     <% end %>
-     <%= link_to_add_association 'add option', f, :options %>
-  <%= f.submit "submit" %>
-  
+
+    <%= link_to_add_options "Add Option", f, :options   %>
+
+<div class= "actions">
+  <%= f.submit %>
+</div>
 <% end %>

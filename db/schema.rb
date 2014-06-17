@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 20140615165402) do
     t.datetime "departure_time"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "confirmed"
+    t.boolean  "confirmed",           default: true
   end
 
   create_table "trips", force: true do |t|

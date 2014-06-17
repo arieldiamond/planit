@@ -15,7 +15,6 @@
 //= require jquery_ujs
 //= require underscore
 //= require gmaps/google
-//= require cocoon
 //= require fullcalendar
 //= require turbolinks
 //= require_tree .

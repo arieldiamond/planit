@@ -13,6 +13,7 @@ class PollsController < ApplicationController
 	def new
 		@poll = Poll.new
 		@trip = Trip.find(params[:trip_id])
+		@poll.options.build
 	end
 
 	def edit
@@ -22,6 +23,10 @@ class PollsController < ApplicationController
 	def create
 		puts params
 		@poll = Poll.new(poll_params)
+		@trip = Trip.find(params[:trip_id])
+		@trip.polls << @poll
+		current_user.created_polls << @poll
+
 		if @poll.save
 			redirect_to trip_polls_path
 		else
@@ -34,6 +39,7 @@ class PollsController < ApplicationController
 	end
 
 	def destroy
+		#need to create callback that destroys all options too
 		@poll = Poll.find(params[:id])
 		@poll.destroy
 	    respond_to do |format|
@@ -60,7 +66,7 @@ class PollsController < ApplicationController
 	private
 
 		def poll_params
-			params.require(:poll).permit(:name, :trip_id, :creator_id, option_attributes: [:name, :_destroy])
+			params.require(:poll).permit(:name, :trip_id, :creator_id, options_attributes: [:id, :name, :poll_id, :_destroy])
 		end
 
 end
