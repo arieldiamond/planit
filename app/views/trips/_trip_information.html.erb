@@ -1,0 +1,50 @@
+<p>
+  <strong>Name:</strong>
+  <%= @trip.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @trip.description %>
+</p>
+
+
+<p>
+  <strong>Location:</strong>
+  <%= @trip.location %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @trip.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @trip.end_date %>
+</p>
+
+<p>
+  <strong>Creator:</strong>
+  <%= @trip.creator_id %>
+</p>
+
+<p><strong>Travelers:</strong></p>
+<ul>
+  <% @trip.trip_participations.each do |trip_participation| %>
+  <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
+  <% if trip_participation.confirmed == false %>
+     (invitation pending)
+  <% end %>
+
+  </li>
+  <% end %>
+</ul>
+
+<%# ALB note: I want to do this properly %>
+<p>Invite someone! (one email address at a time)</p>
+<form method="post" action="/trips/:id/invite">
+  <input type="text" name="invitee_email">
+  <input type="submit" value="Send Invitations">
+  <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
+</form><br>

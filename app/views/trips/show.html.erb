@@ -1,113 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @trip.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @trip.description %>
-</p>
-
-
-<p>
-  <strong>Location:</strong>
-  <%= @trip.location %>
-</p>
-
-<p>
-  <strong>Start date:</strong>
-  <%= @trip.start_date %>
-</p>
-
-<p>
-  <strong>End date:</strong>
-  <%= @trip.end_date %>
-</p>
-
-<p>
-  <strong>Creator:</strong>
-  <%= @trip.creator_id %>
-</p>
-
-<p><strong>Travelers:</strong></p>
-<ul>
-  <% @trip.trip_participations.each do |trip_participation| %>
-  <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
-  <% if trip_participation.confirmed == false %>
-     (invitation pending)
-  <% end %>
-
-  </li>
-  <% end %>
-</ul>
-
-<%# ALB note: I want to do this properly %>
-<p>Invite someone! (one email address at a time)</p>
-<form method="post" action="/trips/:id/invite">
-  <input type="text" name="invitee_email">
-  <input type="submit" value="Send Invitations">
-  <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
-</form><br>
-
-
-
-<p><%= link_to 'See all Polls', trip_polls_path(@trip.id) %></p>
-<div id="activity_list">
-  <h1>Activities</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Location</th>
-        <th>Start time</th>
-        <th>End time</th>
-        <th>Trip</th>
-        <th>Creator</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @activities.each do |activity| %>
-        <tr>
-          <td><%= activity.name %></td>
-          <td><%= activity.description %></td>
-          <td><%= activity.location %></td>
-          <td><%= activity.start_time %></td>
-          <td><%= activity.end_time %></td>
-          <td><%= activity.trip_id %></td>
-          <td><%= activity.creator_id %></td>
-          <td><%= link_to 'Show', activity_path(activity) %></td>
-          <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
-          <td><%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div class="trip_information">
+  <h2>Trip Information</h2>
+  <%= render 'trip_information' %>
 </div>
 
-<%= link_to 'My Trips', trips_path %> |
-<%#= link_to 'Activities', trip_activities_path(@trip.id) %> |
-
-<%= link_to 'Add a New Activity!', new_trip_activity_path(@trip.id) %> |
-<%= link_to 'Back', trips_path %> |
-<%= link_to 'Edit', edit_trip_path(@trip) %> |
-<%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-
-
-
-<div style='width: 800px;'>
-  <div id="map" style='width: 800px; height: 400px;'></div>
+<div class="calendar">
+  <h2>Calendar</h2>
+  <div style='width:400px;' id="calendar"></div>
 </div>
 
-<div style='width:400px;' id="calendar"></div>
+<div class="expense_list">
+  <h2>Expenses</h2>
+  <%= render 'expenses/expense_list' %>
+</div>
+
+<div class="map_information">
+  <h2>Map</h2>
+  <%= render 'map' %>
+</div>
+
+<div class="activity_information">
+  <h2>Activities</h2>
+  <%= render 'activities/activity_list' %>
+</div>
+
+<div class="poll_list">
+  <h2>Polls</h2>
+  <%= render 'polls/poll_list' %>
+</div>
 
 <script type="text/javascript">
-
   window.map_marker = <%=raw @hash.to_json %>
   window.trip_id = <%= @trip.id %>
 </script>
