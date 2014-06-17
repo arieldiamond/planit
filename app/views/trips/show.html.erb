@@ -27,11 +27,10 @@
 
 <div class="poll_list">
   <h2>Polls</h2>
+  <%= render 'polls/poll_list' %>
 </div>
 
 <script type="text/javascript">
   window.map_marker = <%=raw @hash.to_json %>
   window.trip_id = <%= @trip.id %>
 </script>
-
-<p><%= link_to 'See all Polls', trip_polls_path(@trip.id) %></p>
