@@ -1,17 +1,21 @@
 $(document).ready(function(){
     if($('#map').length) {
-      console.log("I am here")
       var handler = Gmaps.build('Google');
       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
       var markers = handler.addMarkers(window.map_marker);
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
-      console.log("I am done")
       });
     }
     if($('#calendar').length) {
-    	console.log("a_calendar")
     	return $('#calendar').fullCalendar({
+        dayClick: function() {
+          console.log($(this).html);
+        
+        $(this).css('background-color', 'red');
+
+    },
+   
     		events: '/trips/' + window.trip_id + '.json'
     	});
     } else {
@@ -21,3 +25,9 @@ $(document).ready(function(){
     	});
 		}
   });
+// $('#calendar').fullCalendar({
+//     eventClick: function(calEvent, jsEvent, view) {
+//         window.location = "http://www.domain.com?start=" + calEvent.start;
+
+//     }
+// });
