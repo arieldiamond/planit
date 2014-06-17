@@ -18,7 +18,7 @@
             <p><a href="/users/"></a></p>
             <p>
               <% if user_signed_in? %>
-                <span id="login"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
+                <!-- <span id="login"><%#= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span> -->
               <% else %>
                 <span id="login"><%= link_to 'Sign in', new_user_session_path %></span>
               <% end %>

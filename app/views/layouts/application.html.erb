@@ -15,23 +15,28 @@
  <!-- Static navbar -->
 <%= render 'shared/nav' %>
  <!-- END Static navbar -->
-
-
+    <% if user_signed_in? %>
+    <!-- <span id="login"><%#= link_to('Sign out', destroy_user_session_path, :method => :delete) %>
+    <h3><%#= link_to "MY TRIPS", trips_path %></h3></span> -->
+    <% end %>
   <div class="container">
     <div class="devise_flash_messages">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div> <!-- / flash -->
-
     <div class="row">
       <div class=-"col-lg-2">
       </div> <!-- / .col-lg-2 -->
-
       <div class=-"col-lg-9">
+
         <!-- before yield -->
         <%= yield %>
         <!-- after yield -->
-
+        <% if user_signed_in? %>
+        <%#= render 'layouts/dashboard' %>
+        <% else %>
+          <%#= render 'layouts/welcome' %>
+        <% end %>
       </div> <!-- / .col-lg-9 -->
     </div> <!-- / row -->
   </div> <!-- / .container -->
