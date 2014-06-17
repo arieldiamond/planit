@@ -1,8 +1,5 @@
 class MobileTripsController < ApplicationController
 
-	def new
-	end 
-
 	def create
 
 		@trip = Trip.create(
@@ -19,6 +16,14 @@ class MobileTripsController < ApplicationController
 
 		redirect_to "/"
 	
+	end 
+
+	def user_trips
+		@user = User.find(params[:user_id])
+		@trips = []
+		@user.created_trips.each { |created_trip| @trips << created_trip }
+		@user.trip_participations { |trip_p| @trips << trip_p }
+		render json: @trips
 	end 
 
 end

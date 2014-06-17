@@ -11,17 +11,21 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   # custom routes for mobile users:
+  # creating users from mobile:
   get 'mobile_users/new' => 'mobile_users#new'
   post 'mobile_users/new' => 'mobile_users#create'
-  get 'mobile_sessions/new' => 'mobile_sessions#new'
-
-  post 'mobile_sessions/new' => 'mobile_sessions#create'
+  # creating trips from mobile:
   get 'mobile_trips/new' => 'mobile_trips#new'
   post 'mobile_trips/new' => 'mobile_trips#create'
+  # getting user trips from mobile:
+  get 'mobile_trips/user_trips'
+  post 'mobile_trips/user_trips' => 'mobile_trips#user_trips'
+  # creating activities from mobile:
   get 'mobile_activities/new' => 'mobile_activities#new'
-  # post 'mobile_activities/new' => 'mobile_activities#create'
+  # logging in from mobile:
   get 'mobile_sessions/sign_in'
   post 'mobile_sessions/sign_in' => 'mobile_sessions#create_session'
+
 
   # custom routes for trip invitiations
   post 'trips/:id/invite' => "trips#invite"
