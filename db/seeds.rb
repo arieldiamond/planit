@@ -82,3 +82,30 @@ activity_participations = [{activity_id: 1, trip_participation_id: 14},
 ActivityParticipation.create!(activity_participations)
 
 
+polls = [{name: "Location", trip_id: 3, creator_id: 1},
+			{name: "Friday Dinner", trip_id: 3, creator_id: 1},
+			{name: "Which Beach?", trip_id: 3, creator_id: 1},
+			{name: "What dates?", trip_id: 3, creator_id: 1}]
+
+Poll.create!(polls)
+
+options = [{name: "Paris", poll_id: 1},
+			{name: "London", poll_id: 1},
+			{name: "Rome", poll_id: 1},
+			{name: "Munich", poll_id: 1},
+			{name: "New York", poll_id: 1},
+			{name: "Los Angeles", poll_id: 1},
+			{name: "Steak", poll_id: 2},
+			{name: "Seafood", poll_id: 2},
+			{name: "Italian", poll_id: 2},
+			{name: "Zuma", poll_id: 3},
+			{name: "East", poll_id: 3},
+			{name: "West", poll_id: 3},
+			{name: "North", poll_id: 3},
+			{name: "Oct 1", poll_id: 4},
+			{name: "Oct 8", poll_id: 4},
+			{name: "Oct 15", poll_id: 4}]
+
+
+
+Option.create!(options)
