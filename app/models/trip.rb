@@ -4,7 +4,7 @@ class Trip < ActiveRecord::Base
   belongs_to :creator, class_name: "User" #works
   has_many :activities, dependent: :destroy #works
   has_many :expenses, dependent: :destroy 
-  has_many :polls
+  has_many :polls, dependent: :destroy
 
   def splitters
     self.trip_participations
