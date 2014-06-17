@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     if($('#map').length) {
       console.log("I am here")
       var handler = Gmaps.build('Google');
