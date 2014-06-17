@@ -5,9 +5,13 @@ Rails.application.routes.draw do
   resources :trips do
     resources :activities, shallow: true
     resources :expenses, :only => [:index, :new, :create, :edit, :update, :destroy]
+    resources :polls
   end
 
   devise_for :users #, :controllers => { :invitations => 'users/invitations' }
+
+  post 'trips/:trip_id/polls/:id/upvote' => "polls#upvote", :controller => :poll
+  post 'trips/:trip_id/polls/:id/downvote' => "polls#downvote", :controller => :poll
 
   root "welcome#index"
 

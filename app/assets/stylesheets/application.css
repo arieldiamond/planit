@@ -10,47 +10,17 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require fullcalendar
  *= require_tree .
  *= require_self
+ *= require twitter/bootstrap
  */
 
-body {
-	background-image: url('../Boat.png');
-	background-repeat:none;
-	background-size: cover;
-	font-family: 'Dosis', sans-serif;
+.form-signin {
+      max-width: 300px;
+      padding: 19px 29px 29px;
+      margin: 0 auto 20px;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
 }
- .main {
- 	padding: 10px;
- 	border: dotted 1px gray;
-	background-color: #EEEEEE;
- }
-
- .nav {
-
- 	background-color: #67809F;
- 	padding: 5px 10px 5px 10px;
-
- }
-
- .nav h1{
- 	margin: 0;
- 	width: 100px;
- }
-
- #tagline {
- 	float: right;
- /*	padding-left: 10px;
- 	padding-bottom: 5px;
- 	margin-top: -15px;	*/
- 	font-style: italic;
- }
-
- #login {
- 	/*float:right;*/
- }
-
- .welcome{
-
- 	font-family: 'Dosis', sans-serif;
- }
