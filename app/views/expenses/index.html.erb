@@ -25,8 +25,8 @@
 							<tr><td class="charge_account"><%= splitter.find_charge_by_expense(expense).account_display %></tr></td>
 						<% end %>
 					</table>
-				</td>
 			<% end %>
+			<td><%= link_to 'Edit', edit_trip_expense_path(@trip, expense) %></td>
 		</tr>
 		<% end %>
 		</div>

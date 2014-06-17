@@ -8,26 +8,42 @@ class ExpensesController < ApplicationController
 	def new
 		@trip = Trip.find_by_id(params[:trip_id])
 		@expense = Expense.new
+    @trip.expenses << @expense
+    @expense.create_charges
 	end
 
 	def create
 		@expense = Expense.create(expense_params)
     @trip = Trip.find(params[:trip_id])
     @trip.expenses << @expense
-    cost_per_person = @expense.cost_in_cents/@expense.splitters.length
-    @expense.splitters.each do |splitter|
-    	charge = Charge.create(debt_in_cents: cost_per_person, payment_in_cents: 0, trip_participation_id: splitter.id)
-    	@expense.charges << charge
-    end
+
     redirect_to trip_expenses_path(@trip)
 	end
 
-  private
-  # Use callbacks to share common setup or constraints between actions.
+	def edit
+		@trip = Trip.find_by_id(params[:trip_id])
+		@expense = Expense.find_by_id(params[:id])
+		@splitters = @trip.splitters
+	end
 
+	def update
+		@expense = Expense.find_by_id(params[:id])
+    respond_to do |format|
+      if @expense.update(expense_params)
+        format.html { redirect_to trip_expenses_path(@expense.trip), notice: 'Expense was successfully updated.' }
+        format.json { render :show, status: :ok, location: @expense }
+      else
+        format.html { render :edit }
+        format.json { render json: @expense.errors, status: :unprocessable_entity }
+      end
+    end
+	end
+
+  private
   # Never trust parameters from the scary internet, only allow the white list through.
+
   def expense_params
-    params.require(:expense).permit(:name, :date, :cost_in_cents, :notes, :activity_id)
+    params.require(:expense).permit(:name, :date, :cost_in_cents, :notes, :activity_id, charges_attributes: [:id, :expense_id, :trip_participation_id, :debt_in_cents, :payment_in_cents ])
   end
 
 end

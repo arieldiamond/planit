@@ -5,12 +5,8 @@ class Trip < ActiveRecord::Base
   has_many :activities, dependent: :destroy #works
   has_many :expenses, dependent: :destroy 
 
-  def splitters
-  	self.trip_participations.order(:traveler_id)
-  end
-
   def cost_in_cents
-  	self.expenses.pluck(:cost_in_cents).sum
+  	costs = self.expenses.pluck(:cost_in_cents).sum
   end
 
   def cost_display

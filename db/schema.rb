@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 20140616060332) do
   end
 
   create_table "charges", force: true do |t|
-    t.integer  "payment_in_cents"
-    t.integer  "debt_in_cents"
+    t.integer  "payment_in_cents",      default: 0
+    t.integer  "debt_in_cents",         default: 0
     t.integer  "trip_participation_id"
     t.integer  "expense_id"
     t.datetime "created_at"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20140616060332) do
     t.datetime "departure_time"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "confirmed"
+    t.boolean  "confirmed",           default: true
   end
 
   create_table "trips", force: true do |t|
