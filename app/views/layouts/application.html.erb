@@ -11,24 +11,30 @@
 
 </head>
 <body>
-	<div class="nav">
-		<a href="/"><h1>planit</h1></a>
-		<span id="tagline">Planning trips better... with science.</span>
-		<p><a href="/users/"></a></p>
-		<p><% if user_signed_in? %>
-				<span id="login"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
-			<% else %>
-				<span id="login"><%= link_to('Sign in', new_user_session_path) %></span>
-			<% end %>
-		</p>
-	</div>
+ <!-- Static navbar -->
+<%= render 'shared/nav' %>
+ <!-- END Static navbar -->
 
-	<div class="main">
-	<%= yield %>
-	<div class="devise_flash_messages">
-     <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
-	</div>
-	</div>
+
+  <div class="container">
+    <div class="devise_flash_messages">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div> <!-- / flash -->
+
+    <div class="row">
+      <div class=-"col-lg-2">
+        asdfasdfa
+      </div> <!-- / .col-lg-2 -->
+
+      <div class=-"col-lg-9">
+        <!-- before yield -->
+        <%= yield %>
+        <!-- after yield -->
+
+      </div> <!-- / .col-lg-9 -->
+    </div> <!-- / row -->
+  </div> <!-- / .container -->
+
 </body>
 </html>

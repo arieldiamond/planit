@@ -17,6 +17,8 @@ class User < ActiveRecord::Base
 	has_many :activity_participations, foreign_key: :trip_participation_id #works
 	has_many :participated_activities, through: :activity_participations, source: :activity  #works
 
+  has_many :created_polls, class_name: "Poll", foreign_key: :creator_id
+
 	def confirmed_trip_participations
 		self.trip_participations.select{ |participation| participation.confirmed == true }
 	end
@@ -33,10 +35,12 @@ class User < ActiveRecord::Base
 
 	# before_invitation_accepted :make_pending_trip_invitation
 
+	acts_as_voter
+
 	private
 
 	# def make_pending_trip_invitation
-		
+
 
 	# endc
 

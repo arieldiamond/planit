@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     if($('#map').length) {
       var handler = Gmaps.build('Google');
       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){

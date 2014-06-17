@@ -53,12 +53,21 @@
   <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
 </form><br>
 
+
+
+<p><%= link_to 'See all Polls', trip_polls_path(@trip.id) %></p>
+
+
+
 <%= link_to 'My Trips', trips_path %> |
 <%= link_to 'Activities', trip_activities_path(@trip.id) %> |
+
 <%= link_to 'Add a New Activity!', new_trip_activity_path(@trip.id) %> |
 <%= link_to 'Back', trips_path %> |
 <%= link_to 'Edit', edit_trip_path(@trip) %> |
 <%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
 
 
 <div style='width: 800px;'>
@@ -68,7 +77,7 @@
 <div style='width:400px;' id="calendar"></div>
 
 <script type="text/javascript">
-  
+
   window.map_marker = <%=raw @hash.to_json %>
   window.trip_id = <%= @trip.id %>
 </script>
