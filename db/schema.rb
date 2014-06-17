@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140615165402) do
+ActiveRecord::Schema.define(version: 20140616060332) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,22 +37,15 @@ ActiveRecord::Schema.define(version: 20140615165402) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "charges", force: true do |t|
     t.integer  "payment_in_cents",      default: 0
     t.integer  "debt_in_cents",         default: 0
     t.integer  "trip_participation_id"
     t.integer  "expense_id"
-=======
-  create_table "options", force: true do |t|
-    t.string   "name"
-    t.integer  "poll_id"
->>>>>>> master
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "expenses", force: true do |t|
     t.string   "name"
     t.datetime "date"
@@ -60,12 +53,21 @@ ActiveRecord::Schema.define(version: 20140615165402) do
     t.text     "notes"
     t.integer  "trip_id"
     t.integer  "activity_id"
-=======
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "options", force: true do |t|
+    t.string   "name"
+    t.integer  "poll_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "polls", force: true do |t|
     t.string   "name"
     t.integer  "trip_id"
     t.integer  "creator_id"
->>>>>>> master
     t.datetime "created_at"
     t.datetime "updated_at"
   end
