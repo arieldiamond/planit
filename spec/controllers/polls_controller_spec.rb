@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe PollController, :type => :controller do
+RSpec.describe PollsController, :type => :controller do
 
 end
