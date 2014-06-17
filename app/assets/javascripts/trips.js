@@ -9,25 +9,21 @@ $(document).ready(function(){
     }
     if($('#calendar').length) {
     	return $('#calendar').fullCalendar({
-        dayClick: function() {
-          console.log($(this).html);
-        
-        $(this).css('background-color', 'red');
+      //   dayClick: function() {
+      //     $(this).css('background-color', 'red');
 
-    },
-   
+      //     window.location = "localhost:3000/trips/" + window.trip_id + "/activities/new"
+      //     console.log("day")
+      //     //jquery UI
+
+      // },
     		events: '/trips/' + window.trip_id + '.json'
     	});
-    } else {
+    } 
+    if ($('#trips_calendar').length) {
     	console.log("trips_calendar")
 			return $('#trips_calendar').fullCalendar({
     		events: '/trips.json'
     	});
 		}
   });
-// $('#calendar').fullCalendar({
-//     eventClick: function(calEvent, jsEvent, view) {
-//         window.location = "http://www.domain.com?start=" + calEvent.start;
-
-//     }
-// });
