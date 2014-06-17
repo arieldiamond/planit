@@ -17,7 +17,8 @@ class PollsController < ApplicationController
 	end
 
 	def edit
-
+		@poll = Poll.find(params[:id])
+		@trip = Trip.find(params[:trip_id])
 	end
 
 	def create
@@ -35,7 +36,17 @@ class PollsController < ApplicationController
 	end
 
 	def update
-
+		@poll = Poll.find(params[:id])
+		@trip = Trip.find(params[:trip_id])
+		respond_to do |format|
+      if @poll.update(poll_params)
+        format.html { redirect_to trip_polls_path, notice: 'Poll was successfully updated.' }
+        format.json { render :show, status: :ok, location: @poll }
+      else
+        format.html { render :edit }
+        format.json { render json: @poll.errors, status: :unprocessable_entity }
+      end
+    end
 	end
 
 	def destroy
@@ -64,6 +75,9 @@ class PollsController < ApplicationController
 
 
 	private
+		def set_poll
+      @poll = Poll.find(params[:id])
+    end
 
 		def poll_params
 			params.require(:poll).permit(:name, :trip_id, :creator_id, options_attributes: [:id, :name, :poll_id, :_destroy])
