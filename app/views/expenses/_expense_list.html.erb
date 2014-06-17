@@ -1,0 +1,44 @@
+<table>
+	<thead>
+		<th>Expense</th>
+		<th>Date</th>
+		<th>Cost</th>
+		<% @trip.splitters.each do |splitter| %>
+			<th><%= splitter.traveler.first_name %></th>
+		<% end %>
+	</thead>
+
+	<tbody>
+		<div class="expense_row">
+		<% @trip.expenses.each do |expense| %>
+		<tr>
+			<td><%= expense.name %></td>
+			<td><%= expense.date %></td>
+			<td><%= expense.cost_display %></td>
+			<% expense.splitters.each do |splitter| %>
+				<td>
+					<table>
+						<% if splitter.find_charge_by_expense(expense) %>
+							<tr><td class="charge_debt"><%= splitter.find_charge_by_expense(expense).debt_display %></tr></td>
+							<tr><td class="charge_payment"><%= splitter.find_charge_by_expense(expense).payment_display %></tr></td>
+							<tr><td class="charge_account"><%= splitter.find_charge_by_expense(expense).account_display %></tr></td>
+						<% end %>
+					</table>
+			<% end %>
+			<td><%= link_to 'Edit', edit_trip_expense_path(@trip, expense) %></td>
+		</tr>
+		<% end %>
+		</div>
+		<div class="total_row">
+			<td></td>
+			<td></td>
+			<td><%= @trip.cost_display %></td>
+			<% @trip.splitters.each do |splitter| %>
+				<td> <%= splitter.trip_account_display %></td>
+			<% end %>
+		</tr>
+		</div>
+	</tbody>
+</table>
+
+<%= link_to 'Add an expense', new_trip_expense_path(@trip) %>
