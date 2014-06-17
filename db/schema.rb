@@ -37,17 +37,35 @@ ActiveRecord::Schema.define(version: 20140615165402) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+  create_table "charges", force: true do |t|
+    t.integer  "payment_in_cents",      default: 0
+    t.integer  "debt_in_cents",         default: 0
+    t.integer  "trip_participation_id"
+    t.integer  "expense_id"
+=======
   create_table "options", force: true do |t|
     t.string   "name"
     t.integer  "poll_id"
+>>>>>>> master
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+  create_table "expenses", force: true do |t|
+    t.string   "name"
+    t.datetime "date"
+    t.integer  "cost_in_cents"
+    t.text     "notes"
+    t.integer  "trip_id"
+    t.integer  "activity_id"
+=======
   create_table "polls", force: true do |t|
     t.string   "name"
     t.integer  "trip_id"
     t.integer  "creator_id"
+>>>>>>> master
     t.datetime "created_at"
     t.datetime "updated_at"
   end

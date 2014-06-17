@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :trips do
     resources :activities, shallow: true
+    resources :expenses, :only => [:index, :new, :create, :edit, :update, :destroy]
     resources :polls
   end
 
