@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Planit | Welcome</title>
-  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <style type="text/css">
-  /*super ghetto inline style, no time*/
+  /*super ghetto inline style sorry , no time*/
   /* Globals */
 
   /* Links */
@@ -14,6 +15,10 @@
     color: #fff;
   }
 
+#welcome .inner #sign-up {
+    font-weight: bold;
+}
+
   /* Custom default button */
   #welcome .btn-default,
   #welcome .btn-default:hover,
@@ -22,6 +27,8 @@
     text-shadow: none; /* Prevent inheritence from `body` */
     background-color: #fff;
     border: 1px solid #fff;
+
+
   }
 
   /*
@@ -31,16 +38,17 @@
   html,
   body#welcome {
     height: 100%;
-    background-color: #333;
+    background-color: #333;    
   }
+
   body#welcome {
     background-image: url('../Boat.png');
     background-repeat:none;
     background-size: cover;
-    font-family: 'Dosis', sans-serif;  color: #fff;
+    font-family: 'Dosis', sans-serif;  color: #fff; !important
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+
   }
 
   /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -59,9 +67,21 @@
     margin-left: auto;
   }
 
+#welcome .cover-heading {
+    margin-bottom: 20px;
+}
+
+#welcome .tagline {
+    margin-bottom: 40px;
+}
   /* Padding for spacing */
   #welcome .inner {
     padding: 30px;
+    letter-spacing: 1px;
+  }
+
+  #welcome .inner.cover {
+    margin-top: 100px;
   }
 
   /*
@@ -86,10 +106,13 @@
     padding: 0 20px;
   }
   #welcome .cover .btn-lg {
-    padding: 10px 20px;
+    padding: 10px 100px;
     font-weight: bold;
   }
 
+#welcome #team-planit {
+    color: #A7D4F4;
+}
   /*
    * Footer
    */
@@ -134,10 +157,11 @@
   }
 </style>
 
+
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 </head>
-
 
 
 <body id="welcome">
@@ -146,19 +170,16 @@
       <div class="cover-container">
         <div class="masthead clearfix">
         <h3 class="masthead-brand">Planit</h3>
+            <div class="inner cover">
+                <h1 class="cover-heading">She used Planit to organize her yearly family reunion</h1>
+                <p class="lead tagline">Planning trips better... with science.</p>
+                <p class="lead"><a href="#" class="btn btn-lg btn-default">Log in</a></p>
+                <div>
+                    <p>Already have an account? <a id="sign-up" href="/users/sign_up">Sign up</a></p>
+                </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Planning trips better... with science.</h1>
-              <%= yield %>
-            <p class="lead"><a href="#" class="btn btn-lg btn-default">Sign in</a></p>
-          </div> <!-- / inner cover -->
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Team Planit: Annie, Ariel, Dusty, Fabi &amp; Jaimin</p>
-            </div>
-          </div> <!-- / mastfoot -->
-
+              <p id="team-planit">Team Planit: Annie, Ariel, Dusty, Fabi &amp; Jaimin</p>
+            </div> <!-- / inner cover -->
       </div> <!-- / masthead clearfix -->
     </div> <!-- / site-wrapper-inner -->
   </div> <!-- / site-wrapper -->
