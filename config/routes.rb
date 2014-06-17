@@ -19,7 +19,9 @@ Rails.application.routes.draw do
   get 'mobile_trips/new' => 'mobile_trips#new'
   post 'mobile_trips/new' => 'mobile_trips#create'
   get 'mobile_activities/new' => 'mobile_activities#new'
-  post 'mobile_activities/new' => 'mobile_activities#create'
+  # post 'mobile_activities/new' => 'mobile_activities#create'
+  get 'mobile_sessions/sign_in'
+  post 'mobile_sessions/sign_in' => 'mobile_sessions#create_session'
 
   # custom routes for trip invitiations
   post 'trips/:id/invite' => "trips#invite"
