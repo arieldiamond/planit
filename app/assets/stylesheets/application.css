@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  margin: 20px auto;
+  margin: auto;
   width: 800px;
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
@@ -61,47 +61,4 @@ a:hover {
   /*color: #5F829C;*/
 }
 
-/*.trip_show h2 {
-  margin:auto;
-}*/
-
-/*#welcome .sub_container {
-  opacity: 0.1;
-}*/
-/*.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  width: 170px;
-  padding: 10px;
-  margin: 0 auto 20px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 5px;
-}
-
-.btn-default a {
-  margin-top: 15px;
-  font-size: 23px;
-  vertical-align: center;
-}
-
-.btn-lg,
-.btn-lg:hover,
-.btn-lg:focus {
-  width: 250px;
-  padding: 30px;
-  margin: 0 auto 30px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 5px;
-}
-
-.btn-lg a {
-  font-size: 27px;
-  vertical-align: center;
-}*/
-
- /* Globals */
-
- 
  
