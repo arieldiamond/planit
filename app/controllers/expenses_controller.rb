@@ -10,8 +10,6 @@ class ExpensesController < ApplicationController
 	end
 
 	def create
-    # puts "XXXXXXXXXXXXXXXXXXXXXXXX"
-    # puts params[:expense][:charges_attributes].keys
     @trip = Trip.find_by_id(params[:trip_id])
     @expense = Expense.create(expense_params)
     @trip.expenses << @expense
@@ -38,27 +36,6 @@ class ExpensesController < ApplicationController
         format.json { render json: @expense.errors, status: :unprocessable_entity }
       end
     end
-
-
-
-		# @expense = Expense.create(expense_params)
-  #   @expense.update(charge_params)
-  #   @trip = Trip.find(params[:trip_id])
-  #   @trip.expenses << @expense
-    # @expense.splitters.each do |splitter|
-    #   puts "XXXXXXXXXXXXXXxXXXXXXXXXXXXXXXxX"
-    #   puts "splitter.traveler = #{splitter.traveler}"
-    #   puts "current_user  = #{current_user}"
-    #   if splitter.traveler == current_user
-    #     Charge.create(debt_in_cents: @expense.cost_per_person, expense_id: @expense.id, trip_participation_id: splitter.id, payment_in_cents: @expense.cost_in_cents)
-    #   end
-    #   if splitter.splitting
-    #     Charge.create(debt_in_cents: @expense.cost_per_person, expense_id: @expense.id, trip_participation_id: splitter.id)
-    #   else
-    #     Charge.create(expense_id: @expense.id, trip_participation_id: splitter.id)
-    #   end
-    # end
-    # redirect_to trip_expenses_path(@trip)
 	end
 
 	def edit
