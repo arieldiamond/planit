@@ -18,12 +18,12 @@ users = [{email: "ariel@email.com", first_name: "Ariel", last_name: "Diamond", p
 
 User.create!(users)
 
-trips = [{name: "Save the world", description: "Just another day", location: "Metropolis", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
-				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
-				 {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "DBC", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1},
-				 {name: "Lake House", description: "It's fourth of july!", location: "Vermont", start_date: DateTime.new(2012,7,1), end_date: DateTime.new(2012,7,15), creator_id: 9},
-				 {name: "Clean up everything", description: "...that we broke saving the world", location: "Metropolis", start_date: DateTime.new(2014,2,13), end_date: DateTime.new(2014,2,20), creator_id: 7},
-				 {name: "Final Project", description: "Planit", location: "DBC", start_date: DateTime.new(2014,6,11), end_date: DateTime.new(2014,6,11), creator_id: 3}
+trips = [{name: "Save the world", description: "Just another day", location: "New York City", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
+				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach, Virginia", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
+				 {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "Dev BootCamp, Chicago", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1},
+				 {name: "Lake House", description: "It's fourth of july!", location: "Burlington, Vermont", start_date: DateTime.new(2012,7,1), end_date: DateTime.new(2012,7,15), creator_id: 9},
+				 {name: "Clean up everything", description: "...that we broke saving the world", location: "New York City", start_date: DateTime.new(2014,2,13), end_date: DateTime.new(2014,2,20), creator_id: 7},
+				 {name: "Final Project", description: "Planit", location: "Dev BootCamp, Chicago", start_date: DateTime.new(2014,6,11), end_date: DateTime.new(2014,6,11), creator_id: 3}
 				]
 
 Trip.create!(trips)
@@ -68,8 +68,8 @@ TripParticipation.create!(trip_participations)
 
 activities = [{name: "fishing", description: "Woohoo, on a boat!", start_time: DateTime.new(2012,7,3,6,0,0), end_time: DateTime.new(2012,7,3,15,0,0), location: "Lake Champlain, Vermont", trip_id: 4, creator_id: 3},
 							{name: "kayaking", description: "Woohoo, on a smaller boat!", start_time: DateTime.new(2012,7,4,10,0,0), end_time: DateTime.new(2012,7,4,14,0,0), location: "Echo Lake, Vermont", trip_id: 4, creator_id: 3},
-							{name: "winning", description: "because we're superheroes", start_time: DateTime.new(2014,2,5,10,0,0), end_time: DateTime.new(2014,2,7,15,0,0), location: "city center", trip_id: 1, creator_id: 7},
-							{name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "Bavette's, 	218 W Kinzie St, Chicago, IL 60654", trip_id: 3, creator_id: 1}]
+							{name: "winning", description: "because we're superheroes", start_time: DateTime.new(2014,2,5,10,0,0), end_time: DateTime.new(2014,2,7,15,0,0), location: "Times Square, New York City", trip_id: 1, creator_id: 7},
+							{name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "218 W Kinzie St, Chicago, IL 60654", trip_id: 3, creator_id: 1}]
 
 Activity.create!(activities)
 
