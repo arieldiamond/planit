@@ -1,26 +1,23 @@
 <% if user_signed_in? %>
 <% else %>
-<body id="welcome">
-    <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-        <div class="cover-container">
-            <div class="masthead clearfix">
-                <h3 class="masthead-brand">Planit</h3>
-                <div class="inner_cover">
-                    <h1 class="cover-heading">She used Planit to organize her yearly family reunion</h1>                    <p class="lead tagline">Group trips. Organized.</p>
-                    <p class="lead"><%= link_to 'Sign up', new_user_registration_path, { :class=>"btn btn-lg btn-default" } %></p>
-                    <p id="login">
-                    <p>Already have an account? 
-                    <p class="lead"><%= link_to 'Log In', new_user_session_path, { :class=>"btn btn-lg btn-default" }  %></p>
-                    </p>
-                    <p id="team-planit">Team Planit: Annie, Ariel, Dusty, Fabi &amp; Jaimin</p>
-                </div>
-                <!-- / inner cover -->
-            </div>
-            <!-- / masthead clearfix -->
-        </div>
-        <!-- / site-wrapper-inner -->
-    </div>
-    <!-- / site-wrapper -->  
-</body>
+  <body id="welcome">
+      <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+          <div class="cover-container">
+              <div class="masthead clearfix">
+                  <h3 class="masthead-brand">Planit</h3>
+                  <div class="inner_cover">
+                      <h1 class="cover-heading">She used Planit to organize her yearly family reunion</h1>                    
+                          <p class="lead tagline">Group trips. Organized.</p>
+                          <p class="lead"><%= link_to 'Sign up', new_user_registration_path, { :class=>"btn btn-lg btn-default" } %></p>
+                    </div><!-- / inner cover -->
+                          <p>Already have an account? 
+                          <%= link_to 'Log In', new_user_session_path, { :class=>"btn btn-lg btn-default" }  %></p>
+                          <p id="team-planit">Team Planit: Annie, Ariel, Dusty, Fabi &amp; Jaimin</p>
+              </div><!-- / masthead clearfix -->
+            </div> <!-- / cover-container -->
+          </div><!-- / site-wrapper-inner -->
+      </div><!-- / site-wrapper -->  
+  </body>
 <% end %>
+
