@@ -7,3 +7,16 @@
 	width: 700px;
 	margin:auto;
 }
+
+.trip_show_bar {
+	width: 100%;
+	height: 30px;
+	background-color: #EDDBB4;
+	text-align: center;
+	margin: 2px;
+}
+
+.trip_show_bar h2 {
+	margin: 0;
+}
+
