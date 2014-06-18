@@ -31,7 +31,7 @@
   <%= f.fields_for :charges do |builder| %>
     <fieldset>
       <%= builder.label :debt_in_cents, "#{builder.object.trip_participation.traveler.first_name}: debt" %>
-      <%= builder.number_field :debt_in_cents %>
+      <%= builder.number_field :debt_in_cents %><br>
       <%= builder.label :payment_in_cents, "Payment" %>
       <%= builder.number_field :payment_in_cents %>
     </fieldset>
