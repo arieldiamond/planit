@@ -1,4 +1,4 @@
-<body id="trips_all">
+<div class="container">
 <% if @confirmed_trip_partcipations.length > 0 %>
 <h2>My Trips</h2>
 <p><div class="pure-button pure-button-active"><%= link_to 'New Trip', new_trip_path %></div><br /></p>
@@ -76,4 +76,4 @@
 <br>
 
 <div class="pure-table pure-table-bordered" id="trips_calendar"></div>
-</body>
+</div>
