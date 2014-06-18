@@ -1,14 +1,12 @@
 class Expense < ActiveRecord::Base
-	include ActiveModel::Validations
-	# validates_with ExpenseValidator, on: :create
-	# validates :cost_in_cents, presence: true
-	
+	include MoneyHelper
+	include DateTimeHelper
+
 	belongs_to :trip
 	belongs_to :activity
 	has_many :charges, dependent: :destroy
 	accepts_nested_attributes_for :charges#, allow_destroy: true
 	has_many :splitters, through: :trip, source: :trip_participations
-
 
 	def create_charges
 		self.splitters.each do |splitter|
@@ -30,8 +28,7 @@ class Expense < ActiveRecord::Base
 	end
 
 	def cost_display
-		# display_in_dollars(self.cost_in_cents)
-		self.cost_in_cents
+		display_in_dollars(self.cost_in_cents)
 	end
 
 	def all_debts_in_cents
@@ -58,6 +55,10 @@ class Expense < ActiveRecord::Base
 		self.payment_sum_in_cents == self.cost_in_cents
 	end
 
+	def date_display
+		to_short_date(self.date)
+	end
+
 end
 
 class ExpenseValidator < ActiveModel::Validator
@@ -65,6 +66,4 @@ class ExpenseValidator < ActiveModel::Validator
 		return true if record.payments_equal_cost?
 		record.errors[:base] << "Your payments and debts don't add up."
 	end
-
-
 end

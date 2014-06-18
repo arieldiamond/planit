@@ -14,4 +14,5 @@ module MoneyHelper
 		end
 		amount.insert(-3, ".")
 	end
+
 end

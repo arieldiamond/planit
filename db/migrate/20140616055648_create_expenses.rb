@@ -2,7 +2,7 @@ class CreateExpenses < ActiveRecord::Migration
   def change
     create_table :expenses do |t|
       t.string :name
-      t.datetime :date
+      t.datetime :date, default: DateTime.now
       t.integer :cost_in_cents, default: 0
       t.text :notes
       t.integer :trip_id
