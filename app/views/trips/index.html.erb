@@ -1,38 +1,37 @@
-
 <% if @confirmed_trip_partcipations.length > 0 %>
-<h2>Your Trips</h2>
+<h2>My Trips</h2>
+<p><div class="pure-button pure-button-active"><%= link_to 'New Trip', new_trip_path %></div><br /></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Location</th>
-      <th>Start date</th>
-      <th>End date</th>
-      <th>Creator</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @confirmed_trip_partcipations.each do |participation| %>
+<div class="pure-table">
+  <table>
+    <thead>
       <tr>
-        <td><%= participation.trip.name %></td>
-        <td><%= participation.trip.description %></td>
-        <td><%= participation.trip.location %></td>
-        <td><%= participation.trip.start_date %></td>
-        <td><%= participation.trip.end_date %></td>
-        <td><%= participation.trip.creator_id %></td>
-        <td><%= link_to 'Activities', trip_activities_path(participation.trip) %></td>
-        <td><%= link_to 'Show', participation.trip %></td>
-        <td><%= link_to 'Edit', edit_trip_path(participation.trip) %></td>
-        <td><%= link_to 'Delete', participation.trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Creator</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<% end %>
+    </thead>
+
+    <tbody>
+      <% @confirmed_trip_partcipations.each do |participation| %>
+        <tr>
+          <td><%= link_to participation.trip.name, participation.trip %></td>
+          <td><%= link_to participation.trip.description, participation.trip %></td>
+          <td><%= participation.trip.location %></td>
+          <td><%= participation.trip.start_date.strftime("%m/%d/%Y") %></td>
+          <td><%= participation.trip.end_date.strftime("%m/%d/%Y") %></td>
+          <td><%= participation.trip.creator.first_name %></td>
+          <td><%= link_to 'Activities', trip_activities_path(participation.trip) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <% end %>
+</div>
 
 
 <% if @pending_trip_partcipations.length > 0 %>
@@ -75,10 +74,7 @@
 
 <br>
 
-<%= link_to 'New Trip', new_trip_path %><br>
-
-
-<div style="width:400px;" id="trips_calendar"></div>
+<div class="pure-table pure-table-bordered" id="trips_calendar"></div>
 
 <script type="text/javascript">
 // $(document).ready(function() {

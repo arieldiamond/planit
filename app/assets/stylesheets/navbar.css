@@ -1,0 +1,19 @@
+.nav {
+	background-color: white;
+	height: 40px;
+	margin-top: -10px;
+	text-decoration: none;
+	padding-left: 5px;
+}
+
+.nav li {
+	list-style-type: none;
+	color: black;
+	float: left;
+	padding-left: 15px;
+	padding-top: 8px;
+}
+
+#planit_brand a {
+	font-size: 20px;
+}

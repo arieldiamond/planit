@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+<<<<<<< HEAD
     if($('#map').length) {
       handler = Gmaps.build('Google');
       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
@@ -10,6 +11,7 @@ $(document).ready(function(){
         //handler.fitMapToBounds();
       });
     }
+
     if($('#calendar').length) {
     	return $('#calendar').fullCalendar({
       //   dayClick: function() {
