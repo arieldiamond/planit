@@ -1,14 +1,17 @@
 $(document).ready(function(){
 
-    // if($('#map').length) {
-    //   console.log("I am a map")
-    //   var handler = Gmaps.build('Google');
-    //   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    //   var markers = handler.addMarkers(window.map_marker);
-    //   handler.bounds.extendWith(markers);
-    //   handler.fitMapToBounds();
-    //   });
-    // }
+<<<<<<< HEAD
+    if($('#map').length) {
+      handler = Gmaps.build('Google');
+      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+        trips = handler.addMarkers(window.tripMarker);
+        activities = handler.addMarkers(window.activityMarker);
+        handler.map.centerOn([tripLat, tripLng]);
+        //handler.bounds.extendWith(activities);
+        //handler.fitMapToBounds();
+      });
+    }
+
     if($('#calendar').length) {
     	return $('#calendar').fullCalendar({
       //   dayClick: function() {

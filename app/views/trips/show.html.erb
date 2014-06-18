@@ -30,6 +30,9 @@
 </div>
 
 <script type="text/javascript">
-  window.map_marker = <%=raw @hash.to_json %>
+  window.tripLat = <%= @trip.latitude %>
+  window.tripLng = <%= @trip.longitude %>
+  window.activityMarker = <%=raw @activities_hash.to_json %>
+  window.tripMarker = <%=raw @trip_hash.to_json %>
   window.trip_id = <%= @trip.id %>
 </script>
