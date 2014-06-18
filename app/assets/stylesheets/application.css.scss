@@ -25,40 +25,13 @@
   }
 }*/
 
-body {
-  background-image: url('../Boat.png');
-  background-repeat:none;
-  background-size: cover;
-  font-family: 'Dosis', sans-serif;  color: black; 
-}
+@import "bootstrap";
 
-.container {
-  margin: auto;
-  width: 800px;
-  padding: 20px 20px 20px 20px;
-  border-radius: 5px;
-  background-color: white;
+ .form-signin {
+      max-width: 300px;
+      padding: 19px 29px 29px;
+      margin: 0 auto 20px;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
 }
-
-/* Links */
-a {
-  color:#5F829C;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: gray;
-}
-
-.form_container {
-  max-width: 300px;
-  padding: 19px 29px 29px;
-  margin: auto;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 5px;
-  /*color: #5F829C;*/
-}
-
- 
