@@ -28,7 +28,7 @@ class ExpensesController < ApplicationController
       end
     end
     # ALB note: hackey part ends here
-    
+
     respond_to do |format|
       if @expense.save
         format.html { redirect_to trip_path(@trip), notice: 'Expense was successfully created.' }
@@ -70,7 +70,7 @@ class ExpensesController < ApplicationController
 	def update
 		@expense = Expense.find_by_id(params[:id])
     respond_to do |format|
-      if @expense.update(expense_params)
+      if @expense.update(expense_and_charges_params)
         format.html { redirect_to trip_expenses_path(@expense.trip), notice: 'Expense was successfully updated.' }
         format.json { render :show, status: :ok, location: @expense }
       else
@@ -87,7 +87,7 @@ class ExpensesController < ApplicationController
     params.require(:expense).permit(:id, :name, :date, :cost_in_cents, :notes, :activity_id)#, charges_attributes: [:id, :expense_id, :trip_participation_id, :debt_in_cents, :payment_in_cents, :splitting, :paid ])
   end
 
-  def charge_params
+  def expense_and_charges_params
     params.require(:expense).permit(:name, :date, :cost_in_cents, :notes, :activity_id, charges_attributes: [:id, :expense_id, :trip_participation_id, :debt_in_cents, :payment_in_cents, :splitting, :paid ])
   end
 
