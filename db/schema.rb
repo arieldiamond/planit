@@ -87,6 +87,8 @@ ActiveRecord::Schema.define(version: 20140616060332) do
     t.string   "name"
     t.string   "description"
     t.string   "location"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "start_date"
     t.datetime "end_date"
     t.integer  "creator_id"

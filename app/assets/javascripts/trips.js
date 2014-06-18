@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
     if($('#map').length) {
-      var handler = Gmaps.build('Google');
+      handler = Gmaps.build('Google');
       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-      var markers = handler.addMarkers(window.map_marker);
-      handler.bounds.extendWith(markers);
-      handler.fitMapToBounds();
+        trips = handler.addMarkers(window.tripMarker);
+        activities = handler.addMarkers(window.activityMarker);
+        handler.map.centerOn([tripLat, tripLng]);
+        //handler.bounds.extendWith(activities);
+        //handler.fitMapToBounds();
       });
     }
     if($('#calendar').length) {
