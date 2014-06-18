@@ -29,19 +29,23 @@ body {
   background-image: url('../Boat.png');
   background-repeat:none;
   background-size: cover;
-  font-family: 'Dosis', sans-serif;  color: #fff; 
+  font-family: 'Dosis', sans-serif;  color: black; 
 }
 
 .container {
-  width: 80%;
-  margin:auto;
+  margin: 20px auto;
+  width: 800px;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 /* Links */
 a {
-  color:black;
+  color:#5F829C;
   text-decoration: none;
 }
+
 a:focus,
 a:hover {
   color: gray;
@@ -54,8 +58,9 @@ a:hover {
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
-  color: #7EADCF;
+  color: #5F829C;
 }
+
 /*.btn-default,
 .btn-default:hover,
 .btn-default:focus {
