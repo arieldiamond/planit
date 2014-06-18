@@ -4,9 +4,6 @@ class Charge < ActiveRecord::Base
 	belongs_to :expense, inverse_of: :charges
 	belongs_to :trip_participation
 
-	delegate :company, :to => :employee, :allow_nil => true
-
-
 	def account_in_cents
 		self.payment_in_cents - self.debt_in_cents
 	end

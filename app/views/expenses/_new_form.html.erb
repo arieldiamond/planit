@@ -1,0 +1,42 @@
+<%= form_for([@trip, @expense]) do |f| %>
+  <% if @expense.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@expense.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% @expense.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_in_cents %><br>
+    <%= f.number_field :cost_in_cents %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+
+  <%= f.fields_for :charges do |builder| %>
+    <fieldset>
+    	<%= "#{builder.object.trip_participation.traveler.first_name}" %>
+      <%= builder.label :payment_in_cents, "Payment" %>
+      <%= builder.number_field :payment_in_cents %>
+    </fieldset>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
