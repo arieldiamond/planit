@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20140616060332) do
   create_table "expenses", force: true do |t|
     t.string   "name"
     t.datetime "date"
-    t.integer  "cost_in_cents"
+    t.integer  "cost_in_cents", default: 0
     t.text     "notes"
     t.integer  "trip_id"
     t.integer  "activity_id"
