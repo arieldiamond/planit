@@ -2,46 +2,46 @@ $(document).ready(function(){
 
     if($('#map').length) {
 
-      function createSidebarLi(json){
-        return ("<li><a>" + json.name + "</a></li>");
-      };
+      // function createSidebarLi(json){
+      //   return ("<li><a>" + json.name + "</a></li>");
+      // };
 
-      function bindLiToMarker($li, marker){
-        $li.on('click', function(){
-          handler.getMap().setZoom(14);
-          marker.setMap(handler.getMap()); //because clusterer removes map property from marker
-          marker.panTo();
+      // function bindLiToMarker($li, marker){
+      //   $li.on('click', function(){
+      //     handler.getMap().setZoom(14);
+      //     marker.setMap(handler.getMap()); //because clusterer removes map property from marker
+      //     marker.panTo();
           
-          google.maps.event.trigger(marker.getServiceObject(), 'click');
-        })
-      };
+      //     google.maps.event.trigger(marker.getServiceObject(), 'click');
+      //   })
+      // };
 
-      function createSidebar(json_array){
-          _.each(json_array, function(json){
-          var $li = $( createSidebarLi(json) );
-          $li.appendTo('#sidebar_container');
+      // function createSidebar(json_array){
+      //     _.each(json_array, function(json){
+      //     var $li = $( createSidebarLi(json) );
+      //     $li.appendTo('#sidebar_container');
           
-          bindLiToMarker($li, json.activities);
-        });
-      };
+      //     bindLiToMarker($li, json.activities);
+      //   });
+      // };
 
-      handler = Gmaps.build('Google');
-      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-        trips = handler.addMarkers(window.tripMarker);
-        activities = handler.addMarkers(window.activityMarker);
+      // handler = Gmaps.build('Google');
+      // handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      //   trips = handler.addMarkers(window.tripMarker);
+      //   activities = handler.addMarkers(window.activityMarker);
         
-        handler.map.centerOn([tripLat, tripLng]);
+      //   handler.map.centerOn([tripLat, tripLng]);
         
-        //handler.bounds.extendWith(activities);
-        //handler.fitMapToBounds();
+      //   //handler.bounds.extendWith(activities);
+      //   //handler.fitMapToBounds();
         
-        _.each(window.activityMarker, function(json, index){
-          json.activities = activities[index];
-        });
+      //   _.each(window.activityMarker, function(json, index){
+      //     json.activities = activities[index];
+      //   });
         
         
-        createSidebar(window.activityMarker);
-      });
+      //   createSidebar(window.activityMarker);
+      // });
     }
 
     if($('#calendar').length) {

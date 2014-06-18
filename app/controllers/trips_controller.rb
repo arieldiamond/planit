@@ -23,6 +23,11 @@ class TripsController < ApplicationController
       marker.lng trip.longitude
       marker.infowindow trip.location
       marker.picture trip_marker_pic
+      marker.title trip.name
+      marker.json ({
+        id: trip.id,
+        name: trip.name
+        })
     end
 
     @activities_hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
