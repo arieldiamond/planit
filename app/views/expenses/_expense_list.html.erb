@@ -1,4 +1,4 @@
-<table>
+<table id="expense_list" class="pure-table pure-table-horizontal">
 	<thead>
 		<th>Expense</th>
 		<th>Date</th>
@@ -6,6 +6,8 @@
 		<% @trip.splitters.each do |splitter| %>
 			<th><%= splitter.traveler.first_name %></th>
 		<% end %>
+		<th>View details</th>
+		<th>Edit</th>
 	</thead>
 
 	<tbody>
@@ -19,12 +21,13 @@
 				<td>
 					<table>
 						<% if splitter.find_charge_by_expense(expense) %>
-							<tr><td class="charge_debt"><%= splitter.find_charge_by_expense(expense).debt_display %></tr></td>
-							<tr><td class="charge_payment"><%= splitter.find_charge_by_expense(expense).payment_display %></tr></td>
+							<tr class="charge_details"><td class="charge_debt"><%= splitter.find_charge_by_expense(expense).debt_display %></tr></td>
+							<tr class="charge_details"><td class="charge_payment"><%= splitter.find_charge_by_expense(expense).payment_display %></tr></td>
 							<tr><td class="charge_account"><%= splitter.find_charge_by_expense(expense).account_display %></tr></td>
 						<% end %>
 					</table>
 			<% end %>
+			<td><a href="">View details</a></td>
 			<td><%= link_to 'Edit', edit_trip_expense_path(@trip, expense) %></td>
 		</tr>
 		<% end %>
@@ -36,6 +39,8 @@
 			<% @trip.splitters.each do |splitter| %>
 				<td> <%= splitter.trip_account_display %></td>
 			<% end %>
+			<td><a id="view_all_details" href="#">View all details</a><a id="hide_all_details" href="#">Hide all details</a></td>
+			<td></td>
 		</tr>
 		</div>
 	</tbody>

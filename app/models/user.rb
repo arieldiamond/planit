@@ -27,21 +27,6 @@ class User < ActiveRecord::Base
 		self.trip_participations.select{ |participation| participation.confirmed == false }
 	end
 
-  # after_invitation_accepted :add_to_trip
-
-  # def add_to_trip
-  #   Trip.find(3).travelers << self #find_by_id(params[:trip_id])
-  # end
-
-	# before_invitation_accepted :make_pending_trip_invitation
-
 	acts_as_voter
-
-	private
-
-	# def make_pending_trip_invitation
-
-
-	# endc
 
 end

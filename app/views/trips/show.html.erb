@@ -1,4 +1,4 @@
-<body id="trip_show">
+<div id="trip_show_page"
   <p id="notice"><%= notice %></p>
 
   <div class="trip_information">
@@ -41,3 +41,48 @@
     window.trip_id = <%= @trip.id %>
   </script>
 </body>
+=======
+  <div id="calendar_bar" class="trip_show_bar">
+    <h2>Calendar</h2>
+  </div>
+  <div id="calendar_div" class="trip_show_details">
+    <div class="pure-table pure-table-bordered" id="calendar"></div>
+  </div>
+
+  <div id="expense_list_bar" class="trip_show_bar">
+    <h2>Expenses</h2>
+  </div>
+  <div id="expense_list" class="trip_show_details">
+    <%= render 'expenses/expense_list' %>6
+  </div>
+
+  <div id="map_information_bar" class="trip_show_bar">
+    <h2>Map</h2>
+  </div>
+  <div id="map_information" class="trip_show_details">
+    <%= render 'map' %>
+  </div>
+
+  <div id="activity_information_bar" class="trip_show_bar">
+    <h2>Activities</h2>
+  </div>
+  <div id="activity_information" class="trip_show_details">
+    <%= render 'activities/activity_list' %>
+  </div>
+
+  <div id="poll_list_bar" class="trip_show_bar">
+    <h2>Polls</h2>
+  </div>
+  <div id="poll_list" class="trip_show_details">
+    <%= render 'polls/poll_list' %>
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.tripLat = <%= @trip.latitude %>
+  window.tripLng = <%= @trip.longitude %>
+  window.activityMarker = <%=raw @activities_hash.to_json %>
+  window.tripMarker = <%=raw @trip_hash.to_json %>
+  window.trip_id = <%= @trip.id %>
+</script>
+>>>>>>> master

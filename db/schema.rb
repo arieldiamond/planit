@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20140616060332) do
     t.integer  "payment_in_cents",      default: 0
     t.integer  "debt_in_cents",         default: 0
     t.integer  "trip_participation_id"
+    t.boolean  "splitting",             default: true
+    t.boolean  "paid",                  default: false
     t.integer  "expense_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -87,6 +89,8 @@ ActiveRecord::Schema.define(version: 20140616060332) do
     t.string   "name"
     t.string   "description"
     t.string   "location"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "start_date"
     t.datetime "end_date"
     t.integer  "creator_id"

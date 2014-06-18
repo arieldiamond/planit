@@ -16,11 +16,26 @@ class TripsController < ApplicationController
   def show
     @activities = Trip.find(params[:id]).activities
 
-    @hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
+    trip_marker_pic = {url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png", width: 32, height: 32}
+
+    @trip_hash = Gmaps4rails.build_markers(@trip) do |trip, marker|
+      marker.lat trip.latitude
+      marker.lng trip.longitude
+      marker.infowindow trip.location
+      marker.picture trip_marker_pic
+    end
+
+    @activities_hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
       marker.lat activity.latitude
       marker.lng activity.longitude
+      marker.title activity.name
       marker.infowindow activity.description
+      marker.json ({
+        id: activity.id,
+        name: activity.name
+        })
     end
+
   end
 
   # GET /trips/new
