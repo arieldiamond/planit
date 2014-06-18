@@ -28,7 +28,12 @@ class TripsController < ApplicationController
     @activities_hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
       marker.lat activity.latitude
       marker.lng activity.longitude
+      marker.title activity.name
       marker.infowindow activity.description
+      marker.json ({
+        id: activity.id,
+        name: activity.name
+        })
     end
 
   end
