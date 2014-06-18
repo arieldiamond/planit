@@ -20,13 +20,10 @@
 
 <body>
   <%= render 'shared/nav' %>
-  <div class="container">
-  <div class="sub">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </div>
-  </div> 
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+
 </body>
 
 </html>

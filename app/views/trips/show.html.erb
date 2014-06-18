@@ -1,9 +1,43 @@
-<div id="trip_show_page"
+<div class="container">
+<div id="trip_show_page">
   <p id="notice"><%= notice %></p>
 
   <div class="trip_information">
     <%= render 'trip_information' %>
   </div>
+
+  <!-- <div class="calendar">
+    <h2>Calendar</h2>
+    <div class="pure-table pure-table-bordered" id="calendar"></div>
+  </div>
+
+  <div class="expense_list">
+    <div class="pure-table">
+    <h2>Expenses</h2>
+    <%#= render 'expenses/expense_list' %>
+    </div>
+  </div>
+
+  <div class="map_information">
+    <h2>Map</h2>
+    <%#= render 'map' %>
+  </div>
+
+  <div class="activity_information">
+    <h2>Activities</h2>
+    <div class="pure-table">
+    <%#= render 'activities/activity_list' %>
+    </div>
+  </div>
+
+  <div class="poll_list">
+  <div class="pure-table pure-table-bordered">
+    <h2>Polls</h2>
+    <%#= render 'polls/poll_list' %>
+    </div>
+  </div> -->
+
+
 
   <div id="calendar_bar" class="trip_show_bar">
     <h2>Calendar</h2>
@@ -41,6 +75,9 @@
   </div>
 </div>
 
+<script type="text/javascript">
+  // window.map_marker = <%=raw @hash.to_json %>
+</script>
 <script type="text/javascript">
   window.tripLat = <%= @trip.latitude %>
   window.tripLng = <%= @trip.longitude %>

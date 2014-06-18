@@ -33,20 +33,11 @@ body {
 }
 
 .container {
-  /*position: relative;*/
-  /*z-index: 1;*/
-  background-color: white;
-/*}
-
-.container .sub {*/
-  /*position: absolute;*/
-/*  z-index: -1;*/
   margin: 20px auto;
   width: 800px;
   padding: 20px 20px 20px 20px;
-  /*background-color: white;*/
   border-radius: 5px;
-  /*opacity: 0.7;*/
+  background-color: white;
 }
 
 /* Links */
@@ -60,21 +51,21 @@ a:hover {
   color: gray;
 }
 
-.form-signin {
+.form_container {
   max-width: 300px;
   padding: 19px 29px 29px;
   margin: auto;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
-  color: #5F829C;
+  /*color: #5F829C;*/
 }
 
-/*#welcome .container {
-  color:black;
-}
+/*.trip_show h2 {
+  margin:auto;
+}*/
 
-#welcome .sub_container {
+/*#welcome .sub_container {
   opacity: 0.1;
 }*/
 /*.btn-default,
