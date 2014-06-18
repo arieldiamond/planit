@@ -1,6 +1,7 @@
 class Expense < ActiveRecord::Base
 	include ActiveModel::Validations
-	# validates_with ExpenseValidator :on => :update
+	# validates_with ExpenseValidator, on: :update
+	# validates :cost_in_cents, presence: true
 	
 	belongs_to :trip
 	belongs_to :activity

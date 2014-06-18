@@ -6,7 +6,7 @@ class ExpensesController < ApplicationController
 	def new
 		@trip = Trip.find_by_id(params[:trip_id])
 		@expense = Expense.new(trip_id: @trip.id)
-    # @expense.create_charges
+    @expense.create_charges
 	end
 
 	def create
