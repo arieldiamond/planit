@@ -13,9 +13,8 @@
  *= require fullcalendar
  *= require_tree .
  *= require_self
- *= require twitter/bootstrap
  */
-/* a {
+/* (from scaffold.css) a {
   color: #000;
   &:visited {
     color: #666;
@@ -26,169 +25,71 @@
   }
 }*/
 
+body {
+  background-image: url('../Boat.png');
+  background-repeat:none;
+  background-size: cover;
+  font-family: 'Dosis', sans-serif;  color: #fff; 
+}
+
+.container {
+  width: 80%;
+  margin:auto;
+}
+
+/* Links */
+a {
+  color:black;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: gray;
+}
+
 .form-signin {
-      max-width: 300px;
-      padding: 19px 29px 29px;
-      margin: 0 auto 20px;
-      background-color: #fff;
-      border: 1px solid #e5e5e5;
-      border-radius: 5px;
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  color: #7EADCF;
+}
+/*.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  width: 170px;
+  padding: 10px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
 }
 
-  /* Globals */
-
-  /* Links */
-  /*#welcome a,*/
-  /*#welcome a:focus,
-  #welcome a:hover {
-    color: #fff;
-  }*/
-
-	#welcome .inner #sign-up {
-	    font-weight: bold;
-	}
-
-	#welcome h3 {
-		outline-color: white;
-	}
-
-  /* Custom default button */
-  #welcome .btn-default,
-  /*#welcome .btn-default:hover,*/
-  #welcome .btn-default:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritence from `body` */
-    background-color: #fff;
-    border: 1px solid #fff;
-    text-decoration: none;
-
-  }
-
-  /*
-   * Base structure
-   */
-
-  html,
-  body#welcome {
-    height: 100%;
-    background-color: #333;    
-  }
-
-  body#welcome {
-    background-image: url('../Boat.png');
-    background-repeat:none;
-    background-size: cover;
-    font-family: 'Dosis', sans-serif;  color: #fff; !important
-    text-align: center;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-
-  }
-
-  /* Extra markup and styles for table-esque vertical and horizontal centering */
-  #welcome .site-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
-  }
-  #welcome .site-wrapper-inner {
-    display: table-cell;
-    vertical-align: top;
-  }
-  #welcome .cover-container {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-#welcome .cover-heading {
-    margin-bottom: 20px;
+.btn-default a {
+  margin-top: 15px;
+  font-size: 23px;
+  vertical-align: center;
 }
 
-#welcome .tagline {
-    margin-bottom: 40px;
+.btn-lg,
+.btn-lg:hover,
+.btn-lg:focus {
+  width: 250px;
+  padding: 30px;
+  margin: 0 auto 30px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
 }
-  /* Padding for spacing */
-  #welcome .inner {
-    padding: 30px;
-    letter-spacing: 1px;
-  }
-  #welcome .inner.cover {
-    margin-top: 100px;
-  }
 
-  /*
-   * Header
-   */
-  #welcome .masthead-brand {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.btn-lg a {
+  font-size: 27px;
+  vertical-align: center;
+}*/
 
-  @media (min-width: 768px) {
-  #welcome .masthead-brand {
-      float: left;
-    }
-  }
+ /* Globals 
 
-  /*
-   * Cover
-   */
-
-  #welcome .cover {
-    padding: 0 20px;
-  }
-  #welcome .cover .btn-lg {
-    padding: 10px 100px;
-    font-weight: bold;
-    color: black;
-  }
-
-#welcome #team-planit {
-    color: #A7D4F4;
-}
-  /*
-   * Footer
-   */
-
-  #welcome .mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
-  }
-
-  /*
-   * Affix and center
-   */
-
-  @media (min-width: 768px) {
-    /* Pull out the header and footer */
-    #welcome .masthead {
-      position: fixed;
-      top: 0;
-      padding-left: 10px;
-    }
-    #welcome .masthead-brand a {
-    	color:white;
-    }
-    #welcome .mastfoot {
-      position: fixed;
-      bottom: 0;
-    }
-    /* Start the vertical centering */
-    #welcome .site-wrapper-inner {
-      vertical-align: middle;
-    }
-    /* Handle the widths */
-    #welcome .masthead,
-    #welcome .mastfoot,
-    #welcome .cover-container {
-      width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-  }
-
-  @media (min-width: 992px) {
-    #welcome .masthead,
-    #welcome .mastfoot,
-    #welcome .cover-container {
-      width: 700px;
-    }
-  }
+ 
+ 
