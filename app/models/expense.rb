@@ -1,6 +1,6 @@
 class Expense < ActiveRecord::Base
 	include ActiveModel::Validations
-	# validates_with ExpenseValidator, on: :update
+	validates_with ExpenseValidator, on: :create
 	# validates :cost_in_cents, presence: true
 	
 	belongs_to :trip
@@ -17,8 +17,12 @@ class Expense < ActiveRecord::Base
 		end
 	end
 
+	def participating_splitters
+		self.charges.where(splitting: true)
+	end
+
 	def number_of_splitters
-		self.splitters.length
+		self.participating_splitters.length
 	end
 
 	def cost_per_person

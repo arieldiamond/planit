@@ -103,8 +103,8 @@ charges = [{expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_partici
 					 {expense_id: 2, payment_in_cents: 2800, debt_in_cents: 700, trip_participation_id: 27},
 					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 28},
 
- 					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 24},
-					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 25},
+ 					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 24, splitting: false},
+					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 25, splitting: false},
 					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 600, trip_participation_id: 26},
 					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 27},
 					 {expense_id: 3, payment_in_cents: 1200, debt_in_cents: 600, trip_participation_id: 28},

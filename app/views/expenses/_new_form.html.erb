@@ -28,10 +28,25 @@
     <%= f.text_field :notes %>
   </div>
 
+  <p>Who paid and how much?</p>
+  <%= f.fields_for :charges do |builder| %>
+
+    <fieldset>
+      <%= builder.label :payment_in_cents, "#{builder.object.trip_participation.traveler.first_name} paid" %>
+      <%= builder.number_field :payment_in_cents %>
+    </fieldset>
+  <% end %>
+
   <p>Who's splitting this expense?</p>
   <%= f.fields_for :charges do |builder| %>
+      <%#= builder.label :debt_in_cents, "#{builder.object.trip_participation.traveler.first_name}: debt" %>
+      <%#= builder.number_field :debt_in_cents %>
+      <%#= builder.label :payment_in_cents, "Payment" %>
+      <%#= builder.number_field :payment_in_cents %>
+
+
     <fieldset>
-      <%= builder.label :splitting, "#{builder.object.trip_participation.traveler.first_name}"%>
+      <%= builder.label :splitting, "#{builder.object.trip_participation.traveler.first_name}" %>
       <%= builder.check_box :splitting %>
     </fieldset>
   <% end %>
