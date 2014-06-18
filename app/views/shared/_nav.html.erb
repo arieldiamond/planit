@@ -1,28 +1,13 @@
-    <div class="navbar navbar-static-top">
-        <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Planit<%#= image_tag "currynation.png"%></a>
-
-        <div class="nav-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-
-          <ul class="nav navbar-nav pull-right">
-            <p><a href="/users/"></a></p>
-            <p>
-              <% if user_signed_in? %>
-                <span id="login"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
-              <% else %>
-                <span id="login"><%= link_to 'Sign in', new_user_session_path %></span>
-              <% end %>
-            </p>
-          </ul> <!-- / .pull-right -->
-        </div><!--/.nav-collapse -->
-    </div>
+<div class="nav">
+	<ul>
+  <li id="planit_brand"><%= link_to 'Planit', root_path %></li>
+    <% if user_signed_in? %>
+      <li><%= link_to 'My Trips', trips_path %>
+    	<li><%= link_to 'My Profile', edit_user_registration_path %>
+      <li id="signout"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
+    <% else %>
+      <li id="login"><%= link_to 'Sign In', new_user_session_path %></li>
+      <li id="sign_up"><%= link_to 'Sign Up', new_user_registration_path %></li>
+    <% end %>
+  </ul>
+</div>

@@ -1,13 +1,49 @@
 $(document).ready(function(){
 
     if($('#map').length) {
-      var handler = Gmaps.build('Google');
+
+      function createSidebarLi(json){
+        return ("<li><a>" + json.name + "</a></li>");
+      };
+
+      function bindLiToMarker($li, marker){
+        $li.on('click', function(){
+          handler.getMap().setZoom(14);
+          marker.setMap(handler.getMap()); //because clusterer removes map property from marker
+          marker.panTo();
+          
+          google.maps.event.trigger(marker.getServiceObject(), 'click');
+        })
+      };
+
+      function createSidebar(json_array){
+          _.each(json_array, function(json){
+          var $li = $( createSidebarLi(json) );
+          $li.appendTo('#sidebar_container');
+          
+          bindLiToMarker($li, json.activities);
+        });
+      };
+
+      handler = Gmaps.build('Google');
       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-      var markers = handler.addMarkers(window.map_marker);
-      handler.bounds.extendWith(markers);
-      handler.fitMapToBounds();
+        trips = handler.addMarkers(window.tripMarker);
+        activities = handler.addMarkers(window.activityMarker);
+        
+        handler.map.centerOn([tripLat, tripLng]);
+        
+        //handler.bounds.extendWith(activities);
+        //handler.fitMapToBounds();
+        
+        _.each(window.activityMarker, function(json, index){
+          json.activities = activities[index];
+        });
+        
+        
+        createSidebar(window.activityMarker);
       });
     }
+
     if($('#calendar').length) {
     	return $('#calendar').fullCalendar({
       //   dayClick: function() {
@@ -28,3 +64,24 @@ $(document).ready(function(){
     	});
 		}
   });
+
+
+
+// handler = Gmaps.build('Google');
+// handler.buildMap({ internal: {id: 'sidebar_builder'}}, function(){
+//   var json_array = [
+//     { lat: 40, lng: -80, name: 'Foo', infowindow: "I'm Foo" },
+//     { lat: 45, lng: -90, name: 'Bar', infowindow: "I'm Bar" },
+//     { lat: 50, lng: -85, name: 'Baz', infowindow: "I'm Baz" }
+//   ];
+
+//   var markers = handler.addMarkers(json_array);
+
+//   _.each(json_array, function(json, index){
+//     json.marker = markers[index];
+//   });
+
+//   createSidebar(json_array);
+//   handler.bounds.extendWith(markers);
+//   handler.fitMapToBounds();
+// });

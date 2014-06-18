@@ -1,7 +1,9 @@
-<p>
-  <strong>Name:</strong>
-  <%= @trip.name %>
-</p>
+<div class="pure-button pure-button-active"><%= link_to 'Edit', edit_trip_path %></div>
+<div class="pure-button pure-button-active"><%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<h1>
+  <strong>
+  <%= @trip.name %></strong>
+</h1>
 
 <p>
   <strong>Description:</strong>
