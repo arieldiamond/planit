@@ -1,17 +1,20 @@
-<%= form_for [@trip, @poll] do |f| %>
+<div id="poll_form">
+	<%= form_for [@trip, @poll] do |f| %>
 
-<div class= "field">
-  <%= f.label :name %><br>
-  <%= f.text_field :name %><br>
+	<div class= "field">
+	  <%= f.label :name %><br>
+	  <%= f.text_field :name %><br>
+	</div>
+
+	    <%= f.fields_for :options do |builder| %>
+	      <%= render 'option_fields', f: builder %>
+	    <% end %>
+
+	    <%= link_to_add_options "Add Option", f, :options   %>
+
+		<div class= "actions">
+		  <%= f.submit %>
+		</div>
+	<% end %>
 </div>
 
-    <%= f.fields_for :options do |builder| %>
-      <%= render 'option_fields', f: builder %>
-    <% end %>
-
-    <%= link_to_add_options "Add Option", f, :options   %>
-
-<div class= "actions">
-  <%= f.submit %>
-</div>
-<% end %>

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :polls
   end
 
-  devise_for :users #, :controllers => { :invitations => 'users/invitations' }
+  devise_for :users 
 
   post 'trips/:trip_id/polls/:id/upvote' => "polls#upvote", :controller => :poll
   post 'trips/:trip_id/polls/:id/downvote' => "polls#downvote", :controller => :poll
