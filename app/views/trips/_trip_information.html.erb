@@ -1,5 +1,10 @@
 <div class="pure-button pure-button-active"><%= link_to 'Edit', edit_trip_path %></div>
 <div class="pure-button pure-button-active"><%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<div class="pure-button pure-button-active"><%= link_to 'New Activity', new_trip_activity_path(@trip) %></div>
+<div class="pure-button pure-button-active"><%= link_to 'New Poll', new_trip_poll_path(@trip) %></div>
+<div class="pure-button pure-button-active"><%= link_to 'Add an expense', new_trip_expense_path(@trip) %></div>
+
+
 <h1>
   <strong>
   <%= @trip.name %></strong>
@@ -18,12 +23,12 @@
 
 <p>
   <strong>Start date:</strong>
-  <%= @trip.start_date %>
+  <%= @trip.start_date.strftime("%m/%d/%Y") %>
 </p>
 
 <p>
   <strong>End date:</strong>
-  <%= @trip.end_date %>
+  <%= @trip.end_date.strftime("%m/%d/%Y") %>
 </p>
 
 <p>
