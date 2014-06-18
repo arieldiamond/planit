@@ -1,4 +1,6 @@
 class TripParticipation < ActiveRecord::Base
+  include MoneyHelper
+
   belongs_to :traveler, class_name: "User" #works
   belongs_to :trip #works
   has_many :activity_participations #works
@@ -17,7 +19,7 @@ class TripParticipation < ActiveRecord::Base
   end
 
   def trip_account_display
-  	# display_in_dollars(self.trip_account_in_cents)
-  	self.trip_account_in_cents
+  	display_in_dollars(self.trip_account_in_cents)
+  	# self.trip_account_in_cents
   end
 end
