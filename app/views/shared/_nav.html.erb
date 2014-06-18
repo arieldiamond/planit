@@ -1,13 +1,22 @@
-<div class="nav">
-	<ul>
-  <li id="planit_brand"><%= link_to 'Planit', root_path, :html => {} %></li>
-    <% if user_signed_in? %>
-      <li><%= link_to 'My Trips', trips_path %>
-    	<li><%= link_to 'My Profile', edit_user_registration_path %>
-      <li id="signout"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
-    <% else %>
-      <li id="login"><%= link_to 'Sign In', new_user_session_path %></li>
-      <li id="sign_up"><%= link_to 'Sign Up', new_user_registration_path %></li>
-    <% end %>
-  </ul>
-</div>
+    <div class="navbar navbar-static-top">
+        <div class="container">
+                    <a class="navbar-brand" href="#"><%= link_to 'Planit', root_path, :html => {} %><%#= image_tag "currynation.png"%></a>
+
+
+	                 <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav pull-right">
+
+                                  <% if user_signed_in? %>
+                                        <span><%= link_to 'My Trips', trips_path %></span>
+                                        <span><%= link_to 'My Profile', edit_user_registration_path %></span>
+                                        <span id="signout"><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></span>
+                                  <% else %>
+                                        <span id="login"><%= link_to 'Sign In', new_user_session_path %></span>
+                                        <span id="sign_up"><%= link_to 'Sign Up', new_user_registration_path %></span>
+                                  <% end %>
+                              </ul> <!-- / .pull-right -->
+                      </ul> <!-- / .nav navbar-nav -->
+
+
+  </div> <!-- / .container   -->
+</div> <!-- / . navbar -->
