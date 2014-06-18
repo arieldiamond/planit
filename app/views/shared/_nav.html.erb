@@ -1,6 +1,6 @@
 <div class="nav">
 	<ul>
-  <li id="planit_brand"><%= link_to 'Planit', root_path %></li>
+  <li id="planit_brand"><%= link_to 'Planit', root_path, :html => {} %></li>
     <% if user_signed_in? %>
       <li><%= link_to 'My Trips', trips_path %>
     	<li><%= link_to 'My Profile', edit_user_registration_path %>
