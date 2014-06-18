@@ -1,4 +1,5 @@
 class Trip < ActiveRecord::Base
+  # validates_presence_of :location
   #for geocoder, sets latitude and longitude
   geocoded_by :location
   after_validation :geocode

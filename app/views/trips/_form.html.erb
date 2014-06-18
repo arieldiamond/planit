@@ -18,11 +18,12 @@
     </div>
     <div class="field">
       <%= f.label :description %><br>
-      <%= f.text_field :description %>
+      <%= f.text_area :description %>
     </div>
     <div class="field">
       <%= f.label :location %><br>
-      <%= f.text_field :location %>
+      
+      <%= f.text_field :location, placeholder: "e.g. Dev BootCamp, Chicago, IL" :html => {required} %>
     </div>
     <div class="field">
       <%= f.label :start_date %><br>
