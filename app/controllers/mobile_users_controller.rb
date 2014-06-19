@@ -14,13 +14,6 @@ class MobileUsersController < ApplicationController
 						password: params[:pword]
 						)
 
-		# respond_to do |format|
-  #     if @activity.save
-  #       format.html { redirect_to @activity, notice: 'Activity was successfully created.' }
-  #       format.json { render :show, status: :created, location: @activity }
-  #       UserMailer.test_email(current_user).deliver
-  #   end
-
 	end 
 
 end

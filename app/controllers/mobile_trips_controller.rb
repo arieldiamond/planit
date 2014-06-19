@@ -32,7 +32,7 @@ class MobileTripsController < ApplicationController
 		@travelers = []
 		@trip.travelers.each { |traveler| @travelers << traveler }
 		response = { :trip => @trip, 
-								 :travelers => @travelers
+								 :travelers => @travelers,
 								 :expense => @amount_owed
 							 }
   	render :json => response
