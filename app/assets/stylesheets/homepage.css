@@ -1,10 +1,20 @@
 body#welcome {
   color: #fff;
   text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 #welcome h1 {
+  font-size: 5em;
+  margin-bottom: 80px;
+}
+
+#welcome h2 {
   font-size: 4em;
+}
+
+#welcome h3 {
+  font-size: 2em;
 }
 
 #welcome .tagline {
@@ -18,6 +28,7 @@ body#welcome {
 
 
 #welcome .inner_cover {
+  margin-top: 30px;
   padding: 10px;
 }
 
@@ -27,6 +38,18 @@ body#welcome {
 
 #welcome .shadow a {
   color: white;
+}
+
+#signup {
+  background-color: white;
+  border-radius: 5px;
+  padding: 13px 50px;
+  margin-bottom: 10px;
+}
+
+#signup a {
+  font-size: 24px;
+  text-shadow: none;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
