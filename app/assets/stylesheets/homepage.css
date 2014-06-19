@@ -1,12 +1,34 @@
 body#welcome {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
-.inner_cover {
+
+#welcome h1 {
+  font-size: 4em;
+}
+
+#welcome .tagline {
+  font-size: 3.6em;
+}
+
+#welcome .title {
+  font-size: 34px;
+  margin-top: 10px;
+}
+
+
+#welcome .inner_cover {
   padding: 10px;
 }
+
+#welcome .shadow {
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#welcome .shadow a {
+  color: white;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 #welcome .site-wrapper {
   display: table;
@@ -28,9 +50,8 @@ body#welcome {
   padding: 30px;
 }
 
-#pure-button {
-  background-color: blue;
-}
+/*Sign up button*/
+
 /*
  * Header
  */
@@ -62,6 +83,9 @@ body#welcome {
   font-weight: bold;
 }
 
+#welcome #team-planit {
+  color: #B6DFF9;
+}
 
 /*
  * Footer
