@@ -30,7 +30,7 @@ class ExpensesController < ApplicationController
     respond_to do |format|
       if @expense.save
         format.html { redirect_to trip_path(@trip), notice: 'Expense was successfully created.' }
-        format.json { render :show, status: :created, location: @expense }
+        format.json { redirect_to :show, status: :created, location: @expense }
       else
         format.html { render :new }
         format.json { render json: @expense.errors, status: :unprocessable_entity }
