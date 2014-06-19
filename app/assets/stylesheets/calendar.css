@@ -1,0 +1,25 @@
+#trips_calendar {
+	margin:auto;
+}
+
+#calendar {
+	margin:auto;
+}
+
+#trips_calendar .fc-event-title {
+	font-size: 18px;
+	color:white;
+}
+
+#trips_calendar .fc-event-title:hover {
+	color: #F3FAB6;
+}
+
+#trips_calendar .fc-event-inner:hover {
+	background-color: #415096;
+}
+
+#calendar {
+	
+}
+
