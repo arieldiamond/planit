@@ -14,7 +14,7 @@
 		<% @trip.expenses.each do |expense| %>
 		<tr>
 			<td><div class="expense_name"><%= expense.name %></div><div><%= expense.cost_display %></div><div class="expense_date"><%= expense.date_display %></div></td>
-			
+
 			<% expense.splitters.each do |splitter| %>
 				<td>
 						<% splitter_charge = splitter.find_charge_by_expense(expense) %>

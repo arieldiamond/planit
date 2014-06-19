@@ -18,14 +18,12 @@ $(document).ready(function(){
   });
 })
 
-
-
-
 $(document).ready(function(){
 
   $('#expense_list').on('click', ".see_details", function(event){
       event.preventDefault();
-      console.log($(this))
+      var chargeId = ($(this).attr("id").substring("see_details_for_".length));
+      $(".charge_details_for_"+chargeId).toggle();
   });
 })
 
@@ -58,7 +56,6 @@ $(document).ready(function(){
       var data = $(this).serialize();
       console.log(data);
       $.post(url, data, function(response){
-        $('#limit').val('My Limit');
         $("#secret_redirect_form").submit();
       })
     } else {
