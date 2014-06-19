@@ -1,14 +1,14 @@
    <div id="main">
-              <div class="pure-button pure-button-active"><%= link_to 'Edit ', edit_trip_path %></div>
-          <div class="pure-button pure-button-active"><%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-        <div class="header">
+      <div class="pure-button pure-button-active"><%= link_to 'Edit ', edit_trip_path %></div>
+      <div class="pure-button pure-button-active"><%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+          <div class="header">
             <h1><%= @trip.name %></h1>
-<!--             <h2>A subtitle for your page goes here</h2>
- -->        </div> <!-- / .header -->
+             <h2><%= @trip.start_date.strftime("%m/%d/%Y") %> - <%= @trip.end_date.strftime("%m/%d/%Y") %></h2>        
+          </div> <!-- / .header -->
 
+           <div class="content">
                     <!-- Where -->
-                    <h2 class="content-subhead">Where:</h2>
-                    <p><%= @trip.location %></p>
+                    <h2 class="content-subhead">Where: <%= @trip.location %></h2>
 
                     <div class="pure-g">
                         <div class="pure-u-1-4">
@@ -23,149 +23,69 @@
                         <div class="pure-u-1-4">
                             <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
                         </div>
-                    </div> 
-                    <!-- / Where -->
+                    </div><!-- / Where -->
 
-                   <!-- Who -->
-                    <h2 class="content-subhead">Who's going:</h2>
-                      <ul>
-                        <% @trip.trip_participations.each do |trip_participation| %>
-                        <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
-                        <% if trip_participation.confirmed == false %>
-                           (invitation pending)
-                        <% end %>
-                        </li>
-                        <% end %>
-                      </ul>
-                      <%# ALB note: I want to do this properly %>
-                      <p>Invite someone!</p>
-                      <form method="post" action="/trips/:id/invite">
-                        <input type="text" name="invitee_email">
-                        <input type="submit" value="Send Invitations">
-                        <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
-                      </form>
-                    <!-- / Who -->
+                  
 
-<!-- begin GRID
- -->
-<div class="marketing l-wrap pure-g">
- <!-- COL ONE -->
-    <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
-        <h3 class="marketing-header">Map</h3>
-            <div id="map_information" class="trip_show_details">
-                <%= render 'map' %>
-            </div>
-    </div>
+            <!-- begin GRID
+             -->
+            <div class="marketing l-wrap pure-g">
+             <!-- COL ONE -->
+                <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
+                    <h3 class="marketing-header">Map</h3>
+                        <div id="map_information" class="trip_show_details">
+                            <%= render 'map' %>
+                        </div>
+                </div>
 
-<!-- COL TWO -->
-    <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
-        <h3 class="marketing-header">What:</h3>
-                    <p>
-                        <%= @trip.description %>
-                    </p>
-    </div>
+            <!-- COL TWO -->
+                <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
+                    <h3 class="marketing-header">Description</h3>
+                                <p>
+                                    <%= @trip.description %>
+                                </p>
+                </div>
 
-<!-- COL THREE -->
-    <div class="content pure-u-1 u-lg-3-4 u-xl-1-3">
-        <h3 class="marketing-header">When:</h3>
-                    <p>
-                          <%= @trip.start_date.strftime("%m/%d/%Y") %> - <%= @trip.end_date.strftime("%m/%d/%Y") %>
-                    </p>
-    </div>
-</div>
-<!-- end GRID
- -->        
-
- <div class="content">
-
+            <!-- COL THREE -->
+                <div class="content pure-u-1 u-lg-3-4 u-xl-1-3">
+                    <h3 class="marketing-header">Who's going</h3>
+                                 <!-- Who -->
+                                  <ul>
+                                      <% @trip.trip_participations.each do |trip_participation| %>
+                                          <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
+                                      <% if trip_participation.confirmed == false %>
+                                           (invitation pending)
+                                      <% end %>
+                                      </li>
+                                      <% end %>
+                                  </ul>
+                                  <%# ALB note: I want to do this properly %>
+                                  <p>Invite someone!</p>
+                                  <form method="post" action="/trips/:id/invite" class="pure-form pure-form-stacked">
+                                      <input type="text" name="invitee_email">
+                                      <input type="submit" class="pure-button"  value="Send Invite">
+                                      <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
+                                  </form><!-- / Who -->
+                </div>
+            </div> <!-- / .marketing -->
+            <!-- end GRID
+             -->        
 
                     <!-- Expenses -->
                     <h2 class="content-subhead">Expenses</h2>
-                        <div id="expense_list_bar" class="trip_show_bar">
-                          <h2>Expenses</h2>
-                        </div>
-                        <div id="expense_list" class="trip_show_details">
                           <%= render 'expenses/expense_list' %>
-                        </div>
                     <!-- / Expenses -->
 
                    <!-- Activities -->
                     <h2 class="content-subhead">Activities</h2>
-                      <ul>
-                        <% @trip.trip_participations.each do |trip_participation| %>
-                        <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
-                        <% if trip_participation.confirmed == false %>
-                           (invitation pending)
-                        <% end %>
-                        </li>
-                        <% end %>
-                      </ul>
-                      <%# ALB note: I want to do this properly %>
-                      <p>Invite someone!</p>
-                      <form method="post" action="/trips/:id/invite">
-                        <input type="text" name="invitee_email">
-                        <input type="submit" value="Send Invitations">
-                        <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
-                      </form>
+                        <div>
+                          <%= render 'activities/activity_list' %>
+                        </div>
                     <!-- / Activities -->
 
         </div> <!-- / .content -->
     </div>
 </div> <!-- / .layout (opening tag is in trip_dashboard.html.erb) -->
-
-<div id="trips_show_nav" class="pure-menu pure-menu-open pure-menu-horizontal">
-  <ul>
-<!--     <li><span class="pure-button pure-button-active"><%#= link_to 'Edit', edit_trip_path %></span></li>
-    <li><div class="pure-button pure-button-active"><%#= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div></li>
-    <li><div class="pure-button pure-button-active"><%#= link_to 'New Activity', new_trip_activity_path(@trip) %></div></li>
-    <li><div class="pure-button pure-button-active"><%#= link_to 'New Poll', new_trip_poll_path(@trip) %></div></li>
-    <li><div class="pure-button pure-button-active"><%#= link_to 'Add an expense', new_trip_expense_path(@trip) %></div></li> -->
-  </ul>
-</div>
-
-<div class="container">
-<div id="trip_show_page">
-  <p id="notice"><%= notice %></p>
-
-  <div class="trip_information">
-    <%= render 'trip_information' %>
-  </div>
-
-  <div id="calendar_bar" class="trip_show_bar">
-    <h2>Calendar</h2>
-  </div>
-  <div id="calendar_div" class="trip_show_details">
-    <div class="pure-table pure-table-bordered" id="calendar"></div>
-  </div>
-
-  <div id="expense_list_bar" class="trip_show_bar">
-    <h2>Expenses</h2>
-  </div>
-  <div id="expense_list" class="trip_show_details">
-    <%= render 'expenses/expense_list' %>
-  </div>
-
-  <div id="map_information_bar" class="trip_show_bar">
-    <h2>Map</h2>
-  </div>
-  <div id="map_information" class="trip_show_details">
-    <%= render 'map' %>
-  </div>
-
-  <div id="activity_information_bar" class="trip_show_bar">
-    <h2>Activities</h2>
-  </div>
-  <div id="activity_information" class="trip_show_details">
-    <%= render 'activities/activity_list' %>
-  </div>
-
-  <div id="poll_list_bar" class="trip_show_bar">
-    <h2>Polls</h2>
-  </div>
-  <div id="poll_list" class="trip_show_details">
-    <%= render 'polls/poll_list' %>
-  </div>
-</div>
 
 <script type="text/javascript">
   // window.map_marker = <%=raw @hash.to_json %>
