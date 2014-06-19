@@ -1,3 +1,77 @@
+   <div id="main">
+              <div class="pure-button pure-button-active"><%= link_to 'Edit ', edit_trip_path %></div>
+          <div class="pure-button pure-button-active"><%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="header">
+            <h1><%= @trip.name %></h1>
+<!--             <h2>A subtitle for your page goes here</h2>
+ -->        </div> <!-- / .header -->
+
+
+
+<!-- begin test
+ -->
+<div class="marketing l-wrap pure-g">
+ <!-- COL ONE -->
+    <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
+        <h3 class="marketing-header">Map</h3>
+            <div id="map_information" class="trip_show_details">
+                <%= render 'map' %>
+            </div>
+    </div>
+
+<!-- COL TWO -->
+    <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
+        <h3 class="marketing-header">What:</h3>
+                    <p>
+                        <%= @trip.description %>
+                    </p>
+    </div>
+
+<!-- COL THREE -->
+    <div class="content pure-u-1 u-lg-3-4 u-xl-1-3">
+        <h3 class="marketing-header">When:</h3>
+                    <p>
+                          <%= @trip.start_date.strftime("%m/%d/%Y") %> - <%= @trip.end_date.strftime("%m/%d/%Y") %>
+                    </p>
+    </div>
+</div>
+<!-- end test
+ -->        
+
+ <div class="content">
+                    <!-- Where -->
+                    <h2 class="content-subhead">Where:</h2>
+                    <p><%= @trip.location %></p>
+
+                    <div class="pure-g">
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                        </div>
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                        </div>
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                        </div>
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+                        </div>
+                    </div> 
+
+                    <!-- Expenses -->
+                    <h2 class="content-subhead">Expenses</h2>
+                        <div id="expense_list_bar" class="trip_show_bar">
+                          <h2>Expenses</h2>
+                        </div>
+                        <div id="expense_list" class="trip_show_details">
+                          <%= render 'expenses/expense_list' %>
+                        </div>
+
+                  
+        </div> <!-- / .content -->
+    </div>
+</div> <!-- / .layout (opening tag is in trip_dashboard.html.erb) -->
+
 <div id="trips_show_nav" class="pure-menu pure-menu-open pure-menu-horizontal">
   <ul>
 <!--     <li><span class="pure-button pure-button-active"><%#= link_to 'Edit', edit_trip_path %></span></li>
@@ -7,6 +81,7 @@
     <li><div class="pure-button pure-button-active"><%#= link_to 'Add an expense', new_trip_expense_path(@trip) %></div></li> -->
   </ul>
 </div>
+
 <div class="container">
 <div id="trip_show_page">
   <p id="notice"><%= notice %></p>
