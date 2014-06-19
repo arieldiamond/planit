@@ -14,16 +14,6 @@
  *= require_tree .
  *= require_self
  */
-/* (from scaffold.css) a {
-  color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
-}*/
 
 body {
   background-image: url('../Boat.png');
