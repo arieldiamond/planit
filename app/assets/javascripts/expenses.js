@@ -27,9 +27,6 @@ $(document).ready(function(){
   });
 })
 
-
-// Show me Ryan!
-
 $(document).ready(function(){
   var checkMath = function() {
     var total_cost_in_cents = parseInt($("#expense_cost_in_cents").val());
