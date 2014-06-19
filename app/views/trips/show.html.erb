@@ -25,8 +25,6 @@
                         </div>
                     </div><!-- / Where -->
 
-                  
-
             <!-- begin GRID
              -->
             <div class="marketing l-wrap pure-g">
@@ -41,31 +39,31 @@
             <!-- COL TWO -->
                 <div class="content pure-u-1 u-sm-1-2 u-xl-1-3">
                     <h3 class="marketing-header">Description</h3>
-                                <p>
-                                    <%= @trip.description %>
-                                </p>
+                      <p>
+                          <%= @trip.description %>
+                      </p>
                 </div>
 
             <!-- COL THREE -->
                 <div class="content pure-u-1 u-lg-3-4 u-xl-1-3">
                     <h3 class="marketing-header">Who's going</h3>
                                  <!-- Who -->
-                                  <ul>
-                                      <% @trip.trip_participations.each do |trip_participation| %>
-                                          <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
-                                      <% if trip_participation.confirmed == false %>
-                                           (invitation pending)
-                                      <% end %>
-                                      </li>
-                                      <% end %>
-                                  </ul>
-                                  <%# ALB note: I want to do this properly %>
-                                  <p>Invite someone!</p>
-                                  <form method="post" action="/trips/:id/invite" class="pure-form pure-form-stacked">
-                                      <input type="text" name="invitee_email">
-                                      <input type="submit" class="pure-button"  value="Send Invite">
-                                      <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
-                                  </form><!-- / Who -->
+                      <ul>
+                          <% @trip.trip_participations.each do |trip_participation| %>
+                              <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
+                          <% if trip_participation.confirmed == false %>
+                               (invitation pending)
+                          <% end %>
+                          </li>
+                          <% end %>
+                      </ul>
+                      <%# ALB note: I want to do this properly %>
+                      <p>Invite someone!</p>
+                      <form method="post" action="/trips/:id/invite" class="pure-form pure-form-stacked">
+                          <input type="text" name="invitee_email">
+                          <input type="submit" class="pure-button"  value="Send Invite">
+                          <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
+                      </form><!-- / Who -->
                 </div>
             </div> <!-- / .marketing -->
             <!-- end GRID
@@ -73,7 +71,7 @@
 
                     <!-- Expenses -->
                     <h2 class="content-subhead">Expenses</h2>
-                          <%= render 'expenses/expense_list' %>
+                      <%= render 'expenses/expense_list' %>
                     <!-- / Expenses -->
 
                    <!-- Activities -->
