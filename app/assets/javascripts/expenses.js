@@ -18,26 +18,40 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-  $("#new_expense_form").ready(function(event){
-    $("input#new_expense_submit_button").prop('disabled', true);
+  var checkMath = function() {
+    var total_cost_in_cents = parseInt($("#expense_cost_in_cents").val());
+    console.log(total_cost_in_cents)
+    var payment_fields = ($(".payments_in_cents"))
+    var sum_of_payments = 0
+    for (var i=0; i < payment_fields.length; i++) {
+      sum_of_payments += parseInt(payment_fields[i].value);
+    };
+    console.log(sum_of_payments)
+    if (total_cost_in_cents === sum_of_payments) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
-    $("#check_your_math").click(function() {
-      var total_cost_in_cents = parseInt($("#expense_cost_in_cents").val());
-      var payment_fields = ($(".payments_in_cents"))
-      var sum_of_payments = 0
-      for (var i=0; i < payment_fields.length; i++) {
-        sum_of_payments += parseInt(payment_fields[i].value);
-      };
-      // $("#total_cost_in_cents").append(total_cost_in_cents)
-      // $("#sum_of_payments").append(sum_of_payments)
-      if (total_cost_in_cents === sum_of_payments) {
-        alert("HOORAY")
-        $("input#new_expense_submit_button").prop('disabled', false);
-      } else {
-        alert("You are terrible at math. I guess you should try again. But it's not looking good for you.")
-      }
-    });
+// "input#new_expense_submit_button"
+  $("#new_expense_form").on('submit', function(event) {
+    event.preventDefault();
+    if (checkMath()) {
+      var url = $(this).attr("action");
+      console.log(url);
+      var data = $(this).serialize();
+      console.log(data);
+      $.post(url, data, function(response){
+        $('#limit').val('My Limit');
+        $("#secret_redirect_form").submit();
+      })
+    } else {
+      alert("Your payments should add up to the total.")
+    };
 
-      // alert("Hey there!");
   });
+
+
+
 });

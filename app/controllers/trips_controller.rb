@@ -1,5 +1,5 @@
 class TripsController < ApplicationController
-  before_action :set_trip, only: [:show, :edit, :update, :destroy]
+  before_action :set_trip, only: [:edit, :update, :destroy]
 
   # GET /trips
   # GET /trips.json
@@ -15,7 +15,8 @@ class TripsController < ApplicationController
   # GET /trips/1
   # GET /trips/1.json
   def show
-    @activities = Trip.find(params[:id]).activities
+    @trip = Trip.includes(:trip_participations).find(params[:id])
+    @activities = @trip.activities
 
     trip_marker_pic = {url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png", width: 32, height: 32}
 
