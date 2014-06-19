@@ -28,7 +28,12 @@ class User < ActiveRecord::Base
 	end
 
 	def trip_account_display_for(trip)
-		self.trip_participations.find_by_trip_id(trip.id).trip_account_display
+		balance = self.trip_participations.find_by_trip_id(trip.id).trip_account_display
+		if balance[0] == "-"
+			"You owe " + balance[1..-1]
+		else
+			"You are owed " + balance
+		end
 	end
 
 	acts_as_voter
