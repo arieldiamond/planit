@@ -1,11 +1,12 @@
 class TripsController < ApplicationController
-  before_action :set_trip, only: [:show, :edit, :update, :destroy]
+  before_action :set_trip, only: [:edit, :update, :destroy]
 
   # GET /trips
   # GET /trips.json
   def index
     @traveler = current_user
     @participations = TripParticipation.where(traveler_id: current_user.id)
+    @trips = @participations.map{|p| p.trip}
     @pending_trip_partcipations = @traveler.pending_trip_participations
     @confirmed_trip_partcipations = @traveler.confirmed_trip_participations
   end
@@ -13,13 +14,34 @@ class TripsController < ApplicationController
   # GET /trips/1
   # GET /trips/1.json
   def show
-    @activities = Trip.find(params[:id]).activities
+    @trip = Trip.includes(:trip_participations).find(params[:id])
+    @activities = @trip.activities
 
-    @hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
+    trip_marker_pic = {url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png", width: 32, height: 32}
+
+    @trip_hash = Gmaps4rails.build_markers(@trip) do |trip, marker|
+      marker.lat trip.latitude
+      marker.lng trip.longitude
+      marker.infowindow trip.location
+      marker.picture trip_marker_pic
+      marker.title trip.name
+      marker.json ({
+        id: trip.id,
+        name: trip.name
+        })
+    end
+
+    @activities_hash = Gmaps4rails.build_markers(@activities) do |activity, marker|
       marker.lat activity.latitude
       marker.lng activity.longitude
+      marker.title activity.name
       marker.infowindow activity.description
+      marker.json ({
+        id: activity.id,
+        name: activity.name
+        })
     end
+
   end
 
   # GET /trips/new

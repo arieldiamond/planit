@@ -14,8 +14,8 @@ en:
         submit_button: "Set my password"
     mailer:
       invitation_instructions:
-        subject: 'Invitation instructions'
-        hello: 'Hello %{email}'
-        someone_invited_you: 'Someone has invited you to %{url}, you can accept it through the link below.'
+        subject: "You've been invited on a trip"
+        hello: 'Hello from Planit!'
+        someone_invited_you: "%{invited_by} has invited you on a trip. Before you can check out the details at %{url}, you'll need to accept the invitation using the link below."
         accept: 'Accept invitation'
-        ignore: "If you don't want to accept the invitation, please ignore this email.<br />Your account won't be created until you access the link above and set your password."
+        ignore: "If you don't want to accept the invitation, just ignore this email.<br />Your account won't be created until you access the link above and set your password."

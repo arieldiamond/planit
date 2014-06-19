@@ -1,78 +1,63 @@
+<div id="trips_show_nav" class="pure-menu pure-menu-open pure-menu-horizontal">
+  <ul>
+<!--     <li><span class="pure-button pure-button-active"><%#= link_to 'Edit', edit_trip_path %></span></li>
+    <li><div class="pure-button pure-button-active"><%#= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div></li>
+    <li><div class="pure-button pure-button-active"><%#= link_to 'New Activity', new_trip_activity_path(@trip) %></div></li>
+    <li><div class="pure-button pure-button-active"><%#= link_to 'New Poll', new_trip_poll_path(@trip) %></div></li>
+    <li><div class="pure-button pure-button-active"><%#= link_to 'Add an expense', new_trip_expense_path(@trip) %></div></li> -->
+  </ul>
+</div>
+<div class="container">
+<div id="trip_show_page">
+  <p id="notice"><%= notice %></p>
 
+  <div class="trip_information">
+    <%= render 'trip_information' %>
+  </div>
 
+  <div id="calendar_bar" class="trip_show_bar">
+    <h2>Calendar</h2>
+  </div>
+  <div id="calendar_div" class="trip_show_details">
+    <div class="pure-table pure-table-bordered" id="calendar"></div>
+  </div>
 
-<p id="notice"><%= notice %></p>
+  <div id="expense_list_bar" class="trip_show_bar">
+    <h2>Expenses</h2>
+  </div>
+  <div id="expense_list" class="trip_show_details">
+    <%= render 'expenses/expense_list' %>
+  </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @trip.name %>
-</p>
+  <div id="map_information_bar" class="trip_show_bar">
+    <h2>Map</h2>
+  </div>
+  <div id="map_information" class="trip_show_details">
+    <%= render 'map' %>
+  </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @trip.description %>
-</p>
+  <div id="activity_information_bar" class="trip_show_bar">
+    <h2>Activities</h2>
+  </div>
+  <div id="activity_information" class="trip_show_details">
+    <%= render 'activities/activity_list' %>
+  </div>
 
-
-<p>
-  <strong>Location:</strong>
-  <%= @trip.location %>
-</p>
-
-<p>
-  <strong>Start date:</strong>
-  <%= @trip.start_date %>
-</p>
-
-<p>
-  <strong>End date:</strong>
-  <%= @trip.end_date %>
-</p>
-
-<p>
-  <strong>Creator:</strong>
-  <%= @trip.creator_id %>
-</p>
-
-<p><strong>Travelers:</strong></p>
-<ul>
-  <% @trip.trip_participations.each do |trip_participation| %>
-  <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
-  <% if trip_participation.confirmed == false %>
-     (invitation pending)
-  <% end %>
-
-  </li>
-  <% end %>
-</ul>
-
-<%# ALB note: I want to do this properly %>
-<p>Invite someone! (one email address at a time)</p>
-<form method="post" action="/trips/:id/invite">
-  <input type="text" name="invitee_email">
-  <input type="submit" value="Send Invitations">
-  <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
-</form><br>
-
-<%= link_to 'See All Activities', trip_activities_path(@trip.id) %> |
-<%= link_to 'Add a New Activity!', new_trip_activity_path(@trip.id) %> |
-<%= link_to 'Back', trips_path %> |
-<%= link_to 'Edit', edit_trip_path(@trip) %> |
-<%= link_to 'Delete', @trip, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-
-<div style='width: 800px;'>
-  <div id="map" style='width: 800px; height: 400px;'></div>
+  <div id="poll_list_bar" class="trip_show_bar">
+    <h2>Polls</h2>
+  </div>
+  <div id="poll_list" class="trip_show_details">
+    <%= render 'polls/poll_list' %>
+  </div>
 </div>
 
-
 <script type="text/javascript">
-$(document).ready(function(){
-    handler = Gmaps.build('Google');
-    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    markers = handler.addMarkers(<%=raw @hash.to_json %>);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-    });
-  });
+  // window.map_marker = <%=raw @hash.to_json %>
+</script>
+<script type="text/javascript">
+  window.tripLat = <%= @trip.latitude %>
+  window.tripLng = <%= @trip.longitude %>
+  window.activityMarker = <%=raw @activities_hash.to_json %>
+  window.tripMarker = <%=raw @trip_hash.to_json %>
+  window.trip_id = <%= @trip.id %>
 </script>

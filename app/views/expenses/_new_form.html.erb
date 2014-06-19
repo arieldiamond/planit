@@ -1,0 +1,62 @@
+<div>
+  <%= form_for([@trip, @expense], html: {id: "new_expense_form"}) do |f| %>
+    <% if @expense.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@expense.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+        <ul>
+        <% @expense.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :date %><br>
+      <%= f.datetime_select :date %>
+    </div>
+    <div class="field">
+      <%= f.label :cost_in_cents %><br>
+      <%= f.number_field :cost_in_cents %>
+    </div>
+    <div class="field">
+      <%= f.label :notes %><br>
+      <%= f.text_field :notes %>
+    </div>
+
+    <p>How much did each person pay?</p>
+    <%= f.fields_for :charges do |builder| %>
+
+      <fieldset>
+        <%= builder.label :payment_in_cents, "#{builder.object.trip_participation.traveler.first_name} paid" %>
+        <%= builder.number_field :payment_in_cents, class: "payments_in_cents"%>
+      </fieldset>
+    <% end %>
+
+    <p>Who's splitting this expense?</p>
+    <%= f.fields_for :charges do |builder| %>
+
+      <fieldset>
+        <%= builder.label :splitting, "#{builder.object.trip_participation.traveler.first_name}" %>
+        <%= builder.check_box :splitting %>
+      </fieldset>
+    <% end %>
+
+    <div class="actions">
+      <%= f.submit :id => "new_expense_submit_button" %>
+      <p><div id="incorrect_expense_message">Check your math!</div></p>
+      <p><div id="total_cost_in_cents"></div></p>
+      <p><div id="sum_of_payments"></div></p>
+
+    </div>
+  <% end %>
+</div>
+
+<form action="/trips/<%= @trip.id %>" method="GET" id="secret_redirect_form">
+    <input id="limit" type="hidden" value="" name="limit">
+</form>

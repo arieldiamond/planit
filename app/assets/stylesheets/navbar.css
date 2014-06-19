@@ -1,0 +1,28 @@
+.nav {
+	z-index: 1;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px #81939C;
+	height: 40px;
+	width: 100%;
+	margin-top: -20px;
+	text-decoration: none;
+	padding-left: 5px;
+	position: fixed;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+.nav li {
+	list-style-type: none;
+	color: black;
+	float: left;
+	padding-left: 15px;
+}
+
+#planit_brand a {
+	font-size: 20px;
+}
+
+/*#trips_show_nav {
+	margin-top: 40px;
+}*/
