@@ -26,4 +26,23 @@ class MobileTripsController < ApplicationController
 		render json: @trips
 	end 
 
+	def trip_detail
+		@trip = Trip.find_by_name(params[:trip_name])
+		@activities = []
+		@travelers = []
+		@trip.activities.each { |activity| @activities << activity }
+		@trip.travelers.each { |traveler| @travelers << traveler }
+		response = { :trip => @trip, 
+								 :travelers => @travelers
+							 }
+  	render :json => response
+	end 
+
+	def activities_detail
+		@trip = Trip.find_by_name(params[:trip_name])
+		@activities = []
+		@trip.activities.each { |activity| @activities << activity }
+		render json: @activities
+	end 
+
 end

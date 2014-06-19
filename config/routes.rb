@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   # getting user trips from mobile:
   get 'mobile_trips/user_trips'
   post 'mobile_trips/user_trips' => 'mobile_trips#user_trips'
+  get 'mobile_trips/trip_detail'
+  post 'mobile_trips/trip_detail' => 'mobile_trips#trip_detail'
+  get 'mobile_trips/activities_detail'
+  post 'mobile_trips/activities_detail' => 'mobile_trips#activities_detail'
   # creating activities from mobile:
   get 'mobile_activities/new' => 'mobile_activities#new'
   # logging in from mobile:
