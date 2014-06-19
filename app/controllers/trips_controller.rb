@@ -9,6 +9,7 @@ class TripsController < ApplicationController
     @trips = @participations.map{|p| p.trip}
     @pending_trip_partcipations = @traveler.pending_trip_participations
     @confirmed_trip_partcipations = @traveler.confirmed_trip_participations
+    @trip = Trip.new
   end
 
   # GET /trips/1
@@ -62,6 +63,7 @@ class TripsController < ApplicationController
     respond_to do |format|
       if @trip.save
         format.html { redirect_to @trip, notice: 'Trip was successfully created.' }
+        format.js {}
         format.json { render :show, status: :created, location: @trip }
       else
         format.html { render :new }

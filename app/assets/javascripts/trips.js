@@ -1,5 +1,7 @@
 $(document).ready(function(){
-
+  $('#new_trip').on('click', function(){
+    $('#new_trip').hide();
+  })
     if($('#map').length) {
 
       // function createSidebarLi(json){
