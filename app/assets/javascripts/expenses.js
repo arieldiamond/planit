@@ -18,6 +18,20 @@ $(document).ready(function(){
   });
 })
 
+
+
+
+$(document).ready(function(){
+
+  $('#expense_list').on('click', ".see_details", function(event){
+      event.preventDefault();
+      console.log($(this))
+  });
+})
+
+
+
+
 $(document).ready(function(){
   var checkMath = function() {
     var total_cost_in_cents = parseInt($("#expense_cost_in_cents").val());

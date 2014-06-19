@@ -1,8 +1,7 @@
+<div id="expense_list_container">
 <table id="expense_list" class="pure-table pure-table-horizontal">
 	<thead>
 		<th>Expense</th>
-		<th>Date</th>
-		<th>Cost</th>
 		<% @trip.splitters.each do |splitter| %>
 			<th><%= splitter.traveler.first_name %></th>
 		<% end %>
@@ -14,29 +13,38 @@
 		<div class="expense_row">
 		<% @trip.expenses.each do |expense| %>
 		<tr>
-			<td><%= expense.name %></td>
-			<td><%= expense.date_display %></td>
-			<td><%= expense.cost_display %></td>
+			<td><div class="expense_name"><%= expense.name %></div><div><%= expense.cost_display %></div><div class="expense_date"><%= expense.date_display %></div></td>
+			
 			<% expense.splitters.each do |splitter| %>
 				<td>
-					<table>
-						<% splitter_trip_participation = splitter.find_charge_by_expense(expense) %>
-						<% if splitter_trip_participation %>
-							<tr class="charge_details"><td class="charge_debt"><%= splitter_trip_participation.debt_display %></tr></td>
-							<tr class="charge_details"><td class="charge_payment"><%= splitter_trip_participation.payment_display %></tr></td>
-							<tr><td class="charge_account"><%= splitter_trip_participation.account_display %></tr></td>
+						<% splitter_charge = splitter.find_charge_by_expense(expense) %>
+						<% if splitter_charge.splitting == true %>
+
+
+							<div class="charge_details charge_details_for_<%= expense.id %>">
+								<div class="charge_payment"><%= splitter_charge.payment_display %></div>
+								<div class="charge_debt">- <%= splitter_charge.debt_display %></div>
+							</div>
+							<div class="charge_account"><%= splitter_charge.account_display %></div>
+
+
 						<% end %>
-					</table>
 			<% end %>
-			<td><a href="">View details</a></td>
+			<td>
+				<div class="charge_details">
+					<div>paid</div>
+					<div>owes</div>
+				</div>
+				<div>
+					<a href="" class="see_details" id="see_details_for_<%= expense.id %>">see details</a>
+				</div>
+			</td>
 			<td><%= link_to 'Edit', edit_trip_expense_path(@trip, expense) %></td>
 		</tr>
 		<% end %>
 		</div>
 		<div class="total_row">
-			<td></td>
-			<td></td>
-			<td><%= @trip.cost_display %></td>
+			<td>Trip total: <%= @trip.cost_display %></td>
 			<% @trip.splitters.each do |splitter| %>
 				<td> <%= splitter.trip_account_display %></td>
 			<% end %>
@@ -48,3 +56,4 @@
 </table>
 
 <div class="pure-button pure-button-active"><%= link_to 'Add an expense', new_trip_expense_path(@trip) %></div>
+</div>

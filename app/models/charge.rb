@@ -13,7 +13,12 @@ class Charge < ActiveRecord::Base
 	end
 
 	def payment_display
-		display_in_dollars(self.payment_in_cents)
+		payment = self.payment_in_cents
+		if payment == 0
+			0
+		else
+			display_in_dollars(payment)
+		end
 	end
 
 	def account_display
