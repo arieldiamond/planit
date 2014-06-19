@@ -20,6 +20,17 @@ class TripParticipation < ActiveRecord::Base
 
   def trip_account_display
   	display_in_dollars(self.trip_account_in_cents)
-  	# self.trip_account_in_cents
+  end
+
+  def trip_account_display_with_words
+    balance = self.trip_account_in_cents
+    balance_display = display_in_dollars(self.trip_account_in_cents)
+    if balance == 0
+      "is even."
+    elsif balance > 0
+      "is owed " + balance_display
+    else
+      "owes " + balance_display[1..-1]
+    end
   end
 end
