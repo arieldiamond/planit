@@ -27,12 +27,13 @@ class MobileTripsController < ApplicationController
 
 	def trip_detail
 		@trip = Trip.find_by_name(params[:trip_name])
-		@activities = []
+		@user = User.find(params[:user_id])
+		@amount_owed = @user.trip_account_display_for(@trip)
 		@travelers = []
-		@trip.activities.each { |activity| @activities << activity }
 		@trip.travelers.each { |traveler| @travelers << traveler }
 		response = { :trip => @trip, 
 								 :travelers => @travelers
+								 :expense => @amount_owed
 							 }
   	render :json => response
 	end 
