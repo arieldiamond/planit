@@ -1,6 +1,10 @@
 $(document).ready(function(){
   if($("#map").length) {
-	      function bindLiToMarker($li, marker){
+      function createSidebarLi(json){
+         return ("<li><a>" + json.name + "</a></li>");
+      };
+
+	     function bindLiToMarker($li, marker){
         $li.on('click', function(){
           handler.getMap().setZoom(13);
           marker.setMap(handler.getMap()); //because clusterer removes map property from marker
