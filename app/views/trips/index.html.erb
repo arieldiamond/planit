@@ -1,7 +1,7 @@
 <div class="container">
 <% if @confirmed_trip_partcipations.length > 0 %>
-<h2>My Trips</h2>
-<p><div class="pure-button pure-button-active"><%= link_to 'New Trip', new_trip_path %></div><br /></p>
+<div id="trips_head"><h2>My Trips</h2></div>
+<p><div id="new_trip" class="pure-button pure-button-active"><%= link_to 'New Trip', new_trip_path, remote:true %></div><br /></p>
 
 <div class="pure-table">
   <table>
