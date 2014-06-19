@@ -27,6 +27,10 @@ class User < ActiveRecord::Base
 		self.trip_participations.select{ |participation| participation.confirmed == false }
 	end
 
+	def trip_account_display_for(trip)
+		self.trip_participations.find_by_trip_id(trip.id).trip_account_display
+	end
+
 	acts_as_voter
 
 end
