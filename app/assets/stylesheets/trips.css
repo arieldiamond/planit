@@ -1,10 +1,8 @@
 #trips_calendar {
-	width: 500px;
 	margin:auto;
 }
 
 #calendar {
-	width: 700px;
 	margin:auto;
 }
 
@@ -14,6 +12,23 @@
 	background-color: #EDDBB4;
 	text-align: center;
 	margin: 2px;
+}
+
+#trips_calendar .fc-event-title {
+	font-size: 18px;
+	color:white;
+}
+
+#trips_calendar .fc-event-title:hover {
+	color: #F3FAB6;
+}
+
+#trips_calendar .fc-event-inner:hover {
+	background-color: #415096;
+}
+
+#calendar {
+	
 }
 
 .trip_show_bar h2 {
