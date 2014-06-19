@@ -49,5 +49,8 @@
   <input type="submit" value="Send Invitations">
   <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
 </form><br>
-<div class="pure-button pure-button-active"><%= link_to 'Edit Trip Information', edit_trip_path %></div>
+<div class="pure-button pure-button-active"><%= link_to 'Edit Trip Information', edit_trip_path, remote: true %></div>
 <div class="pure-button pure-button-active"><%= link_to 'Delete Trip', @trip, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<div class="pure-button pure-button-active"><%= link_to 'New Activity', new_trip_activity_path(@trip), remote: true %></div>
+<div class="pure-button pure-button-active"><%= link_to 'New Poll', new_trip_poll_path(@trip), remote: true %></div>
+<div class="pure-button pure-button-active"><%= link_to 'Add an expense', new_trip_expense_path(@trip), remote: true %></div>
