@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$(".charge_details").hide();
 	$("#hide_all_details").hide();
 
@@ -9,7 +10,7 @@ $(document).ready(function(){
   		$("#hide_all_details").show();
   });
 
-    $('#expense_list').on('click', '#hide_all_details', function(event){
+  $('#expense_list').on('click', '#hide_all_details', function(event){
   		event.preventDefault();
   		$(".charge_details").hide();
   		$("#view_all_details").show();
@@ -49,7 +50,7 @@ $(document).ready(function(){
   };
 
 // "input#new_expense_submit_button"
-  $("#new_expense_form").on('submit', function(event) {
+  $("#trip_show_binder").on('submit', "#new_expense_form", function(event) {
     event.preventDefault();
     if (checkMath()) {
       var url = $(this).attr("action");
@@ -63,9 +64,5 @@ $(document).ready(function(){
     } else {
       alert("Your payments should add up to the total.")
     };
-
   });
-
-
-
 });
