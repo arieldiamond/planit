@@ -31,6 +31,8 @@ Rails.application.routes.draw do
   post 'mobile_trips/activities_detail' => 'mobile_trips#activities_detail'
   # creating activities from mobile:
   get 'mobile_activities/new' => 'mobile_activities#new'
+  post 'mobile_activities/new' => 'mobile_activities#create'
+
   # logging in from mobile:
   get 'mobile_sessions/sign_in'
   post 'mobile_sessions/sign_in' => 'mobile_sessions#create_session'
