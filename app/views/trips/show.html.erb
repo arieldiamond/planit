@@ -6,9 +6,47 @@
 <!--             <h2>A subtitle for your page goes here</h2>
  -->        </div> <!-- / .header -->
 
+                    <!-- Where -->
+                    <h2 class="content-subhead">Where:</h2>
+                    <p><%= @trip.location %></p>
 
+                    <div class="pure-g">
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                        </div>
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                        </div>
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                        </div>
+                        <div class="pure-u-1-4">
+                            <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+                        </div>
+                    </div> 
+                    <!-- / Where -->
 
-<!-- begin test
+                   <!-- Who -->
+                    <h2 class="content-subhead">Who's going:</h2>
+                      <ul>
+                        <% @trip.trip_participations.each do |trip_participation| %>
+                        <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
+                        <% if trip_participation.confirmed == false %>
+                           (invitation pending)
+                        <% end %>
+                        </li>
+                        <% end %>
+                      </ul>
+                      <%# ALB note: I want to do this properly %>
+                      <p>Invite someone!</p>
+                      <form method="post" action="/trips/:id/invite">
+                        <input type="text" name="invitee_email">
+                        <input type="submit" value="Send Invitations">
+                        <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
+                      </form>
+                    <!-- / Who -->
+
+<!-- begin GRID
  -->
 <div class="marketing l-wrap pure-g">
  <!-- COL ONE -->
@@ -35,28 +73,11 @@
                     </p>
     </div>
 </div>
-<!-- end test
+<!-- end GRID
  -->        
 
  <div class="content">
-                    <!-- Where -->
-                    <h2 class="content-subhead">Where:</h2>
-                    <p><%= @trip.location %></p>
 
-                    <div class="pure-g">
-                        <div class="pure-u-1-4">
-                            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
-                        </div>
-                        <div class="pure-u-1-4">
-                            <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
-                        </div>
-                        <div class="pure-u-1-4">
-                            <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
-                        </div>
-                        <div class="pure-u-1-4">
-                            <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
-                        </div>
-                    </div> 
 
                     <!-- Expenses -->
                     <h2 class="content-subhead">Expenses</h2>
@@ -66,8 +87,28 @@
                         <div id="expense_list" class="trip_show_details">
                           <%= render 'expenses/expense_list' %>
                         </div>
+                    <!-- / Expenses -->
 
-                  
+                   <!-- Activities -->
+                    <h2 class="content-subhead">Activities</h2>
+                      <ul>
+                        <% @trip.trip_participations.each do |trip_participation| %>
+                        <li><%= trip_participation.traveler.first_name %> <%= trip_participation.traveler.last_name %>
+                        <% if trip_participation.confirmed == false %>
+                           (invitation pending)
+                        <% end %>
+                        </li>
+                        <% end %>
+                      </ul>
+                      <%# ALB note: I want to do this properly %>
+                      <p>Invite someone!</p>
+                      <form method="post" action="/trips/:id/invite">
+                        <input type="text" name="invitee_email">
+                        <input type="submit" value="Send Invitations">
+                        <input type="hidden" name="trip_invited_to" value="<%= @trip.id %>">
+                      </form>
+                    <!-- / Activities -->
+
         </div> <!-- / .content -->
     </div>
 </div> <!-- / .layout (opening tag is in trip_dashboard.html.erb) -->
