@@ -21,8 +21,7 @@ class MobileTripsController < ApplicationController
 	def user_trips
 		@user = User.find(params[:user_id])
 		@trips = []
-		@user.created_trips.each { |created_trip| @trips << created_trip }
-		@user.trip_participations { |trip_p| @trips << trip_p }
+		@user.traveled_trips.each { |created_trip| @trips << created_trip }
 		render json: @trips
 	end 
 
