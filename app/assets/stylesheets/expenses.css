@@ -1,4 +1,19 @@
+/*we can get rid of this container... it was just so i can work*/
 
-div.trip_expenses_table table th, td {
-	border: 1px solid black;
+#expense_list_container {
+	background-color: white;
+	padding-top: 100px;
+}
+
+#expense_list_container table td {
+	font-size: 80%;
+
+}
+
+#expense_list .expense_name {
+	font-weight: bold;
+}
+
+#expense_list .expense_date {
+	font-size: 80%;
 }
