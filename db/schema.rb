@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 20140616060332) do
 
   create_table "expenses", force: true do |t|
     t.string   "name"
-    t.datetime "date",          default: '2014-06-18 21:37:39'
+    t.datetime "date",          default: '2014-06-19 00:42:26'
     t.integer  "cost_in_cents", default: 0
     t.text     "notes"
     t.integer  "trip_id"
@@ -82,15 +82,13 @@ ActiveRecord::Schema.define(version: 20140616060332) do
     t.datetime "departure_time"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "confirmed",           default: true
+    t.boolean  "confirmed"
   end
 
   create_table "trips", force: true do |t|
     t.string   "name"
     t.string   "description"
     t.string   "location"
-    t.float    "latitude"
-    t.float    "longitude"
     t.datetime "start_date"
     t.datetime "end_date"
     t.integer  "creator_id"
@@ -126,8 +124,10 @@ ActiveRecord::Schema.define(version: 20140616060332) do
     t.integer  "invited_by_id"
     t.string   "invited_by_type"
     t.integer  "invitations_count",      default: 0
+    t.string   "authentication_token"
   end
 
+  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true, using: :btree
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: true, using: :btree
