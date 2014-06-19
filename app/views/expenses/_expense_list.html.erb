@@ -47,13 +47,11 @@
 						<% splitter_charge = splitter.find_charge_by_expense(expense) %>
 						<% if splitter_charge.splitting == true %>
 
-
 							<div class="charge_details charge_details_for_<%= expense.id %>">
 								<div class="charge_payment"><%= splitter_charge.payment_display %></div>
 								<div class="charge_debt">-<%= splitter_charge.debt_display %></div>
 							</div>
 							<div class="charge_account"><%= splitter_charge.account_display %></div>
-
 
 						<% end %>
 			<% end %>
