@@ -60,3 +60,6 @@ div#trips_display h2.content-subhead  a{
     margin-top: 0;
 }
 
+.separator {
+  border-bottom: 1px solid whitesmoke;
+}
