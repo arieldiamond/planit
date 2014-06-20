@@ -1,19 +1,22 @@
+<div class="container">
 <h1><%= @poll.name %></h1>
 
 <ol>
 <% @options.each do |option| %>
 	<li>
-		<%= option.name %>
-		<form method="post" action="<%= option.poll_id %>/upvote">
+		<div id="poll-choice"><%= option.name %></div>
+		<form id="poll_vote"class="pure-form" method="post" action="<%= option.poll_id %>/upvote">
 	  		<input type="submit" value="Up Vote">
 	  		<input type="hidden" name="option_id" value="<%= option.id %>">
+		<div id="poll_vote">Upvotes: <%= option.votes_for.up.size %></div>
 		</form>
-		<form method="post" action="<%= option.poll_id %>/downvote">
+		<form class="pure-form" method="post" action="<%= option.poll_id %>/downvote">
 	  		<input type="submit" value="Down Vote">
 	  		<input type="hidden" name="option_id" value="<%= option.id %>">
+		<div id="poll_vote">Downvotes: <%= option.votes_for.down.size %></div>
 		</form>
-		Upvotes: <%= option.votes_for.up.size %>
-		Downvotes: <%= option.votes_for.down.size %>
 	</li>
 <% end %>
 </ol>
+<div class="pure-button"><%= link_to 'Back', trip_path(@trip) %></div>
+</div>
