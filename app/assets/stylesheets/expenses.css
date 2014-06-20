@@ -7,7 +7,7 @@
 
 #expense_list_container table td {
 	font-size: 80%;
-
+  text-align: center;
 }
 
 #expense_list .expense_name {
@@ -16,4 +16,16 @@
 
 #expense_list .expense_date {
 	font-size: 80%;
+}
+
+#expense_list .charge_payment {
+  /*color: green;*/
+}
+
+#expense_list .charge_debt {
+  color: red;
+}
+
+#expense_list .charge_account {
+  font-weight: bold;
 }
