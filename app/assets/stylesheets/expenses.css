@@ -1,13 +1,12 @@
-/*we can get rid of this container... it was just so i can work*/
-
-#expense_list_container {
-	background-color: white;
-	padding-top: 100px;
-}
 
 #expense_list_container table td {
-	font-size: 80%;
+	font-size: 110%;
   text-align: center;
+  font-family: 'Arial';
+}
+
+#expense_list {
+	margin:7px;
 }
 
 #expense_list .expense_name {

@@ -7,6 +7,7 @@ class PollsController < ApplicationController
 
 	def show
 		@poll = Poll.find(params[:id])
+		@trip = Trip.find(params[:trip_id])
 		@options = Option.where(poll_id: @poll.id)
 	end
 
