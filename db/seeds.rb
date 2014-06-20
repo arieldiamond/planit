@@ -21,7 +21,7 @@ User.create!(users)
 trips = [{name: "Save the world", description: "Just another day", location: "New York City", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
 				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach, Virginia", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
 				 {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "Dev BootCamp, Chicago", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1},
-				 {name: "Lake House", description: "It's fourth of july!", location: "Burlington, Vermont", start_date: DateTime.new(2012,7,1), end_date: DateTime.new(2012,7,15), creator_id: 9},
+				 {name: "Lake House", description: "Summer reunion 2014.", location: "Burlington, Vermont", start_date: DateTime.new(2014,6,10), end_date: DateTime.new(2014,6,21), creator_id: 9},
 				 {name: "Clean up everything", description: "...that we broke saving the world", location: "New York City", start_date: DateTime.new(2014,2,13), end_date: DateTime.new(2014,2,20), creator_id: 7},
 				 {name: "Final Project", description: "Planit", location: "Dev BootCamp, Chicago", start_date: DateTime.new(2014,6,11), end_date: DateTime.new(2014,6,11), creator_id: 3}
 				]
@@ -66,10 +66,12 @@ trip_participations = [{trip_id: 1, traveler_id: 6, transportation_type: "web", 
 
 TripParticipation.create!(trip_participations)
 
-activities = [{name: "fishing", description: "Woohoo, on a boat!", start_time: DateTime.new(2012,7,3,6,0,0), end_time: DateTime.new(2012,7,3,15,0,0), location: "Lake Champlain, Vermont", trip_id: 4, creator_id: 3},
-							{name: "kayaking", description: "Woohoo, on a smaller boat!", start_time: DateTime.new(2012,7,4,10,0,0), end_time: DateTime.new(2012,7,4,14,0,0), location: "Echo Lake, Vermont", trip_id: 4, creator_id: 3},
+activities = [{name: "Fishing", description: "We're meeting at 5:30 and the boat leaves at 6:00 sharp.", start_time: DateTime.new(2014,6,11,6,0,0), end_time: DateTime.new(2014,6,11,15,0,0), location: "Lake Champlain, Vermont", trip_id: 4, creator_id: 3},
+							{name: "Kayaking", description: "Just like last year.", start_time: DateTime.new(2014,6,13,10,0,0), end_time: DateTime.new(2014,6,13,14,0,0), location: "Echo Lake, Vermont", trip_id: 4, creator_id: 3},
 							{name: "winning", description: "because we're superheroes", start_time: DateTime.new(2014,2,5,10,0,0), end_time: DateTime.new(2014,2,7,15,0,0), location: "Times Square, New York City", trip_id: 1, creator_id: 7},
-							{name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "218 W Kinzie St, Chicago, IL 60654", trip_id: 3, creator_id: 1}]
+							{name: "eat cake, drink cocktails", description: "because it's Ariel's birthday", start_time: DateTime.new(2014,6,19,18,0,0), end_time: DateTime.new(2014,6,19,21,0,0), location: "218 W Kinzie St, Chicago, IL 60654", trip_id: 3, creator_id: 1},
+							{name: "Dinner", description: "Happy birthday, Ariel!", start_time: DateTime.new(2014,6,19,19,0,0), end_time: DateTime.new(2014,6,19,22,0,0), location: "Parker Pie Company, Glover, Vermont", trip_id: 4, creator_id: 3},
+							{name: "Hiking", description: "Half day hike up Wheeler Mountain, then a late breakfast at Rosa's Diner.", start_time: DateTime.new(2014,6,20,8,0,0), end_time: DateTime.new(2014,6,20,12,0,0), location: "Wheeler Mountain, Vermont", trip_id: 4, creator_id: 3}]
 
 Activity.create!(activities)
 
@@ -83,60 +85,76 @@ activity_participations = [{activity_id: 1, trip_participation_id: 14},
 													 {activity_id: 3, trip_participation_id: 17},
 													 {activity_id: 3, trip_participation_id: 18},
 													 {activity_id: 3, trip_participation_id: 16},
-													 {activity_id: 4, trip_participation_id: 1},
-													 {activity_id: 4, trip_participation_id: 2},
-													 {activity_id: 4, trip_participation_id: 3},
-													 {activity_id: 4, trip_participation_id: 5}]
+													 {activity_id: 4, trip_participation_id: 14},
+													 {activity_id: 4, trip_participation_id: 15},
+													 {activity_id: 4, trip_participation_id: 16},
+													 {activity_id: 4, trip_participation_id: 17},
+													 {activity_id: 5, trip_participation_id: 18},
+													 {activity_id: 5, trip_participation_id: 15},
+													 {activity_id: 5, trip_participation_id: 16},
+													 {activity_id: 5, trip_participation_id: 17},
+													 {activity_id: 5, trip_participation_id: 18},
+													 {activity_id: 6, trip_participation_id: 14},
+													 {activity_id: 6, trip_participation_id: 15},
+													 {activity_id: 6, trip_participation_id: 16},
+													 {activity_id: 6, trip_participation_id: 17},
+													 {activity_id: 6, trip_participation_id: 18}]
 
 ActivityParticipation.create!(activity_participations)
 
 
-charges = [{expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 24},
-					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 25},
-					 {expense_id: 1, payment_in_cents: 1500, debt_in_cents: 300, trip_participation_id: 26},
-					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 27},
-					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 28},
+charges = [{expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 14},
+					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 15},
+					 {expense_id: 1, payment_in_cents: 1500, debt_in_cents: 300, trip_participation_id: 16},
+					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 17},
+					 {expense_id: 1, payment_in_cents: 0, debt_in_cents: 300, trip_participation_id: 18},
 
-					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 24},
-					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 25},
-					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 26},
-					 {expense_id: 2, payment_in_cents: 2800, debt_in_cents: 700, trip_participation_id: 27},
-					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 700, trip_participation_id: 28},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 14, splitting: false},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 1400, trip_participation_id: 15},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 16, splitting: false},
+					 {expense_id: 2, payment_in_cents: 2800, debt_in_cents: 1400, trip_participation_id: 17},
+					 {expense_id: 2, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 18, splitting: false},
 
- 					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 24, splitting: false},
-					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 25, splitting: false},
-					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 600, trip_participation_id: 26},
-					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 27},
-					 {expense_id: 3, payment_in_cents: 1200, debt_in_cents: 600, trip_participation_id: 28},
+ 					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 1800, trip_participation_id: 14},
+					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 1800, trip_participation_id: 15},
+					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 1800, trip_participation_id: 16},
+					 {expense_id: 3, payment_in_cents: 9000, debt_in_cents: 1800, trip_participation_id: 17},
+					 {expense_id: 3, payment_in_cents: 0, debt_in_cents: 1800, trip_participation_id: 18},
 
-					 {expense_id: 4, payment_in_cents: 1000, debt_in_cents: 400, trip_participation_id: 24},
-					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 400, trip_participation_id: 25},
-					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 26},
-					 {expense_id: 4, payment_in_cents: 200, debt_in_cents: 400, trip_participation_id: 27},
-					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 28}]
+ 					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 8000, trip_participation_id: 14, splitting: false},
+					 {expense_id: 4, payment_in_cents: 20000, debt_in_cents: 8000, trip_participation_id: 15, splitting: false},
+					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 8000, trip_participation_id: 16},
+					 {expense_id: 4, payment_in_cents: 0, debt_in_cents: 8000, trip_participation_id: 17},
+					 {expense_id: 4, payment_in_cents: 20000, debt_in_cents: 8000, trip_participation_id: 18},
+
+					 {expense_id: 5, payment_in_cents: 0, debt_in_cents: 2000, trip_participation_id: 14},
+					 {expense_id: 5, payment_in_cents: 0, debt_in_cents: 2000, trip_participation_id: 15},
+					 {expense_id: 5, payment_in_cents: 0, debt_in_cents: 2000, trip_participation_id: 16},
+					 {expense_id: 5, payment_in_cents: 8000, debt_in_cents: 2000, trip_participation_id: 17},
+					 {expense_id: 5, payment_in_cents: 0, debt_in_cents: 0, trip_participation_id: 18, splitting: false}]
 
 Charge.create!(charges)
 
-expenses = [{name: "doughnuts", date: DateTime.new(2014,6,16), cost_in_cents: 1500, notes: "Thanks, Dusty!", trip_id: 6},
-						{name: "beer", date: DateTime.new(2014,6,17), cost_in_cents: 2800, notes: "Ariel was drinking her bourbon", trip_id: 6},
-						{name: "real domain name", date: DateTime.new(2014,6,18), cost_in_cents: 1200, notes: "planit.com", trip_id: 6},
-						{name: "long domain name", date: DateTime.new(2014,6,18), cost_in_cents: 1200, notes: "letstakeatripwithfriendsandplanitrealnice.com", trip_id: 6}]
+expenses = [{name: "Doughnuts", date: DateTime.new(2014,6,16), cost_in_cents: 1500, notes: "Thanks, Dusty!", trip_id: 4},
+						{name: "Wine", date: DateTime.new(2014,6,17), cost_in_cents: 2800, notes: "Ariel was drinking her bourbon", trip_id: 4},
+						{name: "Groceries", date: DateTime.new(2014,6,18), cost_in_cents: 1200, notes: "planit.com", trip_id: 4},
+						{name: "Fishing", date: DateTime.new(2014,6,11), cost_in_cents: 12000, notes: "letstakeatripwithfriendsandplanitrealnice.com", trip_id: 4},
+						{name: "Kayaking", date: DateTime.new(2014,6,13), cost_in_cents: 8000, notes: "planit.com", trip_id: 4}]
 
 Expense.create!(expenses)
 
-polls = [{name: "Location", trip_id: 3, creator_id: 1},
-			{name: "Friday Dinner", trip_id: 3, creator_id: 1},
-			{name: "Which Beach?", trip_id: 3, creator_id: 1},
-			{name: "What dates?", trip_id: 3, creator_id: 1}]
+polls = [{name: "Location", trip_id: 4, creator_id: 1},
+			{name: "Friday Dinner", trip_id: 4, creator_id: 1},
+			{name: "Which Beach?", trip_id: 4, creator_id: 1},
+			{name: "What dates?", trip_id: 4, creator_id: 1}]
 
 Poll.create!(polls)
 
 options = [{name: "Paris", poll_id: 1},
-			{name: "London", poll_id: 1},
-			{name: "Rome", poll_id: 1},
-			{name: "Munich", poll_id: 1},
-			{name: "New York", poll_id: 1},
-			{name: "Los Angeles", poll_id: 1},
+			{name: "Florida", poll_id: 1},
+			{name: "New Hampshire", poll_id: 1},
+			{name: "Massachusetts", poll_id: 1},
+			{name: "Vermont", poll_id: 1},
 			{name: "Steak", poll_id: 2},
 			{name: "Seafood", poll_id: 2},
 			{name: "Italian", poll_id: 2},
