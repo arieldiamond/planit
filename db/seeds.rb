@@ -21,7 +21,7 @@ User.create!(users)
 trips = [{name: "Save the world", description: "Just another day", location: "New York City", start_date: DateTime.new(2014,2,3), end_date: DateTime.new(2014,2,11), creator_id: 9},
 				 {name: "Spring break", description: "Everyone needs a vacation", location: "Virginia Beach, Virginia", start_date: DateTime.new(2010,4,7), end_date: DateTime.new(2010,4,15), creator_id: 8},
 				 {name: "Ariel's Birthday", description: "Because today is a really convenient day to have a birthday", location: "Dev BootCamp, Chicago", start_date: DateTime.new(2014,6,19), end_date: DateTime.new(2014,6,20), creator_id: 1},
-				 {name: "Lake House", description: "It's fourth of july!", location: "Burlington, Vermont", start_date: DateTime.new(2012,7,1), end_date: DateTime.new(2012,7,15), creator_id: 9},
+				 {name: "Lake House", description: "Summer reunion 2014.", location: "Burlington, Vermont", start_date: DateTime.new(2014,6,10), end_date: DateTime.new(2014,6,21), creator_id: 9},
 				 {name: "Clean up everything", description: "...that we broke saving the world", location: "New York City", start_date: DateTime.new(2014,2,13), end_date: DateTime.new(2014,2,20), creator_id: 7},
 				 {name: "Final Project", description: "Planit", location: "Dev BootCamp, Chicago", start_date: DateTime.new(2014,6,11), end_date: DateTime.new(2014,6,11), creator_id: 3}
 				]
