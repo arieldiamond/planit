@@ -3,20 +3,9 @@
 <body id="welcome">
   <div class="inner_cover">
     <h1 class="cover-heading">Planit</h1>
-    <p class="lead tagline">Group trips. Organized.</p>
-    <p>She used Planit to organize her yearly family reunion</p>
-    <p class="lead"><div class="pure-button pure-button-active"><%= link_to 'Sign up', new_user_registration_path %></div></p>
-    <p id="login">
-      <p>Already have an account? <div class="pure-button pure-button-active"><%= link_to 'Log In', new_user_session_path %></div></p>
-    </p>
-<a href="#">Tester</a>
-<script>
-$('a').bind('click', function() {
-    alert('Unobtrusive!');
-    console.log("hm?")
-}
-</script>
-    <p id="team-planit">Team Planit: Annie, Ariel, Dusty, Fabi &amp; Jaimin</p>
+    <h2 class="tagline">Group trips. Organized.</h2>
+    <p class="lead"><div id="signup" class="pure-button pure-button-active"><%= link_to 'Sign up', new_user_registration_path %></div></p>
+    
   </div> <!-- / inner cover -->
 </body>
 <% end %>

@@ -15,7 +15,7 @@
  *= require_self
  */
 
-body {
+html, body {
   background-image: url('../Boat.png');
   background-repeat:none;
   background-size: cover;

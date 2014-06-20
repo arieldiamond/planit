@@ -1,2 +1,2 @@
-	$("#trips_head").html("<%= escape_javascript(render 'form') %>")
+	$("<%= escape_javascript(render 'form') %>").appendTo("#trips_head")
 	// shows new trips form

@@ -2,11 +2,56 @@ body#welcome {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
-.inner_cover {
+
+#welcome h1 {
+  font-size: 5em;
+  margin-bottom: 80px;
+}
+
+#welcome h2 {
+  font-size: 4em;
+}
+
+#welcome h3 {
+  font-size: 2em;
+}
+
+#welcome .tagline {
+  font-size: 3.6em;
+}
+
+#welcome .title {
+  font-size: 34px;
+  margin-top: 10px;
+}
+
+
+#welcome .inner_cover {
+  margin-top: 30px;
   padding: 10px;
 }
+
+#welcome .shadow {
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#welcome .shadow a {
+  color: white;
+}
+
+#signup {
+  background-color: white;
+  border-radius: 5px;
+  padding: 13px 50px;
+  margin-bottom: 10px;
+}
+
+#signup a {
+  font-size: 24px;
+  text-shadow: none;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 #welcome .site-wrapper {
   display: table;
@@ -14,10 +59,12 @@ body#welcome {
   height: 100%; 
   min-height: 100%;
 }
+
 #welcome .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
 }
+
 #welcome .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -31,24 +78,6 @@ body#welcome {
 #pure-button {
   background-color: blue;
 }
-/*
- * Header
- */
-#welcome .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
 
 /*
  * Cover
@@ -63,46 +92,17 @@ body#welcome {
 }
 
 
+#welcome #team-planit {
+  color: #B6DFF9;
+}
+
+
 /*
  * Footer
  */
 
-#welcome .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
 
 
 /*
  * Affix and center
  */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  #welcome .masthead {
-    position: fixed;
-    top: 0;
-  }
-  #welcome .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  #welcome .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  #welcome .masthead,
-  #welcome .mastfoot,
-  #welcome .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  #welcome .masthead,
-  #welcome .mastfoot,
-  #welcome .cover-container {
-    width: 700px;
-  }
-}

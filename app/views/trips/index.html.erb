@@ -11,8 +11,6 @@
         <th>Description</th>
         <th>Location</th>
         <th>Start date</th>
-        <th>End date</th>
-        <th>Creator</th>
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -23,10 +21,7 @@
           <td><%= link_to participation.trip.name, participation.trip %></td>
           <td><%= link_to participation.trip.description, participation.trip %></td>
           <td><%= participation.trip.location %></td>
-          <td><%= participation.trip.start_date.strftime("%m/%d/%Y") %></td>
-          <td><%= participation.trip.end_date.strftime("%m/%d/%Y") %></td>
-          <td><%= participation.trip.creator.first_name %></td>
-          <td><%= link_to 'Activities', trip_activities_path(participation.trip) %></td>
+          <td><%= participation.trip.start_date.strftime("%m/%d/%Y") %></td>        
         </tr>
       <% end %>
     </tbody>
