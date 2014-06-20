@@ -4,6 +4,8 @@
 
 #calendar {
 	margin:auto;
+	border-color:#415096;
+
 }
 
 #trips_calendar .fc-event-title {
@@ -19,7 +21,24 @@
 	background-color: #415096;
 }
 
-#calendar {
-	
+
+#calendar .fc-event-title {
+	font-size: 18px;
+	color:white;
 }
 
+#calendar .fc-event-title:hover {
+	color: #F3FAB6;
+}
+
+#calendar .fc-event  {
+	background-color: #7AC449;
+	border-color: #7AC449;
+}
+
+#calendar .fc-event:hover {
+	background-color: #58A127;
+	border-color: #58A127;
+}
+
+/*<a href="http://localhost:3000/activities/4.html" class="fc-event fc-event-hori fc-event-start fc-event-end" style="position: absolute; left: 469.4270935058594px; width: 43px; top: 237.55209350585938px;"><div class="fc-event-inner"><span class="fc-event-title">eat cake, drink cocktails</span></div></a>*/
