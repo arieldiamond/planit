@@ -1,12 +1,22 @@
 .trip_show_bar {
 	width: 100%;
 	height: 30px;
-	background-color: #EDDBB4;
+	background-color: #C2DEED;
 	text-align: center;
+	margin-top: 10px;
 	margin: 2px;
 }
 
 .trip_show_bar h2 {
-	margin: 0;
+	padding-top:4px;
+
 }
 
+#trip_title {
+	font-size: 3em;
+	text-align: center;
+}
+
+#trip_show_page p {
+	font-size: 18px;
+}

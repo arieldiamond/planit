@@ -2,8 +2,15 @@
 <div id="trip_show_page">
   <p id="notice"><%= notice %></p>
 
-  <div class="trip_information">
-    <%= render 'trip_information' %>
+  <div id="trip_title">
+    <h1><strong><%= @trip.name %></strong> </h1>
+ </div>
+
+  <div id="calendar_bar" class="trip_show_bar">
+    <h2>Trip Information</h2>
+    </div>
+    <div class="trip_information">
+      <%= render 'trip_information' %>
   </div>
 
   <div id="trip_show_binder"></div>
