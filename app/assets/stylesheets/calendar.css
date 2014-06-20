@@ -4,6 +4,8 @@
 
 #calendar {
 	margin:auto;
+	border-color:#415096;
+
 }
 
 #trips_calendar .fc-event-title {
@@ -17,8 +19,8 @@
 
 #trips_calendar .fc-event-inner:hover {
 	background-color: #415096;
-	border-color:#415096;
 }
+
 
 #calendar .fc-event-title {
 	font-size: 18px;

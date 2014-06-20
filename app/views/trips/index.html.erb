@@ -1,31 +1,16 @@
-<div class="container">
+<div class="container" id="my-trips">
 <% if @confirmed_trip_partcipations.length > 0 %>
 <div id="trips_head"><h2>My Trips</h2></div>
 <p><div id="new_trip" class="pure-button pure-button-active"><%= link_to 'New Trip', new_trip_path, remote:true %></div><br /></p>
 
-<div class="pure-table">
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Location</th>
-        <th>Start date</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @confirmed_trip_partcipations.each do |participation| %>
-        <tr>
-          <td><%= link_to participation.trip.name, participation.trip %></td>
-          <td><%= link_to participation.trip.description, participation.trip %></td>
-          <td><%= participation.trip.location %></td>
-          <td><%= participation.trip.start_date.strftime("%m/%d/%Y") %></td>        
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div id="trips_display">
+  <% @confirmed_trip_partcipations.each do |participation| %>
+      <div id="trip_name"><h1 class="content-subhead"><%= link_to participation.trip.name, participation.trip %></h1></div>
+      <h2><%= link_to participation.trip.description, participation.trip %></h2>
+      <h2><%= participation.trip.location %></h2>
+      <h2><%= participation.trip.start_date.strftime("%m/%d/%Y") %></h2>
+      <div class="separator"></div>
+  <% end %>
   <% end %>
 </div>
 
