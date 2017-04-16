@@ -27,7 +27,13 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+<<<<<<< HEAD
+    anjlab-bootstrap-rails (3.0.3.0)
+      railties (>= 3.0)
+      sass (>= 3.2)
+=======
     acts_as_votable (0.10.0)
+>>>>>>> origin/development
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     builder (3.2.2)
@@ -186,7 +192,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
+  anjlab-bootstrap-rails
+=======
   acts_as_votable (~> 0.10.0)
+>>>>>>> origin/development
   capybara
   coffee-rails (~> 4.0.0)
   coveralls
